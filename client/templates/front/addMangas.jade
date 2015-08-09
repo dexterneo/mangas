@@ -1,0 +1,56 @@
+template(name="addMangas")
+	.modal.fade#myModal(tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
+		.modal-dialog.modal-lg(role="document")
+			.modal-content
+				.modal-header
+					button.close(type="button" data-dismiss="modal" aria-label="Close")
+						span(aria-hidden="true") &times;
+					h4.modal-title#myModalLabel Ajouter un mangas
+				.modal-body
+					form
+						.form-group
+							label(for="mangasName") Mangas
+							input.form-control.awesomplete#mangasName(type="text" list='mangasList')
+							datalist#mangasList
+								each mangasList
+									option #{mangasName}
+						.form-group
+							label(for="author") Auteur
+							input.form-control.awesomplete#author(type="text" list='authorList')
+							datalist#authorList
+								each authorList
+									option #{author}
+						.form-group
+							label(for="title") Titre du tome
+							input.form-control#title(type="text")
+						.form-group
+							label(for="tomeNumber") N° du tome
+							input.form-control#tomeNumber(type="number" min="1" value="1")
+						.form-group
+							label(for="isbn") ISBN ou code barre
+							input.form-control#isbn(type="text")
+						.form-group
+							label(for="cover") Couverture
+							input.form-control#cover(type="url")
+						.form-group
+							label(for="releaseDate") Date de mise en vente
+							input.form-control#releaseDate(type="url")
+						.form-group
+							label
+								input#owned(type="checkbox" value="")
+								| Possédé ?
+						.form-group
+							label(for="editor") Editeur
+							input.form-control.awesomplete#editor(type="text" list='editorList')
+							datalist#editorList
+								each editorList
+									option #{editor}
+						.form-group
+							label(for="version") Version
+							input.form-control.awesomplete#version(type="text" list='versionList')
+							datalist#versionList
+								each versionList
+									option #{version}
+				.modal-footer
+					button.btn.btn-default.pull-left(type="button" data-dismiss="modal") Close
+					button.btn.btn-success#addMangasInDB(type="button") Save changes
