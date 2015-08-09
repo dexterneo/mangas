@@ -1,0 +1,13 @@
+{
+	"applicationName": "Mangas Biblio",
+	"404": "Désolé, nous ne trouvons pas de page à cette adresse...",
+	"toggleNav": "Basculer la navigation",
+	"link": "Lien",
+	"current": "actuel",
+	"dropdown": "Menu déroulant",
+	"action": "Action",
+	"go": "GO",
+	"addAMangas": "Ajouter un mangas",
+	"ownedMangas": "Mangas possédés",
+	"missingMangas": "Mangas manquant"
+}
