@@ -10,10 +10,10 @@ template(name="header")
 				a.navbar-brand(href="{{pathFor 'home'}}") {{_ "applicationName"}}
 			#mkp-navbar.collapse.navbar-collapse
 				ul.nav.navbar-nav
-					li.active
+					li(class="#{homeActive}")
 						a(href="{{pathFor 'home'}}") {{_ "ownedMangas"}}
-					li
-						a(href="#") {{_ "missingMangas"}}
+					li(class="#{missingActive}")
+						a(href="{{pathFor 'missingMangas'}}") {{_ "missingMangas"}}
 				form.navbar-form.navbar-left(role="search")
 					.form-group
 						input.form-control(type="text" placeholder="Search")
