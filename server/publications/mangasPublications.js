@@ -5,3 +5,11 @@ Meteor.publish('allOwnedMangas', function(userId) {
 		"owned": true
 	});
 });
+
+// Send back all missing mangas
+Meteor.publish('allMissingMangas', function(userId) {
+	return Mangas.find({
+		"user": userId,
+		"owned": false
+	});
+});
