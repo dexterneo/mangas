@@ -1,7 +1,8 @@
 template(name="mangas")
 	.mangas
 		.thumbnail
-			img(src="#{cover}" alt="#{title}")
+			a(href="{{pathFor 'tomeDetails'}}")
+				img(src="#{cover}" alt="#{title}")
 			.caption
 				h3.text-center #{mangasName}
 				h4.text-center Tome #{tomeNumber}

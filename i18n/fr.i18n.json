@@ -9,5 +9,6 @@
 	"go": "GO",
 	"addAMangas": "Ajouter un mangas",
 	"ownedMangas": "Mangas possédés",
-	"missingMangas": "Mangas manquant"
+	"missingMangas": "Mangas manquant",
+	"by": "Par"
 }
