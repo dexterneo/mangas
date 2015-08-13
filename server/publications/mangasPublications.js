@@ -13,3 +13,10 @@ Meteor.publish('allMissingMangas', function(userId) {
 		"owned": false
 	});
 });
+
+// Send back the data about a tome
+Meteor.publish('tomeDetails', function(id) {
+	return Mangas.find({
+		"_id": id
+	});
+});
