@@ -1,3 +1,10 @@
 template(name="tomeDetails")
 	.container
 		h1 #{mangasName}
+		h3 {{_ "by"}} #{author}
+		.thumbnail.col-xs-12.col-sm-12.col-md-6.col-lg-6
+			img(src="#{cover}" alt="#{title}")
+			.caption
+				h3.text-center #{title}
+				h4.text-center {{_ "tome"}} #{tomeNumber} - {{_ "version"}} : #{version}
+				p {{_ "released"}} #{displayDate} {{_ "byEditor"}} #{editor}
