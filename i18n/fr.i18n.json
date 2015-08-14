@@ -10,5 +10,9 @@
 	"addAMangas": "Ajouter un mangas",
 	"ownedMangas": "Mangas possédés",
 	"missingMangas": "Mangas manquant",
-	"by": "Par"
+	"by": "Par",
+	"tome": "Tome",
+	"released": "Parue",
+	"byEditor": "chez l'éditeur",
+	"version": "Version"
 }
