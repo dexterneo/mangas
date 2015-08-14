@@ -8,3 +8,11 @@ template(name="tomeDetails")
 				h3.text-center #{title}
 				h4.text-center {{_ "tome"}} #{tomeNumber} - {{_ "version"}} : #{version}
 				p {{_ "released"}} #{displayDate} {{_ "byEditor"}} #{editor}
+				if owned
+					p {{_ "inBiblio"}}
+				else
+					p {{_ "notInBiblio"}}
+		if notOwned
+			.col-xs-12.col-sm-12.col-md-6.col-lg-6
+				h2 Actions
+				a(href="http://www.amazon.fr/s?field-keywords=#{mangasName}+tome+#{tomeNumber}" target="blank") Achetez le sur Amazon
