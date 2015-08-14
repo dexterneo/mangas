@@ -14,10 +14,6 @@ template(name="header")
 						a(href="{{pathFor 'home'}}") {{_ "ownedMangas"}}
 					li(class="#{missingActive}")
 						a(href="{{pathFor 'missingMangas'}}") {{_ "missingMangas"}}
-				form.navbar-form.navbar-left(role="search")
-					.form-group
-						input.form-control(type="text" placeholder="Search")
-					button.btn.btn-default(type="submit") {{_ "go"}}
 				form.navbar-form.navbar-left#buttonAddMangas
 					button.btn.btn-primary(type="button" data-toggle="modal" data-target="#myModal") {{_ "addAMangas"}}
 				.nav.navbar-nav.navbar-right
