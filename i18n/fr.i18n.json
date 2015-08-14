@@ -14,5 +14,7 @@
 	"tome": "Tome",
 	"released": "Parue",
 	"byEditor": "chez l'éditeur",
-	"version": "Version"
+	"version": "Version",
+	"inBiblio": "Ce tome fait partie de votre Mangathèque",
+	"notInBiblio": "Ce tome ne fait pas encore partie de votre collection"
 }
