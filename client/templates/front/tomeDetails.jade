@@ -8,13 +8,24 @@ template(name="tomeDetails")
 				.caption
 					h3.text-center #{title}
 					h4.text-center {{_ "tome"}} #{tomeNumber} - {{_ "version"}} : #{version}
-					p {{_ "released"}} #{displayDate} {{_ "byEditor"}} #{editor}
-					if owned
-						p {{_ "inBiblio"}}
-					else
-						p {{_ "notInBiblio"}}
-		if notOwned
-			.col-xs-12.col-sm-12.col-md-6.col-lg-6
+		.col-xs-12.col-sm-12.col-md-6.col-lg-6
+			if notOwned
 				h2 {{_ "buyTome"}}
 				a(href="http://www.amazon.fr/s?field-keywords=#{isbn}" target="blank") {{_ "buyItOnAmazon"}}
-				h2 {{_ "setOwnedTrue"}}
+			h2 {{_ "informations"}}
+			p {{_ "tomeTitle"}} : #{title}
+			p {{_ "mangasName"}} : #{mangasName}
+			p {{_ "author"}} : #{author}
+			p {{_ "released"}} : #{displayDate}
+			p {{_ "editor"}} : #{editor}
+			p {{_ "version"}} : #{version}
+			if owned
+				p {{_ "inBiblio"}}
+				p {{_ "setOwnedFalse"}}
+					button#setOwnedFalse.btn.btn-danger(type="button")
+						span.glyphicon.glyphicon-remove
+			else
+				p {{_ "notInBiblio"}}
+				p {{_ "setOwnedTrue"}}
+					button#setOwnedTrue.btn.btn-success(type="button")
+						span.glyphicon.glyphicon-ok
