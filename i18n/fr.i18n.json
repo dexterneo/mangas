@@ -19,5 +19,11 @@
 	"notInBiblio": "Ce tome ne fait pas encore partie de votre collection",
 	"buyItOnAmazon": "Achetez le sur Amazon",
 	"buyTome": "Acheter le tome",
-	"setOwnedTrue": "Marquer comme possédé"
+	"setOwnedTrue": "Ajouter le à votre collection",
+	"setOwnedFalse": "Retirer le de votre collection",
+	"informations": "Informations sur le tome",
+	"tomeTitle": "Titre du tome",
+	"mangasName": "Nom du mangas",
+	"author": "Auteur",
+	"editor": "Editeur"
 }
