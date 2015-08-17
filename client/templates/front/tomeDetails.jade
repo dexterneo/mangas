@@ -30,3 +30,8 @@ template(name="tomeDetails")
 				p {{_ "setOwnedTrue"}}
 					button#setOwnedTrue.btn.btn-success(type="button")
 						span.glyphicon.glyphicon-ok
+		.col-xs-12.col-sm-12.col-md-12.col-lg-12
+			h2 {{_ "allTomes"}}
+				#coverList.row
+					each allTomes
+						+cover
