@@ -13,7 +13,8 @@ template(name="tomeDetails")
 				h2 {{_ "buyTome"}}
 				a(href="http://www.amazon.fr/s?field-keywords=#{isbn}" target="blank") {{_ "buyItOnAmazon"}}
 			h2 {{_ "informations"}}
-			p {{_ "tomeTitle"}} : #{title}
+			if title
+				p {{_ "tomeTitle"}} : #{title}
 			p {{_ "mangasName"}} : #{mangasName}
 			p {{_ "author"}} : #{author}
 			p {{_ "released"}} : #{displayDate}
