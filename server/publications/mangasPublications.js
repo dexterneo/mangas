@@ -27,3 +27,11 @@ Meteor.publish('allTomes', function(userId, mangasName) {
         "mangasName": mangasName
     });
 });
+
+Meteor.publish('mangaka', function(userId, author) {
+    return Mangas.find({
+        "user": userId,
+        "author": author,
+        "tomeNumber": 1
+    });
+});
