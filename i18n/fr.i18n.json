@@ -26,5 +26,6 @@
     "mangasName": "Nom du manga",
     "author": "Auteur",
     "editor": "Editeur",
-    "allTomes": "Tous les tomes du manga"
+    "allTomes": "Tous les tomes du manga",
+    "seriesOwned": "Séries de mangas possédées"
 }
