@@ -7,6 +7,10 @@ Template.mangaka.helpers({
             "user": Meteor.userId(),
             "author": Router.current().params.author,
             "tomeNumber": 1
+        }, {
+            sort: {
+                "mangasName": 1
+            }
         });
     }
 });
