@@ -1,31 +1,29 @@
 body
 	padding-top 70px
 
-.mangas
+.mangas, .mangas-cover
 	display inline-block
-	padding 0 15px 0 15px
+	padding 0 10px 0 10px
 
 @media (max-width: 767px)
-	.mangas
-		a
-			img
-				width 220px
-				height 338px
+	.mangas.grid-item
+		width 33%
+	.mangas-cover.grid-item
+		width 50%
 @media (min-width: 768px)
-	.mangas
-		a
-			img
-				width 226px
-				height 328px
+	.mangas.grid-item
+		width 25%
+	.mangas-cover.grid-item
+		width 33%
 @media (min-width: 992px)
-	.mangas
-		a
-			img
-				width 215px
-				height 316px
+	.mangas.grid-item
+		width 20%
+	.mangas-cover.grid-item
+		width 25%
 @media (min-width: 1200px)
-	.mangas
-		a
-			img
-				width 200px
-				height 307px
+	.mangas.grid-item
+		width 16%
+	.mangas-cover.grid-item
+		width 20%
+
+
