@@ -1,0 +1,7 @@
+template(name="mangaka")
+	.container
+		h1 #{author}
+		h2 {{_ "seriesOwned"}}
+		#coverList.grid
+			each serie
+				+cover

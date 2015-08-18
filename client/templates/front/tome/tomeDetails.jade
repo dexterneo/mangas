@@ -16,7 +16,8 @@ template(name="tomeDetails")
 			if title
 				p {{_ "tomeTitle"}} : #{title}
 			p {{_ "mangasName"}} : #{mangasName}
-			p {{_ "author"}} : #{author}
+			p {{_ "author"}} :
+				a(href="{{pathFor 'mangaka'}}") #{author}
 			p {{_ "released"}} : #{displayDate}
 			p {{_ "editor"}} : #{editor}
 			p {{_ "version"}} : #{version}
@@ -32,6 +33,6 @@ template(name="tomeDetails")
 						span.glyphicon.glyphicon-ok
 		.col-xs-12.col-sm-12.col-md-12.col-lg-12
 			h2 {{_ "allTomes"}}
-				#coverList.grid
-					each allTomes
-						+cover
+			#coverList.grid
+				each allTomes
+					+cover
