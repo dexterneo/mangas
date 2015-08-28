@@ -27,5 +27,7 @@
     "author": "Auteur",
     "editor": "Editeur",
     "allTomes": "Tous les tomes du manga",
-    "seriesOwned": "Séries de mangas possédées"
+    "seriesOwned": "Séries de mangas possédées",
+    "allTomesOwned": "Tous les tomes possédés",
+    "allTomesMissing": "Tous les tomes manquants"
 }
