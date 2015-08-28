@@ -9,48 +9,54 @@ template(name="addMangas")
 				.modal-body
 					form
 						.form-group
-							label(for="mangasName") Mangas
+							label(for="mangasName") {{_ "manga"}}
 							input.form-control.awesomplete#mangasName(type="text" list='mangasList')
 							datalist#mangasList
 								each mangasList
 									option #{mangasName}
 						.form-group
-							label(for="author") Auteur
+							label(for="author") {{_ "author"}}
 							input.form-control.awesomplete#author(type="text" list='authorList')
 							datalist#authorList
 								each authorList
 									option #{author}
 						.form-group
-							label(for="title") Titre du tome
+							label(for="title") {{_ "tomeTitle"}}
 							input.form-control#title(type="text")
 						.form-group
-							label(for="tomeNumber") N° du tome
+							label(for="tomeNumber") {{_ "tomeNumber"}}
 							input.form-control#tomeNumber(type="number" min="1" value="1")
 						.form-group
-							label(for="isbn") ISBN ou code barre
+							label(for="isbn") {{_ "isbnOrBarcode"}}
 							input.form-control#isbn(type="text")
 						.form-group
-							label(for="cover") Couverture
+							label(for="cover") {{_ "cover"}}
 							input.form-control#cover(type="url")
 						.form-group
-							label(for="releaseDate") Date de mise en vente
+							label(for="releaseDate") {{_ "releaseDate"}}
 							input.form-control#releaseDate(type="url")
 						.form-group
-							label
-								input#owned(type="checkbox" value="")
-								| Possédé ?
+							label(for="genre") {{_ "genre"}}
+							input.form-control.awesomplete#genre(type="text" list='genreList')
+							datalist#genreList
+								each genreList
+									option #{genre}
 						.form-group
-							label(for="editor") Editeur
+							label(for="editor") {{_ "editor"}}
 							input.form-control.awesomplete#editor(type="text" list='editorList')
 							datalist#editorList
 								each editorList
 									option #{editor}
 						.form-group
-							label(for="version") Version
+							label(for="version") {{_ "version"}}
 							input.form-control.awesomplete#version(type="text" list='versionList')
 							datalist#versionList
 								each versionList
 									option #{version}
+						.form-group
+							label
+								input#owned(type="checkbox" value="")
+								| {{_ "owned"}} ?
 				.modal-footer
-					button.btn.btn-default.pull-left(type="button" data-dismiss="modal") Close
-					button.btn.btn-success#addMangasInDB(type="button") Save changes
+					button.btn.btn-default.pull-left(type="button" data-dismiss="modal") {{_ "close"}}
+					button.btn.btn-success#addMangasInDB(type="button") {{_ "addMangas"}}

@@ -74,6 +74,25 @@ Template.addMangas.helpers({
             });
         }
         return list;
+    },
+    genreList: function() {
+        var list = _.uniq(Mangas.find({}, {
+            sort: {
+                "genre": 1
+            },
+            fields: {
+                "genre": 1
+            }
+        }).fetch().map(function(x) {
+            return x.author;
+        }), true);
+        for (var i = 0; i < list.length; i++) {
+            var j = list.shift();
+            list.push({
+                genre: j
+            });
+        }
+        return list;
     }
 });
 
@@ -89,6 +108,7 @@ Template.addMangas.events({
             cover: $('#cover').val(),
             releaseDate: $('#releaseDate').val(),
             owned: $('#owned').is(':checked'),
+            genre: $('#genre').val(),
             editor: $('#editor').val(),
             version: 'fr'
         };
