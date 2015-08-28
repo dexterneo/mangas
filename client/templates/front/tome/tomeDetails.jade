@@ -32,7 +32,13 @@ template(name="tomeDetails")
 					button#setOwnedTrue.btn.btn-success(type="button")
 						span.glyphicon.glyphicon-ok
 		.col-xs-12.col-sm-12.col-md-12.col-lg-12
-			h2 {{_ "allTomes"}}
-			#coverList.grid
-				each allTomes
-					+cover
+			if missingTome
+				h2 {{_ "allTomesMissing"}}
+				#coverList.grid
+					each allTomesMissing
+						+cover
+			if ownedTome
+				h2 {{_ "allTomesOwned"}}
+				#coverList.grid
+					each allTomesOwned
+						+cover
