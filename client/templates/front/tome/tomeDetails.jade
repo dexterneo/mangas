@@ -19,6 +19,7 @@ template(name="tomeDetails")
 			p {{_ "author"}} :
 				a(href="{{pathFor 'mangaka'}}") #{author}
 			p {{_ "released"}} : #{displayDate}
+			p {{_ "genre"}} : #{genre}
 			p {{_ "editor"}} : #{editor}
 			p {{_ "version"}} : #{version}
 			if owned
