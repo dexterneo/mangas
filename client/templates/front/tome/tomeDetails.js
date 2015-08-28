@@ -5,16 +5,52 @@ Template.tomeDetails.helpers({
     notOwned: function() {
         return !this.owned;
     },
-    allTomes: function() {
+    allTomesOwned: function() {
         return Mangas.find({
             "user": Meteor.userId(),
-            "mangasName": this.mangasName
+            "mangasName": this.mangasName,
+            "owned": true
         }, {
             sort: {
                 "tomeNumber": 1
             }
         });
-    }
+    },
+    allTomesMissing: function() {
+        return Mangas.find({
+            "user": Meteor.userId(),
+            "mangasName": this.mangasName,
+            "owned": false
+        }, {
+            sort: {
+                "tomeNumber": 1
+            }
+        });
+    },
+    missingTome: function() {
+        var a = Mangas.findOne({
+            "user": Meteor.userId(),
+            "mangasName": this.mangasName,
+            "owned": false
+        });
+        if (a) {
+            return true;
+        } else {
+            return false;
+        }
+    },
+    ownedTome: function() {
+        var a = Mangas.findOne({
+            "user": Meteor.userId(),
+            "mangasName": this.mangasName,
+            "owned": true
+        });
+        if (a) {
+            return true;
+        } else {
+            return false;
+        }
+    },
 });
 
 Template.tomeDetails.events({
