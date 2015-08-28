@@ -24,10 +24,20 @@
     "informations": "Informations sur le tome",
     "tomeTitle": "Titre du tome",
     "mangasName": "Nom du manga",
-    "author": "Auteur",
+    "author": "Auteur ou Mangaka",
     "editor": "Editeur",
     "allTomes": "Tous les tomes du manga",
     "seriesOwned": "Séries de mangas possédées",
     "allTomesOwned": "Tous les tomes possédés",
-    "allTomesMissing": "Tous les tomes manquants"
+    "allTomesMissing": "Tous les tomes manquants",
+    "manga": "Nom du manga",
+    "tomeTitle": "Titre du tome",
+    "tomeNumber": "N° du tome",
+    "isbnOrBarcode": "ISBN ou code barre",
+    "cover": "Url de l'image de 1ère de couverture",
+    "releaseDate": "Date de mise en vente",
+    "genre": "Genre",
+    "close": "Fermer",
+    "addMangas": "Ajouter ce manga à votre Mangathèque",
+    "owned": "Possédé"
 }
