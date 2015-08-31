@@ -11,7 +11,10 @@ template(name="tomeDetails")
 		.col-xs-12.col-sm-12.col-md-6.col-lg-6
 			if notOwned
 				h2 {{_ "buyTome"}}
-				a(href="http://www.amazon.fr/s?field-keywords=#{isbn}" target="blank") {{_ "buyItOnAmazon"}}
+				p
+					a(href="http://www.amazon.fr/s?field-keywords=#{isbn}" target="blank") {{_ "buyItOnAmazon"}}
+				p
+					a(href="http://www.priceminister.com/s/#{isbn}" target="blank") {{_ "buyItOnPriceMinister"}}
 			h2 {{_ "informations"}}
 			if title
 				p {{_ "tomeTitle"}} : #{title}
