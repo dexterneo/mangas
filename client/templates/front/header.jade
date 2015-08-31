@@ -9,13 +9,14 @@ template(name="header")
 					span.icon-bar
 				a.navbar-brand(href="{{pathFor 'home'}}") {{_ "applicationName"}}
 			#mkp-navbar.collapse.navbar-collapse
-				ul.nav.navbar-nav
-					li(class="#{homeActive}")
-						a(href="{{pathFor 'home'}}") {{_ "ownedMangas"}}
-					li(class="#{missingActive}")
-						a(href="{{pathFor 'missingMangas'}}") {{_ "missingMangas"}}
-				form.navbar-form.navbar-left#buttonAddMangas
-					button.btn.btn-primary(type="button" data-toggle="modal" data-target="#myModal") {{_ "addAMangas"}}
+				if currentUser
+					ul.nav.navbar-nav
+						li(class="#{homeActive}")
+							a(href="{{pathFor 'ownedMangas'}}") {{_ "ownedMangas"}}
+						li(class="#{missingActive}")
+							a(href="{{pathFor 'missingMangas'}}") {{_ "missingMangas"}}
+					form.navbar-form.navbar-left#buttonAddMangas
+						button.btn.btn-primary(type="button" data-toggle="modal" data-target="#myModal") {{_ "addAMangas"}}
 				.nav.navbar-nav.navbar-right
 					+loginButtons
 	+addMangas
