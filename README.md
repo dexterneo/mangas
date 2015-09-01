@@ -23,7 +23,3 @@ When you go to the books shop, you now know which tome is missing in your collec
 * Add a list of tomes of a given mangas because currently you have to add tome by tome
 * Sort function
 * Search function
-
-## Screenshots
-
-![Home of the app](https://www.dropbox.com/s/yqr4ep8fd8ujvuk/mangatek_home.png)
