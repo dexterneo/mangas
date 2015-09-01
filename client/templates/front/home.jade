@@ -10,3 +10,7 @@ template(name='home')
 		p Trouvez tous les mangas réalisez par votre mangaka préféré
 		p Pas d'idée de cadeau ? Envoyez par mail à vos amis la liste des mangas qu'il vous manque !
 		h2 Mangas présents sur Mangatek
+		.col-xs-12.col-sm-12.col-md-12.col-lg-12
+			#coverList.grid
+				each covers
+					+cover
