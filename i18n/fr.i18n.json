@@ -32,7 +32,6 @@
     "allTomesOwned": "Tous les tomes possédés",
     "allTomesMissing": "Tous les tomes manquants",
     "manga": "Nom du manga",
-    "tomeTitle": "Titre du tome",
     "tomeNumber": "N° du tome",
     "isbnOrBarcode": "ISBN ou code barre",
     "cover": "Url de l'image de 1ère de couverture",
@@ -40,5 +39,12 @@
     "genre": "Genre",
     "close": "Fermer",
     "addMangas": "Ajouter ce manga à votre Mangathèque",
-    "owned": "Possédé"
+    "owned": "Possédé",
+    "catchPhrase": "Créez et gérez votre mangathèque !",
+    "whatIsIt": "Qu'est-ce que Mangatek ?",
+    "whatIsItAnswer1": "Mangatek vous permet de créer, d'organiser votre mangathèque virtuelle.",
+    "whatIsItAnswer2": "Vous n'oublierez plus quel tome vous manque sur chaque série de mangas.",
+    "whatIsItAnswer3": "Trouvez tous les mangas réalisez par votre mangaka préféré",
+    "whatIsItAnswer4": "Pas d'idée de cadeau ? Envoyez par mail à vos amis la liste des mangas qu'il vous manque !",
+    "mangasOnApplication": "Mangas présents sur Mangatek"
 }
