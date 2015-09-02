@@ -2,14 +2,15 @@ template(name='home')
 	.jumbotron
 		.container
 			h1 {{_ "applicationName"}}
-			p Créez et gérez votre mangathèque !
+			p {{_ "catchPhrase"}}
 	.container
-		h2 Qu'est-ce que Mangatek
-		p Mangatek vous permet de créer, d'organiser votre mangathèque virtuelle.
-		p Vous n'oublierez plus quel tome vous manque sur chaque série de mangas.
-		p Trouvez tous les mangas réalisez par votre mangaka préféré
-		p Pas d'idée de cadeau ? Envoyez par mail à vos amis la liste des mangas qu'il vous manque !
-		h2 Mangas présents sur Mangatek
+		h2 {{_ "whatIsIt"}}
+		ul
+			li {{_ "whatIsItAnswer1"}}
+			li {{_ "whatIsItAnswer2"}}
+			li {{_ "whatIsItAnswer3"}}
+			li {{_ "whatIsItAnswer4"}}
+		h2 {{_ "mangasOnApplication"}}
 		.col-xs-12.col-sm-12.col-md-12.col-lg-12
 			#coverList.grid
 				each covers
