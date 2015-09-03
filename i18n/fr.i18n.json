@@ -52,6 +52,10 @@
     "step2": "Cliquez sur le bouton 'Ajouter une série' dans la barre de menu de Mangatek",
     "step3": "Choisissez le manga à ajouter",
     "step4": "Précisez quel tomes vous possédez",
-    "step5": "Validez et refaites l'opération pour en ajouter d'autres !"
-
+    "step5": "Validez et refaites l'opération pour en ajouter d'autres !",
+    "addCompleteMangas": "Ajouter un manga complet",
+    "authorLastName": "Nom de l'auteur ou mangaka",
+    "authorFirstName": "Prénom de l'auteur ou mangaka",
+    "authorCover": "Url de la photo de l'auteur ou mangaka",
+    "mangasCover": "Url du logo du manga"
 }
