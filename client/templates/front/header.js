@@ -12,5 +12,19 @@ Template.header.helpers({
         } else {
             return false;
         }
+    },
+    addCompleteMangasActive: function() {
+        if (Router.current().route._path === '/admin/addCompleteMangas') {
+            return 'active';
+        } else {
+            return false;
+        }
+    },
+    admin: function() {
+        if (Meteor.user().profile.isAdmin) {
+            return true;
+        } else {
+            return false;
+        }
     }
 });
