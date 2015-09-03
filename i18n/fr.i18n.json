@@ -46,5 +46,12 @@
     "whatIsItAnswer2": "Vous n'oublierez plus quel tome vous manque sur chaque série de mangas.",
     "whatIsItAnswer3": "Trouvez tous les mangas réalisez par votre mangaka préféré",
     "whatIsItAnswer4": "Pas d'idée de cadeau ? Envoyez par mail à vos amis la liste des mangas qu'il vous manque !",
-    "mangasOnApplication": "Mangas présents sur Mangatek"
+    "mangasOnApplication": "Mangas présents sur Mangatek",
+    "howToBegin": "Comment créer votre mangathèque ?",
+    "step1": "Créez un compte en cliquant sur le formulaire en haut à droite",
+    "step2": "Cliquez sur le bouton 'Ajouter une série' dans la barre de menu de Mangatek",
+    "step3": "Choisissez le manga à ajouter",
+    "step4": "Précisez quel tomes vous possédez",
+    "step5": "Validez et refaites l'opération pour en ajouter d'autres !"
+
 }
