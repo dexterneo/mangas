@@ -23,3 +23,8 @@ When you go to the books shop, you now know which tome is missing in your collec
 * Add a list of tomes of a given mangas because currently you have to add tome by tome
 * Sort function
 * Search function
+
+## Pull Request are welcome
+
+This is a Meteor project, so make sur you have Meteor installed on your machine.
+Then hit meteor to start the app.
