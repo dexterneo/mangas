@@ -57,5 +57,8 @@
     "authorLastName": "Nom de l'auteur ou mangaka",
     "authorFirstName": "Prénom de l'auteur ou mangaka",
     "authorCover": "Url de la photo de l'auteur ou mangaka",
-    "mangasCover": "Url du logo du manga"
+    "mangasCover": "Url du logo du manga",
+    "addACompleteManga": "Ajouter une série complète",
+    "addTomeForTheSerie": "Ajouter des tomes à la série",
+    "addTome": "Ajouter un tome"
 }
