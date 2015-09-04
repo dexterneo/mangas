@@ -1,45 +1,28 @@
 template(name="addCompleteMangas")
 	.container
-		form
-			.form-group
-				label(for="mangasName") {{_ "manga"}}
-				input.form-control#mangasName(type="text")
-			.form-group
-				label(for="authorLastName") {{_ "authorLastName"}}
-				input.form-control#authorLastName(type="text")
-			.form-group
-				label(for="authorFirstName") {{_ "authorFirstName"}}
-				input.form-control#authorFirstName(type="text")
-			.form-group
-				label(for="authorCover") {{_ "authorCover"}}
-				input.form-control#authorCover(type="url")
-			.form-group
-				label(for="mangasCover") {{_ "mangasCover"}}
-				input.form-control#mangasCover(type="url")
-			.form-group
-				label(for="genre") {{_ "genre"}}
-				input.form-control.awesomplete#genre(type="text")
-			br
-			br
-			br
-			.form-group
-				label(for="title") {{_ "tomeTitle"}}
-				input.form-control#title(type="text")
-			.form-group
-				label(for="tomeNumber") {{_ "tomeNumber"}}
-				input.form-control#tomeNumber(type="number" min="1" value="1")
-			.form-group
-				label(for="isbn") {{_ "isbnOrBarcode"}}
-				input.form-control#isbn(type="text")
-			.form-group
-				label(for="cover") {{_ "cover"}}
-				input.form-control#cover(type="url")
-			.form-group
-				label(for="releaseDate") {{_ "releaseDate"}}
-				input.form-control#releaseDate(type="url")
-			.form-group
-				label(for="editor") {{_ "editor"}}
-				input.form-control.awesomplete#editor(type="text")
-			.form-group
-				label(for="version") {{_ "version"}}
-				input.form-control.awesomplete#version(type="text")
+		h2 {{_ "addACompleteManga"}}
+		.panel.panel-default
+			.panel-body
+				form
+					.form-group
+						label(for="mangasName") {{_ "manga"}}
+						input.form-control#mangasName(type="text")
+					.form-group
+						label(for="authorLastName") {{_ "authorLastName"}}
+						input.form-control#authorLastName(type="text")
+					.form-group
+						label(for="authorFirstName") {{_ "authorFirstName"}}
+						input.form-control#authorFirstName(type="text")
+					.form-group
+						label(for="authorCover") {{_ "authorCover"}}
+						input.form-control#authorCover(type="url")
+					.form-group
+						label(for="mangasCover") {{_ "mangasCover"}}
+						input.form-control#mangasCover(type="url")
+					.form-group
+						label(for="genre") {{_ "genre"}}
+						input.form-control.awesomplete#genre(type="text")
+		h2 {{_ "addTomeForTheSerie"}}
+		.tomes
+			+addTome
+		button.btn.btn-primary.clearfix.addTome(type='button') {{_ "addTome"}}
