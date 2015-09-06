@@ -1,5 +1,5 @@
 template(name="addTome")
-	.panel.panel-default
+	.tome.panel.panel-default
 		.panel-body
 			form
 				.form-group
@@ -16,7 +16,7 @@ template(name="addTome")
 					input.form-control.cover(type="url")
 				.form-group
 					label(for="releaseDate") {{_ "releaseDate"}}
-					input.form-control.releaseDate(type="url")
+					input.form-control.releaseDate(type="date")
 				.form-group
 					label(for="editor") {{_ "editor"}}
 					input.form-control.awesomplete.editor(type="text")

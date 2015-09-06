@@ -25,4 +25,7 @@ template(name="addCompleteMangas")
 		h2 {{_ "addTomeForTheSerie"}}
 		.tomes
 			+addTome
-		button.btn.btn-primary.clearfix.addTome(type='button') {{_ "addTome"}}
+		.clearfix
+			button.btn.btn-primary#addTome(type='button') {{_ "addTome"}}
+		.clearfix
+			button.btn.btn-success#addManga(type='button') {{_ "validate"}}
