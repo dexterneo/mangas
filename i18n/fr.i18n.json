@@ -61,5 +61,6 @@
 	"addACompleteManga": "Ajouter une série complète",
 	"addTomeForTheSerie": "Ajouter des tomes à la série",
 	"addTome": "Ajouter un tome",
-	"validate": "Valider"
+	"validate": "Valider",
+	"addMangaForUser": "Ajouter un manga à votre collection"
 }
