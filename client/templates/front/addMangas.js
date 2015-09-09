@@ -103,14 +103,14 @@ Template.addMangas.events({
 			user: Meteor.userId(),
 			mangasName: $('#mangasName').val(),
 			author: $('#author').val(),
-			tomeNumber: Number($('#tomeNumber').val()),
+			tomeNumber: filterInt($('#tomeNumber').val()),
 			isbn: $('#isbn').val(),
 			cover: $('#cover').val(),
 			releaseDate: $('#releaseDate').val(),
 			owned: $('#owned').is(':checked'),
 			genre: $('#genre').val(),
 			editor: $('#editor').val(),
-			version: 'fr'
+			version: $('#version').val()
 		};
 
 		Meteor.call('mangasInsert', mangas, function(error) {
