@@ -18,3 +18,5 @@ accounts-password
 ian:accounts-ui-bootstrap-3
 stylus
 momentjs:moment
+aldeed:autoform
+aldeed:collection2
