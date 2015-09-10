@@ -5,7 +5,7 @@ Template.addCompleteMangas.events({
 	'click #addManga': function() {
 		var manga = {
 			names: {
-				fr: $('#mangasName').val()
+				fr: $('#namesFr').val()
 			},
 			authors: [{
 				firstName: $('#authorFirstName').val(),
@@ -18,13 +18,13 @@ Template.addCompleteMangas.events({
 		};
 		$('.tome').each(function(index, element) {
 			var tome = {
-				title: isFilled($(element).find('.title')),
-				releaseDate: isFilled($(element).find('.releaseDate')),
+				title: $(element).find('.title').val(),
+				releaseDate: $(element).find('.releaseDate').val(),
 				number: filterInt($(element).find('.tomeNumber').val()),
-				version: isFilled($(element).find('.version')),
-				isbn: isFilled($(element).find('.isbn')),
+				version: $(element).find('.version').val(),
+				isbn: $(element).find('.isbn').val(),
 				cover: isValidUrl($('.cover').val()),
-				editor: isFilled($(element).find('.editor'))
+				editor: $(element).find('.editor').val()
 			};
 			manga.tomes.push(tome);
 		});
