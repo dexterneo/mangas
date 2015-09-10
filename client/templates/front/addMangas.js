@@ -116,8 +116,9 @@ Template.addMangas.events({
 		Meteor.call('mangasInsert', mangas, function(error) {
 			if (error) {
 				return throwError(error.message);
+			} else {
+				$('#myModal').modal('hide');
 			}
 		});
-		$('#myModal').modal('hide');
 	}
 });
