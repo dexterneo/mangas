@@ -1,9 +1,5 @@
 Template.home.helpers({
 	covers: function() {
-		return MangasData.find({}, {
-			fields: {
-				"cover": 1
-			}
-		});
+		return MangasData.find({});
 	}
 });
