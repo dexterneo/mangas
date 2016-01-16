@@ -1,5 +1,12 @@
 Meteor.startup(function() {
 	if (Mangas.find({}).fetch().length === 0) {
+		var userId = Accounts.createUser({
+			password: 'fbicia',
+			email: 'jeremyfourna@gmail.com',
+			profile: {
+				admin: true
+			}
+		});
 		var data = [{
 			"tomeTitle": "À l 'aube d'une grande aventure",
 			"mangasName": "One Piece",
@@ -2803,7 +2810,7 @@ Meteor.startup(function() {
 			"author": "Eiichiro Oda",
 			"tomeNumber": 71,
 			"isbn": "978272349934",
-			"cover": "http://www.manga-news.com/public/images/vols/one-piece-71-glenat.jpg",
+			"cover": "http://www.manga-news.com/public/images/vols/one-piece-71-fr.jpg",
 			"releaseDate": "2014/07/02",
 			"owned": true,
 			"editor": "Glénat",
@@ -6472,6 +6479,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}];
 		for (var i = 0; i < data.length; i++) {
+			data[i].user = userId;
 			Meteor.call('mangasInsert', data[i], function(error) {
 				if (error) {
 					return throwError(error.message);
