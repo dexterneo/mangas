@@ -81,7 +81,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "Dr.Slump",
+			"mangasName": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 1,
@@ -3381,7 +3381,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "Dr.Slump",
+			"mangasName": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 6,
@@ -3513,7 +3513,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "Dr.Slump",
+			"mangasName": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 7,
@@ -3657,7 +3657,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "Dr.Slump",
+			"mangasName": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 8,
@@ -3801,7 +3801,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "Dr.Slump",
+			"mangasName": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 9,
@@ -3921,7 +3921,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "Dr.Slump",
+			"mangasName": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 10,
@@ -4053,7 +4053,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "Dr.Slump",
+			"mangasName": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 11,
@@ -4173,7 +4173,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "Dr.Slump",
+			"mangasName": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 12,
@@ -4305,7 +4305,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "Dr.Slump",
+			"mangasName": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 13,
@@ -4437,7 +4437,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "Dr.Slump",
+			"mangasName": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 14,
@@ -4557,7 +4557,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "Dr.Slump",
+			"mangasName": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 15,
