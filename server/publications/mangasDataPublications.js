@@ -1,4 +1,4 @@
-// Send back all mangas
+// Send back all covers and french mangasName
 Meteor.publish('allMangasCover', function() {
 	return MangasData.find({}, {
 		fields: {
@@ -8,10 +8,12 @@ Meteor.publish('allMangasCover', function() {
 	});
 });
 
+// Send back all mangasData
 Meteor.publish('allMangasData', function() {
 	return MangasData.find({});
 });
 
+// Send back one mangasData
 Meteor.publish('oneMangasData', function(id) {
 	return MangasData.find({
 		'_id': id
