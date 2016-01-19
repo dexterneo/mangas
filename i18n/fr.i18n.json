@@ -7,7 +7,7 @@
 	"dropdown": "Menu déroulant",
 	"action": "Action",
 	"go": "GO",
-	"addAMangas": "Ajouter un mangas",
+	"addAMangas": "Ajouter un manga",
 	"ownedMangas": "Mangas possédés",
 	"missingMangas": "Mangas manquant",
 	"by": "par",
@@ -22,7 +22,7 @@
 	"buyTome": "Acheter le tome",
 	"setOwnedTrue": "Ajouter le à votre collection",
 	"setOwnedFalse": "Retirer le de votre collection",
-	"informations": "Informations sur le tome",
+	"tomeInformations": "Informations sur le tome",
 	"tomeTitle": "Titre du tome",
 	"mangasName": "Nom du manga",
 	"author": "Auteur ou Mangaka",
@@ -43,7 +43,7 @@
 	"catchPhrase": "Créez et gérez votre mangathèque !",
 	"whatIsIt": "Qu'est-ce que Mangatek ?",
 	"whatIsItAnswer1": "Mangatek vous permet de créer, d'organiser votre mangathèque virtuelle.",
-	"whatIsItAnswer2": "Vous n'oublierez plus quel tome vous manque sur chaque série de mangas.",
+	"whatIsItAnswer2": "Vous n'oublierez plus quel tome vous manque sur chaque série de manga.",
 	"whatIsItAnswer3": "Trouvez tous les mangas réalisez par votre mangaka préféré",
 	"whatIsItAnswer4": "Pas d'idée de cadeau ? Envoyez par mail à vos amis la liste des mangas qu'il vous manque !",
 	"mangasOnApplication": "Mangas présents sur Mangatek",
@@ -63,5 +63,7 @@
 	"addTome": "Ajouter un tome",
 	"validate": "Valider",
 	"addMangaForUser": "Ajouter un manga à votre collection",
-	"tomeCover": "Couverture du tome"
+	"tomeCover": "Couverture du tome",
+	"mangasInformations": "Informations sur le manga",
+	"mangasByThisAuthor": "Mangas réalisés par le mangaka"
 }
