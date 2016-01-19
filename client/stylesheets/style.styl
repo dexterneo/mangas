@@ -1,8 +1,9 @@
 body
 	padding-top 70px
 
-img
-	width 100%
+.panel-body
+	img
+		width 100%
 
 .mangas, .mangas-cover
 	display inline-block
@@ -11,11 +12,16 @@ img
 #buttonAddMangaForUser
 	margin 0 0 20px 0
 
-@media (max-width: 767px)
+@media (max-width: 449px)
+	.mangas.grid-item
+		width 100%
+	.mangas-cover.grid-item
+		width 50%
+@media (min-width: 450px)
 	.mangas.grid-item
 		width 50%
 	.mangas-cover.grid-item
-		width 50%
+		width 33%
 @media (min-width: 768px)
 	.mangas.grid-item
 		width 33%
@@ -23,11 +29,11 @@ img
 		width 33%
 @media (min-width: 992px)
 	.mangas.grid-item
-		width 20%
+		width 25%
 	.mangas-cover.grid-item
 		width 25%
 @media (min-width: 1200px)
 	.mangas.grid-item
-		width 16%
+		width 25%
 	.mangas-cover.grid-item
 		width 20%
