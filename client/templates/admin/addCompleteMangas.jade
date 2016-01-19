@@ -1,30 +1,40 @@
 template(name="addCompleteMangas")
 	.container
-		h2 {{_ "addACompleteManga"}}
 		.panel.panel-default
+			.panel-heading
+				.panel-title
+					h2 {{_ "addACompleteManga"}}
 			.panel-body
-				form
-					.form-group
-						label(for="namesFr") {{_ "manga"}}
-						input.form-control#namesFr(type="text")
-					.form-group
-						label(for="authorLastName") {{_ "authorLastName"}}
-						input.form-control#authorLastName(type="text")
-					.form-group
-						label(for="authorFirstName") {{_ "authorFirstName"}}
-						input.form-control#authorFirstName(type="text")
-					.form-group
-						label(for="authorCover") {{_ "authorCover"}}
-						input.form-control#authorCover(type="url")
-					.form-group
-						label(for="mangasCover") {{_ "mangasCover"}}
-						input.form-control#mangasCover(type="url")
-					.form-group
-						label(for="genre") {{_ "genre"}}
-						input.form-control.awesomplete#genre(type="text")
-		h2 {{_ "addTomeForTheSerie"}}
-		.tomes
-			+addTome
-		.clearfix
-			button.btn.btn-primary#addTome(type='button') {{_ "addTome"}}
-			button.btn.btn-success#addManga(type='button') {{_ "validate"}}
+				.panel.panel-default
+					.panel-heading
+						h4 {{_ "mangasInformations"}}
+					.panel-body
+						form
+							.form-group
+								label(for="namesFr") {{_ "manga"}}
+								input.form-control#namesFr(type="text")
+							.form-group
+								label(for="authorLastName") {{_ "authorLastName"}}
+								input.form-control#authorLastName(type="text")
+							.form-group
+								label(for="authorFirstName") {{_ "authorFirstName"}}
+								input.form-control#authorFirstName(type="text")
+							.form-group
+								label(for="authorCover") {{_ "authorCover"}}
+								input.form-control#authorCover(type="url")
+							.form-group
+								label(for="mangasCover") {{_ "mangasCover"}}
+								input.form-control#mangasCover(type="url")
+							.form-group
+								label(for="genre") {{_ "genre"}}
+								input.form-control.awesomplete#genre(type="text")
+				.panel.panel-default
+					.panel-heading
+						h2 {{_ "addTomeForTheSerie"}}
+					.panel-body
+						.tomes
+							+addTome
+					.panel-footer
+						button.btn.btn-primary#addTome(type='button') {{_ "addTome"}}
+			.panel-footer
+				button.btn.btn-success#addManga(type='button') {{_ "validate"}}
