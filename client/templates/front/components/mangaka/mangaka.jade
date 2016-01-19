@@ -1,7 +1,11 @@
 template(name="mangaka")
 	.container
-		h1 #{author}
-		h2 {{_ "seriesOwned"}}
-		#coverList.grid
-			each serie
-				+cover
+		.panel.panel-default
+			.panel-heading
+				.panel-title
+					h1 #{author}
+			.panel-body
+				h2 {{_ "mangasByThisAuthor"}}
+				#coverList.grid
+					each serie
+						+cover
