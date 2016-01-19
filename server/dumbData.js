@@ -10549,5 +10549,9 @@ Meteor.startup(function() {
 			});
 		}
 		console.log("End dumbData import");
+	} else {
+		Mangas.remove({});
+		mangasData.remove({});
+		Meteor.users.remove({});
 	}
 });
