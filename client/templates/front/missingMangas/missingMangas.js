@@ -6,6 +6,12 @@ Template.missingMangas.helpers({
 		}, {
 			sort: {
 				"tomeNumber": 1
+			},
+			fields: {
+				"cover": 1,
+				"mangasName": 1,
+				"tomeNumber": 1,
+				"owned": 1
 			}
 		});
 	}
