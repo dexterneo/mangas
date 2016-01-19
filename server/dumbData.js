@@ -237,7 +237,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Paradise Lost",
+			"mangasName": "GTO - Paradise Lost",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 1,
@@ -6477,6 +6477,82 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}];
+		/*var mangasCover = [{
+			name: "Naruto",
+			cover: "http://www.manga-news.com/public/images/series/.naruto-logo_m.jpg"
+		}, {
+			name: "Ikigami-Préavis de mort",
+			cover: "http://www.manga-news.com/public/images/series/.logo-Ikigami_m.jpg"
+		}, {
+			name: "Bakuman",
+			cover: "http://www.manga-news.com/public/images/series/.bakuman-logo_m.jpg"
+		}, {
+			name: "Soul Eater",
+			cover: "http://www.manga-news.com/public/images/series/.logo_souleater_m.jpg"
+		}, {
+			name: "Head Trick",
+			cover: "http://www.manga-news.com/public/images/series/.head-trick-logo_m.jpg"
+		}, {
+			name: "GTO - Paradise Lost",
+			cover: "http://www.manga-news.com/public/images/series/.GTO-paradise-lost-logo_m.jpg"
+		}, {
+			name: "GTO-Great Teacher Onizuka",
+			cover: "http://www.manga-news.com/public/images/series/.gto_logo_m.jpg"
+		}, {
+			name: "GTO-Shonan 14 Days",
+			cover: "http://www.manga-news.com/public/images/series/.shonan-gto-14-days-logo_m.jpg"
+		}, {
+			name: "Death Note",
+			cover: "http://img.kazeo.com/667/66719/L/death-note-logo.jpg"
+		}, {
+			name: "Hunter X Hunter",
+			cover: "http://www.manga-news.com/public/images/series/.hunterx_logo_m.jpg"
+		}, {
+			name: "L 'Attaque Des Titans",
+			cover: "http://www.manga-news.com/public/images/series/.attaque-des-titans-logo_m.jpg"
+		}, {
+			name: "Dr. Slump",
+			cover: "http://www.manga-news.com/public/images/series/.Dr-Slump-deluxe-logo_m.jpg"
+		}, {
+			name: "20th Century Boys",
+			cover: "http://www.manga-news.com/public/images/series/.20th_logo_m.jpg"
+		}, {
+			name: "FullMetal Alchemist",
+			cover: "http://www.manga-news.com/public/images/series/.fma_logo_m.jpg"
+		}, {
+			name: "Akira",
+			cover: "http://www.manga-news.com/public/images/series/.akira_logo_m.jpg"
+		}, {
+			name: "XXX Holic",
+			cover: "http://www.manga-news.com/public/images/series/.xxx-holic-logo_m.jpg"
+		}, {
+			name: "Drifters",
+			cover: "http://www.manga-news.com/public/images/series/.drifters-logo_m.jpg"
+		}, {
+			name: "City Hunter",
+			cover: "http://www.manga-news.com/public/images/series/.citu_hunter_ultime_logo_m.jpg"
+		}, {
+			name: "A Silent Voice",
+			cover: "http://www.manga-news.com/public/images/series/.silent-voice-logo_m.jpg"
+		}, {
+			name: "One Piece",
+			cover: "http://www.manga-news.com/public/images/series/.logo-One-Piece_m.jpg"
+		}, {
+			name: "Prison School",
+			cover: "http://www.manga-news.com/public/images/series/.prison-school-logo_m.jpg"
+		}, {
+			name: "Berserk",
+			cover: "http://www.manga-news.com/public/images/series/.berserk-logo_m.jpg"
+		}, {
+			name: "I Am A Hero",
+			cover: "http://www.manga-news.com/public/images/series/.i-am-a-hero-logo_m.jpg"
+		}, {
+			name: "Monster",
+			cover: "http://www.manga-news.com/public/images/series/.monster-deluxe-logo_m.jpg"
+		}, {
+			name: "Dragon Ball",
+			cover: "http://www.manga-news.com/public/images/series/.dragon-ball-logo-glenat_m.jpg"
+		}];
 		for (var i = 0; i < data.length; i++) {
 			data[i].user = userId;
 			Meteor.call('mangasInsert', data[i], function(error) {
@@ -6485,5 +6561,295 @@ Meteor.startup(function() {
 				}
 			});
 		}
+		var pipeline = [{
+			$match: {}
+		}, {
+			$group: {
+				_id: "$mangasName"
+			}
+		}];
+		var mangasNameList = Mangas.aggregate(pipeline);
+		for (var j = 0; j < mangasNameList.length; j++) {
+			var manga = {
+				names: {},
+				authors: [],
+				cover: "",
+				genre: "",
+				tomes: []
+
+			};
+			var tomesData = Mangas.find({
+				mangasName: mangasNameList[j]._id
+			}, {
+				sort: {
+					tomeNumber: 1
+				}
+			}).fetch();
+			for (var k = 0; k < mangasCover.length; k++) {
+				if (mangasNameList[j]._id === mangasCover[k].name) {
+					manga.cover = mangasCover[k].cover;
+				}
+			}
+			for (var l = 0; l < tomesData.length; l++) {
+				if (l === 0) {
+					manga.names = {
+						fr: tomesData[l].mangasName
+					};
+					manga.authors.push({
+						firstName: "",
+						lastName: tomesData[l].author,
+						photo: ""
+					});
+				}
+				manga.tomes.push({
+					title: tomesData[l].tomeTitle || '',
+					releaseDate: tomesData[l].releaseDate,
+					number: tomesData[l].tomeNumber,
+					version: tomesData[l].version,
+					isbn: tomesData[l].isbn,
+					cover: tomesData[l].cover,
+					editor: tomesData[l].editor
+				});
+			}
+			Meteor.call('addCompleteMangas', manga, function(error) {
+				if (error) {
+					return console.log(error.message, error.invalidKeys, manga);
+				}
+			});
+		}*/
+		var mangasData = [{
+			"names": {
+				"fr": "Ikigami-Préavis de mort"
+			},
+			"authors": [{
+				"firstName": "Motoro"
+				"lastName": "Mase"
+			}],
+			"cover": "http://www.manga-news.com/public/images/series/.logo-Ikigami_m.jpg",
+			"tomes": [{
+				"releaseDate": "2009/01/29",
+				"number": 1,
+				"version": "fr",
+				"isbn": "9782849655375",
+				"cover": "http://www.manga-news.com/public/images/vols/ikigami-01.jpg",
+				"editor": "Kaze"
+			}, {
+				"releaseDate": "2009/04/09",
+				"number": 2,
+				"version": "fr",
+				"isbn": "9782849655580",
+				"cover": "http://www.manga-news.com/public/images/vols/ikigam02.jpg",
+				"editor": "Kaze"
+			}, {
+				"releaseDate": "2009/07/09",
+				"number": 3,
+				"version": "fr",
+				"isbn": "9782849656273",
+				"cover": "http://www.manga-news.com/public/images/vols/ikigami-3.jpg",
+				"editor": "Kaze"
+			}, {
+				"releaseDate": "2009/09/24",
+				"number": 4,
+				"version": "fr",
+				"isbn": "9782849656686",
+				"cover": "http://www.manga-news.com/public/images/vols/ikigami-asuka-4.jpg",
+				"editor": "Kaze"
+			}, {
+				"releaseDate": "2010/01/28",
+				"number": 5,
+				"version": "fr",
+				"isbn": "9782849657249",
+				"cover": "http://www.manga-news.com/public/images/vols/ikigami-asuka-5.jpg",
+				"editor": "Kaze"
+			}, {
+				"releaseDate": "2010/04/29",
+				"number": 6,
+				"version": "fr",
+				"isbn": "9782849657911",
+				"cover": "http://www.manga-news.com/public/images/vols/ikigami-kaze-manga-6.jpg",
+				"editor": "Kaze"
+			}, {
+				"releaseDate": "2010/07/01",
+				"number": 7,
+				"version": "fr",
+				"isbn": "9782849658604",
+				"cover": "http://www.manga-news.com/public/images/vols/ikigami-7-kaze-manga.jpg",
+				"editor": "Kaze"
+			}, {
+				"releaseDate": "2011/03/24",
+				"number": 8,
+				"version": "fr",
+				"isbn": "9782820300614",
+				"cover": "http://www.manga-news.com/public/images/vols/ikigami-8-kaze.jpg",
+				"editor": "Kaze"
+			}, {
+				"releaseDate": "2012/01/18",
+				"number": 9,
+				"version": "fr",
+				"isbn": "9782820302779",
+				"cover": "http://www.manga-news.com/public/images/vols/Ikigami-9-kaze.jpg",
+				"editor": "Kaze"
+			}, {
+				"releaseDate": "2012/06/20",
+				"number": 10,
+				"version": "fr",
+				"isbn": "9782820304506",
+				"cover": "http://www.manga-news.com/public/images/vols/ikigami-10-kaze.jpg",
+				"editor": "Kaze"
+			}]
+		}, {
+			"names": {
+				"fr": "Bakuman"
+			},
+			"authors": [{
+				"firstName": "Takeshi"
+				"lastName": "Obata"
+			}, {
+				"firstName": "Tsugumi",
+				"lastName": "Oba"
+			}],
+			"cover": "http://www.manga-news.com/public/images/series/.bakuman-logo_m.jpg",
+			"tomes": [{
+				"releaseDate": "2010/07/02",
+				"number": 1,
+				"version": "fr",
+				"isbn": "9782505008262",
+				"cover": "http://www.manga-news.com/public/images/vols/bakuman-1-kana.jpg",
+				"editor": "Kana"
+			}, {
+				"releaseDate": "2010/07/02",
+				"number": 2,
+				"version": "fr",
+				"isbn": "9782505008279",
+				"cover": "http://www.manga-news.com/public/images/vols/bakuman-jp-02.jpg",
+				"editor": "Kana"
+			}, {
+				"releaseDate": "2010/09/17",
+				"number": 3,
+				"version": "fr",
+				"isbn": "9782505009634",
+				"cover": "http://www.manga-news.com/public/images/vols/bakuman-3-kana.jpg",
+				"editor": "Kana"
+			}, {
+				"releaseDate": "2010/11/05",
+				"number": 4,
+				"version": "fr",
+				"isbn": "9782505009887",
+				"cover": "http://www.manga-news.com/public/images/vols/bakuman-4-kana.jpg",
+				"editor": "Kana"
+			}, {
+				"releaseDate": "2011/01/07",
+				"number": 5,
+				"version": "fr",
+				"isbn": "9782505010302",
+				"cover": "http://www.manga-news.com/public/images/vols/bakuman-5-kana.jpg",
+				"editor": "Kana"
+			}, {
+				"releaseDate": "2011/04/01",
+				"number": 6,
+				"version": "fr",
+				"isbn": "9782505010760",
+				"cover": "http://www.manga-news.com/public/images/vols/bakuman-6-kana.jpg",
+				"editor": "Kana"
+			}, {
+				"releaseDate": "2011/07/01",
+				"number": 7,
+				"version": "fr",
+				"isbn": "9782505011699",
+				"cover": "http://www.manga-news.com/public/images/vols/bakuman-7-kana.jpg",
+				"editor": "Kana"
+			}, {
+				"releaseDate": "2011/10/07",
+				"number": 8,
+				"version": "fr",
+				"isbn": "9782505012412",
+				"cover": "http://www.manga-news.com/public/images/vols/bakuman-8-kana.jpg",
+				"editor": "Kana"
+			}, {
+				"releaseDate": "2012/01/06",
+				"number": 9,
+				"version": "fr",
+				"isbn": "9782505049685",
+				"cover": "http://www.manga-news.com/public/images/vols/bakuman-9-kana.jpg",
+				"editor": "Kana"
+			}, {
+				"releaseDate": "2012/04/27",
+				"number": 10,
+				"version": "fr",
+				"isbn": "9782505014379",
+				"cover": "http://www.manga-news.com/public/images/vols/bakuman-10-kana.jpg",
+				"editor": "Kana"
+			}, {
+				"releaseDate": "2012/07/06",
+				"number": 11,
+				"version": "fr",
+				"isbn": "9782505014799",
+				"cover": "http://www.manga-news.com/public/images/vols/bakuman-11-kana.jpg",
+				"editor": "Kana"
+			}, {
+				"releaseDate": "2012/10/19",
+				"number": 12,
+				"version": "fr",
+				"isbn": "9782505015475",
+				"cover": "http://www.manga-news.com/public/images/vols/bakuman-12-kana.jpg",
+				"editor": "Kana"
+			}, {
+				"releaseDate": "2013/01/04",
+				"number": 13,
+				"version": "fr",
+				"isbn": "9782505016847",
+				"cover": "http://www.manga-news.com/public/images/vols/bakuman-13-kana.jpg",
+				"editor": "Kana"
+			}, {
+				"releaseDate": "2013/04/05",
+				"number": 14,
+				"version": "fr",
+				"isbn": "9782505017271",
+				"cover": "http://www.manga-news.com/public/images/vols/bakuman-14-kana.jpg",
+				"editor": "Kana"
+			}, {
+				"releaseDate": "2013/07/05",
+				"number": 15,
+				"version": "fr",
+				"isbn": "9782505017288",
+				"cover": "http://www.manga-news.com/public/images/vols/bakuman-15-kana.jpg",
+				"editor": "Kana"
+			}, {
+				"releaseDate": "2013/10/18",
+				"number": 16,
+				"version": "fr",
+				"isbn": "9782505017295",
+				"cover": "http://www.manga-news.com/public/images/vols/bakuman-16-kana.jpg",
+				"editor": "Kana"
+			}, {
+				"releaseDate": "2014/01/24",
+				"number": 17,
+				"version": "fr",
+				"isbn": "9782505060062",
+				"cover": "http://www.manga-news.com/public/images/vols/bakuman-17-kana.jpg",
+				"editor": "Kana"
+			}, {
+				"releaseDate": "2014/04/04",
+				"number": 18,
+				"version": "fr",
+				"isbn": "9782505060444",
+				"cover": "http://www.manga-news.com/public/images/vols/bakuman-18.jpg",
+				"editor": "Kana"
+			}, {
+				"releaseDate": "2014/07/04",
+				"number": 19,
+				"version": "fr",
+				"isbn": "9782505060451",
+				"cover": "http://www.manga-news.com/public/images/vols/bakuman-19-kana.jpg",
+				"editor": "Kana"
+			}, {
+				"releaseDate": "2014/11/28",
+				"number": 20,
+				"version": "fr",
+				"isbn": "9782505060468",
+				"cover": "http://www.manga-news.com/public/images/vols/bakuman-20-kana.jpg",
+				"editor": "Kana"
+			}]
+		}];
 	}
 });
