@@ -10,6 +10,12 @@ Template.mangaka.helpers({
 		}, {
 			sort: {
 				"mangasName": 1
+			},
+			fields: {
+				"mangasName": 1,
+				"cover": 1,
+				"author": 1,
+				"tomeNumber": 1
 			}
 		});
 	}
