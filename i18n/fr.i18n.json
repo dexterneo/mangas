@@ -39,6 +39,7 @@
 	"genre": "Genre",
 	"close": "Fermer",
 	"addMangas": "Ajouter ce manga à votre Mangathèque",
+	"addTomes": "Ajoutez ces tomes à votre Mangathèque",
 	"owned": "Possédé",
 	"catchPhrase": "Créez et gérez votre mangathèque !",
 	"whatIsIt": "Qu'est-ce que Mangatek ?",
@@ -69,5 +70,6 @@
 	"whichMangaToAdd": "Quel manga souhaitez vous ajouter à votre collection ?",
 	"addToCollection": "Ajouter",
 	"toCollection": "à votre mangathèque",
-	"clickToAddToCollection": "Ajouter ce tome"
+	"clickToAddToCollection": "Ajouter ce tome",
+	"ownThemAll": "Sélectionnez/Dé-sélectionnez les tous !"
 }
