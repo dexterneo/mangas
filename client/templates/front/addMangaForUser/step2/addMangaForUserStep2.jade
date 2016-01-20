@@ -1,12 +1,23 @@
 template(name="addMangaForUserStep2")
 	.container
-		.panel.panel-default
-			.panel-heading
-				.panel-title
-					h2 {{_ "addToCollection"}} 
-						strong #{manga.names.fr}
-						| {{_ "toCollection"}}
-			.panel-body
-				.grid
-					each manga.tomes
-						+cover2
+		with manga
+			.panel.panel-default
+				.panel-heading
+					.panel-title
+						h2 {{_ "addToCollection"}} 
+							strong #{names.fr}
+							| {{_ "toCollection"}}
+				.panel-body
+					.clearfix
+						button.ownThemAll.btn.btn-primary(type="button") {{_ "ownThemAll"}}
+						button.addTomes.btn.btn-success(type="button") {{_ "addTomes"}}
+					.grid
+						each tomes
+							.mangas.grid-item
+								a.thumbnail(href="{{pathFor 'tomeDetails'}}")
+									img(src="#{cover}" alt="#{mangasName}")
+								button.addToCollection.btn.btn-default.btn-block(type="button") {{_ "clickToAddToCollection"}}
+						.clearfix
+							button.ownThemAll.btn.btn-primary(type="button") {{_ "ownThemAll"}}
+							button.addTomes.btn.btn-success(type="button") {{_ "addTomes"}}
+
