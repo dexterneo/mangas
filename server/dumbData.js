@@ -1,5 +1,5 @@
 Meteor.startup(function() {
-	if (Mangas.find({}).fetch().length === 0) {
+	if (Mangas.find({}).fetch().length === 0 && MangasData.find({}).fetch().length === 0) {
 		var userId = Accounts.createUser({
 			password: '123456',
 			email: 'abc@def.com',
@@ -213,7 +213,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Great Teacher Onizuka",
+			"mangasName": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 1,
@@ -225,7 +225,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Shonan 14 Days",
+			"mangasName": "GTO - Shonan 14 Days",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 1,
@@ -405,7 +405,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Great Teacher Onizuka",
+			"mangasName": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 2,
@@ -417,7 +417,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Shonan 14 Days",
+			"mangasName": "GTO - Shonan 14 Days",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 2,
@@ -585,7 +585,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Great Teacher Onizuka",
+			"mangasName": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 3,
@@ -597,7 +597,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Shonan 14 Days",
+			"mangasName": "GTO - Shonan 14 Days",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 3,
@@ -766,7 +766,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Great Teacher Onizuka",
+			"mangasName": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 4,
@@ -778,7 +778,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Shonan 14 Days",
+			"mangasName": "GTO - Shonan 14 Days",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 4,
@@ -910,7 +910,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Great Teacher Onizuka",
+			"mangasName": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 5,
@@ -922,7 +922,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Shonan 14 Days",
+			"mangasName": "GTO - Shonan 14 Days",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 5,
@@ -1030,7 +1030,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Great Teacher Onizuka",
+			"mangasName": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 6,
@@ -1042,7 +1042,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Shonan 14 Days",
+			"mangasName": "GTO - Shonan 14 Days",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 6,
@@ -1126,7 +1126,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Great Teacher Onizuka",
+			"mangasName": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 7,
@@ -1138,7 +1138,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Shonan 14 Days",
+			"mangasName": "GTO - Shonan 14 Days",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 7,
@@ -1222,7 +1222,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Great Teacher Onizuka",
+			"mangasName": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 8,
@@ -1234,7 +1234,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Shonan 14 Days",
+			"mangasName": "GTO - Shonan 14 Days",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 8,
@@ -1318,7 +1318,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Great Teacher Onizuka",
+			"mangasName": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 9,
@@ -1330,7 +1330,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Shonan 14 Days",
+			"mangasName": "GTO - Shonan 14 Days",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 9,
@@ -1402,7 +1402,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Great Teacher Onizuka",
+			"mangasName": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 10,
@@ -1474,7 +1474,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Great Teacher Onizuka",
+			"mangasName": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 11,
@@ -1534,7 +1534,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Great Teacher Onizuka",
+			"mangasName": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 12,
@@ -1594,7 +1594,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Great Teacher Onizuka",
+			"mangasName": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 13,
@@ -4522,7 +4522,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Great Teacher Onizuka",
+			"mangasName": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 14,
@@ -4642,7 +4642,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Great Teacher Onizuka",
+			"mangasName": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 15,
@@ -4738,7 +4738,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Great Teacher Onizuka",
+			"mangasName": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 16,
@@ -4834,7 +4834,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Great Teacher Onizuka",
+			"mangasName": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 17,
@@ -4930,7 +4930,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Great Teacher Onizuka",
+			"mangasName": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 18,
@@ -5026,7 +5026,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Great Teacher Onizuka",
+			"mangasName": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 19,
@@ -5122,7 +5122,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Great Teacher Onizuka",
+			"mangasName": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 20,
@@ -5218,7 +5218,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Great Teacher Onizuka",
+			"mangasName": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 21,
@@ -5290,7 +5290,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Great Teacher Onizuka",
+			"mangasName": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 22,
@@ -5350,7 +5350,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Great Teacher Onizuka",
+			"mangasName": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 23,
@@ -5422,7 +5422,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Great Teacher Onizuka",
+			"mangasName": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 24,
@@ -5494,7 +5494,7 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 			"tomeTitle": "",
-			"mangasName": "GTO-Great Teacher Onizuka",
+			"mangasName": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 25,
@@ -7512,7 +7512,7 @@ Meteor.startup(function() {
 			}]
 		}, {
 			"names": {
-				"fr": "GTO-Great Teacher Onizuka"
+				"fr": "GTO - Great Teacher Onizuka"
 			},
 			"authors": [{
 				"firstName": "Tôru",
@@ -7698,7 +7698,7 @@ Meteor.startup(function() {
 			}]
 		}, {
 			"names": {
-				"fr": "GTO-Shonan 14 Days"
+				"fr": "GTO - Shonan 14 Days"
 			},
 			"authors": [{
 				"firstName": "Tôru",
@@ -10533,14 +10533,14 @@ Meteor.startup(function() {
 			}]
 		}];
 		console.log("Start dumbData import");
-		for (var i = 0; i < data.length; i++) {
+		/*for (var i = 0; i < data.length; i++) {
 			data[i].user = userId;
 			Meteor.call('mangasInsert', data[i], function(error) {
 				if (error) {
 					return console.log(error.message, error.invalidKeys, data[i]);
 				}
 			});
-		}
+		}*/
 		for (var m = 0; m < mangasData.length; m++) {
 			Meteor.call('addCompleteMangas', mangasData[m], function(error) {
 				if (error) {
@@ -10549,9 +10549,10 @@ Meteor.startup(function() {
 			});
 		}
 		console.log("End dumbData import");
-	} else {
-		Mangas.remove({});
-		mangasData.remove({});
-		Meteor.users.remove({});
 	}
+	/*else {
+		Mangas.remove({});
+		MangasData.remove({});
+		Meteor.users.remove({});
+	}*/
 });

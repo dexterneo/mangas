@@ -3,6 +3,9 @@ Template.addMangaForUserStep1.helpers({
 		return MangasData.find({}, {
 			sort: {
 				"names.fr": 1
+			},
+			fields: {
+				"cover": 1
 			}
 		});
 	}

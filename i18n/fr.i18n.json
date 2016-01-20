@@ -65,5 +65,9 @@
 	"addMangaForUser": "Ajouter un manga à votre collection",
 	"tomeCover": "Couverture du tome",
 	"mangasInformations": "Informations sur le manga",
-	"mangasByThisAuthor": "Mangas réalisés par le mangaka"
+	"mangasByThisAuthor": "Mangas réalisés par le mangaka",
+	"whichMangaToAdd": "Quel manga souhaitez vous ajouter à votre collection ?",
+	"addToCollection": "Ajouter",
+	"toCollection": "à votre mangathèque",
+	"clickToAddToCollection": "Ajouter ce tome"
 }

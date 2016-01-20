@@ -1,5 +1,12 @@
 template(name="addMangaForUserStep2")
 	.container
-		h1 #{manga.genre}
-		h2 #{manga.names.fr}
-		p Babar
+		.panel.panel-default
+			.panel-heading
+				.panel-title
+					h2 {{_ "addToCollection"}} 
+						strong #{manga.names.fr}
+						| {{_ "toCollection"}}
+			.panel-body
+				.grid
+					each manga.tomes
+						+cover2

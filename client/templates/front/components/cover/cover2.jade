@@ -1,0 +1,7 @@
+template(name="cover2")
+	.panel.panel-default.grid-item.mangas-cover
+		.panel-body
+			a.thumbnail(href="{{pathFor 'tomeDetails'}}")
+				img(src="#{cover}" alt="#{mangasName}")
+		.panel-footer
+			p.text-center {{_ "clickToAddToCollection"}}

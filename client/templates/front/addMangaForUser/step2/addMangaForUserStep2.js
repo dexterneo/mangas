@@ -1,6 +1,6 @@
 Template.addMangaForUserStep2.helpers({
 	manga: function() {
-		return MangasData.find({
+		return MangasData.findOne({
 			'_id': Router.current().params._id
 		});
 	}
