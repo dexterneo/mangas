@@ -19,3 +19,12 @@ Meteor.publish('oneMangasData', function(id) {
 		'_id': id
 	});
 });
+
+// Send all Mangas for a given mangaka
+Meteor.publish('mangaka', function(author) {
+	var newAuthor = author.split(" ");
+	return MangasData.find({
+		"authors.firstName": newAuthor[0],
+		"authors.lastName": newAuthor[1]
+	});
+});

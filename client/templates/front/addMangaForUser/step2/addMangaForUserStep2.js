@@ -17,30 +17,36 @@ Template.addMangaForUserStep2.events({
 		return $(".addToCollection").toggleClass("btn-default btn-success");
 	},
 	"click .addTomes": function(e, t) {
+		var manga = this;
 		e.preventDefault();
 		$('.mangas').each(function(index, element) {
-			console.log(this);
-			/*var mangas = {
-				title: $('#title').val(),
-				user: Meteor.userId(),
-				mangasName: $('#mangasName').val(),
-				author: $('#author').val(),
-				tomeNumber: filterInt($('#tomeNumber').val()),
-				isbn: $('#isbn').val(),
-				cover: $('#cover').val(),
-				releaseDate: $('#releaseDate').val(),
-				owned: $('#owned').is(':checked'),
-				genre: $('#genre').val(),
-				editor: $('#editor').val(),
-				version: $('#version').val()
-			};
-			Meteor.call('mangasInsert', mangas, function(error) {
-				if (error) {
-					return throwError(error.message);
+			if (index + 1 === manga.tomes[index].number) {
+				var tomeData = manga.tomes[index];
+				var tome = {
+					title: tomeData.title || "",
+					user: Meteor.userId(),
+					name: manga.names.fr,
+					author: getAuthors(manga.authors),
+					number: tomeData.number,
+					isbn: tomeData.isbn,
+					cover: tomeData.cover,
+					releaseDate: tomeData.releaseDate || "",
+					genre: manga.genre,
+					editor: tomeData.editor,
+					version: tomeData.version
+				};
+				if ($(element).find(".addToCollection").hasClass('btn-success')) {
+					tome.owned = true;
 				} else {
-					$('#myModal').modal('hide');
+					tome.owned = false;
 				}
-			});*/
+				Meteor.call('mangasInsert', tome, function(error) {
+					if (error) {
+						return throwError(error.message);
+					}
+				});
+			}
 		});
+		Router.go("ownedMangas");
 	}
 });

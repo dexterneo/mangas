@@ -22,18 +22,9 @@ Meteor.publish('tomeDetails', function(id) {
 });
 
 // Send back all tomes for a mangasName
-Meteor.publish('allTomes', function(userId, mangasName) {
+Meteor.publish('allTomes', function(userId, name) {
 	return Mangas.find({
 		"user": userId,
-		"mangasName": mangasName
-	});
-});
-
-// Send all Mangas for a given mangaka
-Meteor.publish('mangaka', function(userId, author) {
-	return Mangas.find({
-		"user": userId,
-		"author": author,
-		"tomeNumber": 1
+		"name": name
 	});
 });

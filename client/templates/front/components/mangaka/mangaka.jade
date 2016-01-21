@@ -8,4 +8,7 @@ template(name="mangaka")
 				h2 {{_ "mangasByThisAuthor"}}
 				#coverList.grid
 					each serie
-						+cover
+						with tome1
+							.grid-item.mangas-cover
+								a.thumbnail(href="{{pathFor 'addMangaForUserStep1'}}")
+									img(src="#{cover}" alt="#{name}")

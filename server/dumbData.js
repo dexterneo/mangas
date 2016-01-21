@@ -8,8 +8,8 @@ Meteor.startup(function() {
 			}
 		});
 		var data = [{
-			"tomeTitle": "À l 'aube d'une grande aventure",
-			"mangasName": "One Piece",
+			"title": "À l 'aube d'une grande aventure",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 1,
@@ -20,8 +20,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Monster",
+			"title": "",
+			"name": "Monster",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 1,
@@ -32,8 +32,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "I Am A Hero",
+			"title": "",
+			"name": "I Am A Hero",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kengo Hanazawa",
 			"tomeNumber": 1,
@@ -44,8 +44,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 1,
@@ -56,8 +56,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "XXX Holic",
+			"title": "",
+			"name": "XXX Holic",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "CLAMP",
 			"tomeNumber": 1,
@@ -68,8 +68,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Drifters",
+			"title": "",
+			"name": "Drifters",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kohta Hirano",
 			"tomeNumber": 1,
@@ -80,8 +80,8 @@ Meteor.startup(function() {
 			"editor": "Tonkam",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Dr. Slump",
+			"title": "",
+			"name": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 1,
@@ -92,8 +92,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 1,
@@ -104,8 +104,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Sangoku",
-			"mangasName": "Dragon Ball",
+			"title": "Sangoku",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 1,
@@ -116,8 +116,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 1,
@@ -128,8 +128,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "A Silent Voice",
+			"title": "",
+			"name": "A Silent Voice",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshitoki Oima",
 			"cover": "http://www.manga-news.com/public/images/vols/a-silent-voice-1-ki-oon.jpg",
@@ -140,8 +140,8 @@ Meteor.startup(function() {
 			"editor": "Ki-oon",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "20th Century Boys",
+			"title": "",
+			"name": "20th Century Boys",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 1,
@@ -152,8 +152,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Prison School",
+			"title": "",
+			"name": "Prison School",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Hiramoto",
 			"tomeNumber": 1,
@@ -164,8 +164,8 @@ Meteor.startup(function() {
 			"editor": "Soleil",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "L 'Attaque Des Titans",
+			"title": "",
+			"name": "L 'Attaque Des Titans",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hajime Isayama",
 			"tomeNumber": 1,
@@ -176,8 +176,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 1,
@@ -188,8 +188,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Akira",
+			"title": "",
+			"name": "Akira",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Katsuhiro Otomo",
 			"tomeNumber": 1,
@@ -200,8 +200,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Death Note",
+			"title": "",
+			"name": "Death Note",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 1,
@@ -212,8 +212,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Great Teacher Onizuka",
+			"title": "",
+			"name": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 1,
@@ -224,8 +224,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Shonan 14 Days",
+			"title": "",
+			"name": "GTO - Shonan 14 Days",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 1,
@@ -236,8 +236,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Paradise Lost",
+			"title": "",
+			"name": "GTO - Paradise Lost",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 1,
@@ -248,8 +248,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Luffy versus la bande à Baggy!!",
-			"mangasName": "One Piece",
+			"title": "Luffy versus la bande à Baggy!!",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 2,
@@ -260,8 +260,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Monster",
+			"title": "",
+			"name": "Monster",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 2,
@@ -272,8 +272,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "XXX Holic",
+			"title": "",
+			"name": "XXX Holic",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "CLAMP",
 			"tomeNumber": 2,
@@ -284,8 +284,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Dr. Slump",
+			"title": "",
+			"name": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 2,
@@ -296,8 +296,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 2,
@@ -308,8 +308,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Kaméhaméha",
-			"mangasName": "Dragon Ball",
+			"title": "Kaméhaméha",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 2,
@@ -320,8 +320,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 2,
@@ -332,8 +332,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "A Silent Voice",
+			"title": "",
+			"name": "A Silent Voice",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshitoki Oima",
 			"tomeNumber": 2,
@@ -344,8 +344,8 @@ Meteor.startup(function() {
 			"editor": "KI-oon",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "20th Century Boys",
+			"title": "",
+			"name": "20th Century Boys",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 2,
@@ -356,8 +356,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 2,
@@ -368,8 +368,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 2,
@@ -380,8 +380,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Akira",
+			"title": "",
+			"name": "Akira",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Katsuhiro Otomo",
 			"tomeNumber": 2,
@@ -392,8 +392,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Death Note",
+			"title": "",
+			"name": "Death Note",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 2,
@@ -404,8 +404,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Great Teacher Onizuka",
+			"title": "",
+			"name": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 2,
@@ -416,8 +416,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Shonan 14 Days",
+			"title": "",
+			"name": "GTO - Shonan 14 Days",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 2,
@@ -428,8 +428,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Piété filiale",
-			"mangasName": "One Piece",
+			"title": "Piété filiale",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 3,
@@ -440,8 +440,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Monster",
+			"title": "",
+			"name": "Monster",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 3,
@@ -452,8 +452,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "XXX Holic",
+			"title": "",
+			"name": "XXX Holic",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "CLAMP",
 			"tomeNumber": 3,
@@ -464,8 +464,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Dr. Slump",
+			"title": "",
+			"name": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 3,
@@ -476,8 +476,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 3,
@@ -488,8 +488,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "L 'initiation",
-			"mangasName": "Dragon Ball",
+			"title": "L 'initiation",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 3,
@@ -500,8 +500,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 3,
@@ -512,8 +512,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "A Silent Voice",
+			"title": "",
+			"name": "A Silent Voice",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshitoki Oima",
 			"tomeNumber": 3,
@@ -524,8 +524,8 @@ Meteor.startup(function() {
 			"editor": "Ki-oon",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "20th Century Boys",
+			"title": "",
+			"name": "20th Century Boys",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 3,
@@ -536,8 +536,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 3,
@@ -548,8 +548,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 3,
@@ -560,8 +560,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Akira",
+			"title": "",
+			"name": "Akira",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Katsuhiro Otomo",
 			"tomeNumber": 3,
@@ -572,8 +572,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Death Note",
+			"title": "",
+			"name": "Death Note",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 3,
@@ -584,8 +584,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Great Teacher Onizuka",
+			"title": "",
+			"name": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 3,
@@ -596,8 +596,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Shonan 14 Days",
+			"title": "",
+			"name": "GTO - Shonan 14 Days",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 3,
@@ -608,8 +608,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Un chemin en pente raide",
-			"mangasName": "One Piece",
+			"title": "Un chemin en pente raide",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 4,
@@ -620,8 +620,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Monster",
+			"title": "",
+			"name": "Monster",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 4,
@@ -632,8 +632,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "XXX Holic",
+			"title": "",
+			"name": "XXX Holic",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "CLAMP",
 			"tomeNumber": 4,
@@ -644,8 +644,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Dr. Slump",
+			"title": "",
+			"name": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 4,
@@ -656,8 +656,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 4,
@@ -668,8 +668,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le Tournoi",
-			"mangasName": "Dragon Ball",
+			"title": "Le Tournoi",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 4,
@@ -680,8 +680,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 4,
@@ -693,8 +693,8 @@ Meteor.startup(function() {
 			"version": "fr"
 		}, {
 
-			"tomeTitle": "",
-			"mangasName": "A Silent Voice",
+			"title": "",
+			"name": "A Silent Voice",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshitoki Oima",
 			"tomeNumber": 4,
@@ -705,8 +705,8 @@ Meteor.startup(function() {
 			"editor": "Ki-oon",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "20th Century Boys",
+			"title": "",
+			"name": "20th Century Boys",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 4,
@@ -717,8 +717,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 4,
@@ -729,8 +729,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 4,
@@ -741,8 +741,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Akira",
+			"title": "",
+			"name": "Akira",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Katsuhiro Otomo",
 			"tomeNumber": 4,
@@ -753,8 +753,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Death Note",
+			"title": "",
+			"name": "Death Note",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 4,
@@ -765,8 +765,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Great Teacher Onizuka",
+			"title": "",
+			"name": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 4,
@@ -777,8 +777,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Shonan 14 Days",
+			"title": "",
+			"name": "GTO - Shonan 14 Days",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 4,
@@ -789,8 +789,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Pour qui sonne le glas",
-			"mangasName": "One Piece",
+			"title": "Pour qui sonne le glas",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 5,
@@ -801,8 +801,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Monster",
+			"title": "",
+			"name": "Monster",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 5,
@@ -813,8 +813,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "XXX Holic",
+			"title": "",
+			"name": "XXX Holic",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "CLAMP",
 			"tomeNumber": 5,
@@ -825,8 +825,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Dr. Slump",
+			"title": "",
+			"name": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 5,
@@ -837,8 +837,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "L 'Ultime combat",
-			"mangasName": "Dragon Ball",
+			"title": "L 'Ultime combat",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 5,
@@ -849,8 +849,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 5,
@@ -861,8 +861,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "20th Century Boys",
+			"title": "",
+			"name": "20th Century Boys",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 5,
@@ -873,8 +873,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 5,
@@ -885,8 +885,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 5,
@@ -897,8 +897,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Akira",
+			"title": "",
+			"name": "Akira",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Katsuhiro Otomo",
 			"tomeNumber": 5,
@@ -909,8 +909,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Great Teacher Onizuka",
+			"title": "",
+			"name": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 5,
@@ -921,8 +921,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Shonan 14 Days",
+			"title": "",
+			"name": "GTO - Shonan 14 Days",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 5,
@@ -933,8 +933,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Monster",
+			"title": "",
+			"name": "Monster",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 6,
@@ -945,8 +945,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "La grande promesse",
-			"mangasName": "One Piece",
+			"title": "La grande promesse",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 6,
@@ -957,8 +957,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "L 'Empire du ruban rouge",
-			"mangasName": "Dragon Ball",
+			"title": "L 'Empire du ruban rouge",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 6,
@@ -969,8 +969,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 6,
@@ -981,8 +981,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "20th Century Boys",
+			"title": "",
+			"name": "20th Century Boys",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 6,
@@ -993,8 +993,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 6,
@@ -1005,8 +1005,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 6,
@@ -1017,8 +1017,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Akira",
+			"title": "",
+			"name": "Akira",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Katsuhiro Otomo",
 			"tomeNumber": 6,
@@ -1029,8 +1029,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Great Teacher Onizuka",
+			"title": "",
+			"name": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 6,
@@ -1041,8 +1041,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Shonan 14 Days",
+			"title": "",
+			"name": "GTO - Shonan 14 Days",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 6,
@@ -1053,8 +1053,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Monster",
+			"title": "",
+			"name": "Monster",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 7,
@@ -1065,8 +1065,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le Vieux schnock",
-			"mangasName": "One Piece",
+			"title": "Le Vieux schnock",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 7,
@@ -1077,8 +1077,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "La Menace",
-			"mangasName": "Dragon Ball",
+			"title": "La Menace",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 7,
@@ -1089,8 +1089,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "20th Century Boys",
+			"title": "",
+			"name": "20th Century Boys",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 7,
@@ -1101,8 +1101,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 7,
@@ -1113,8 +1113,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 7,
@@ -1125,8 +1125,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Great Teacher Onizuka",
+			"title": "",
+			"name": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 7,
@@ -1137,8 +1137,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Shonan 14 Days",
+			"title": "",
+			"name": "GTO - Shonan 14 Days",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 7,
@@ -1149,8 +1149,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Monster",
+			"title": "",
+			"name": "Monster",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 8,
@@ -1161,8 +1161,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Je ne vais pas mourir",
-			"mangasName": "One Piece",
+			"title": "Je ne vais pas mourir",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 8,
@@ -1173,8 +1173,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le Duel",
-			"mangasName": "Dragon Ball",
+			"title": "Le Duel",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 8,
@@ -1185,8 +1185,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "20th Century Boys",
+			"title": "",
+			"name": "20th Century Boys",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 8,
@@ -1197,8 +1197,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 8,
@@ -1209,8 +1209,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 8,
@@ -1221,8 +1221,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Great Teacher Onizuka",
+			"title": "",
+			"name": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 8,
@@ -1233,8 +1233,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Shonan 14 Days",
+			"title": "",
+			"name": "GTO - Shonan 14 Days",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 8,
@@ -1245,8 +1245,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Monster",
+			"title": "",
+			"name": "Monster",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 9,
@@ -1257,8 +1257,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Une jeune fille en pleurs",
-			"mangasName": "One Piece",
+			"title": "Une jeune fille en pleurs",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 9,
@@ -1269,8 +1269,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Sangohan",
-			"mangasName": "Dragon Ball",
+			"title": "Sangohan",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 9,
@@ -1281,8 +1281,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "20th Century Boys",
+			"title": "",
+			"name": "20th Century Boys",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 9,
@@ -1293,8 +1293,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 9,
@@ -1305,8 +1305,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 9,
@@ -1317,8 +1317,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Great Teacher Onizuka",
+			"title": "",
+			"name": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 9,
@@ -1329,8 +1329,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Shonan 14 Days",
+			"title": "",
+			"name": "GTO - Shonan 14 Days",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 9,
@@ -1341,8 +1341,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "OK let 's stand up !",
-			"mangasName": "One Piece",
+			"title": "OK let 's stand up !",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 10,
@@ -1353,8 +1353,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le Miraculé",
-			"mangasName": "Dragon Ball",
+			"title": "Le Miraculé",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 10,
@@ -1365,8 +1365,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "20th Century Boys",
+			"title": "",
+			"name": "20th Century Boys",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 10,
@@ -1377,8 +1377,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 10,
@@ -1389,8 +1389,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 10,
@@ -1401,8 +1401,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Great Teacher Onizuka",
+			"title": "",
+			"name": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 10,
@@ -1413,8 +1413,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le pire brigand de tout East-Blue",
-			"mangasName": "One Piece",
+			"title": "Le pire brigand de tout East-Blue",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 11,
@@ -1425,8 +1425,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le Grand défi",
-			"mangasName": "Dragon Ball",
+			"title": "Le Grand défi",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 11,
@@ -1437,8 +1437,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "20th Century Boys",
+			"title": "",
+			"name": "20th Century Boys",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 11,
@@ -1449,8 +1449,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 11,
@@ -1461,8 +1461,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 11,
@@ -1473,8 +1473,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Great Teacher Onizuka",
+			"title": "",
+			"name": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 11,
@@ -1485,8 +1485,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "La légende est en marche",
-			"mangasName": "One Piece",
+			"title": "La légende est en marche",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 12,
@@ -1497,8 +1497,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Les Forces du mal",
-			"mangasName": "Dragon Ball",
+			"title": "Les Forces du mal",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 12,
@@ -1509,8 +1509,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 12,
@@ -1521,8 +1521,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 12,
@@ -1533,8 +1533,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Great Teacher Onizuka",
+			"title": "",
+			"name": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 12,
@@ -1545,8 +1545,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Sois forte!!!",
-			"mangasName": "One Piece",
+			"title": "Sois forte!!!",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 13,
@@ -1557,8 +1557,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "L 'Empire du chaos",
-			"mangasName": "Dragon Ball",
+			"title": "L 'Empire du chaos",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 13,
@@ -1569,8 +1569,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 13,
@@ -1581,8 +1581,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 13,
@@ -1593,8 +1593,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Great Teacher Onizuka",
+			"title": "",
+			"name": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 13,
@@ -1605,8 +1605,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "L 'instinct",
-			"mangasName": "One Piece",
+			"title": "L 'instinct",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 14,
@@ -1617,8 +1617,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le Démon",
-			"mangasName": "Dragon Ball",
+			"title": "Le Démon",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 14,
@@ -1629,8 +1629,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 14,
@@ -1641,8 +1641,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 14,
@@ -1653,8 +1653,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Droit devant!!",
-			"mangasName": "One Piece",
+			"title": "Droit devant!!",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 15,
@@ -1665,8 +1665,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Chi-chi",
-			"mangasName": "Dragon Ball",
+			"title": "Chi-chi",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 15,
@@ -1677,8 +1677,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 15,
@@ -1689,8 +1689,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 15,
@@ -1701,8 +1701,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Perpétuation",
-			"mangasName": "One Piece",
+			"title": "Perpétuation",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 16,
@@ -1713,8 +1713,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "L 'Héritier",
-			"mangasName": "Dragon Ball",
+			"title": "L 'Héritier",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 16,
@@ -1725,8 +1725,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 16,
@@ -1737,8 +1737,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 16,
@@ -1749,8 +1749,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Les cerisiers de Hiluluk",
-			"mangasName": "One Piece",
+			"title": "Les cerisiers de Hiluluk",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 17,
@@ -1761,8 +1761,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Les Saïyens",
-			"mangasName": "Dragon Ball",
+			"title": "Les Saïyens",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 17,
@@ -1773,8 +1773,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 17,
@@ -1785,8 +1785,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 17,
@@ -1797,8 +1797,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Ace entre en scène",
-			"mangasName": "One Piece",
+			"title": "Ace entre en scène",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 18,
@@ -1809,8 +1809,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Maître Kaïo",
-			"mangasName": "Dragon Ball",
+			"title": "Maître Kaïo",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 18,
@@ -1821,8 +1821,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 18,
@@ -1833,8 +1833,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 18,
@@ -1845,8 +1845,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Rébellion",
-			"mangasName": "One Piece",
+			"title": "Rébellion",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 19,
@@ -1857,8 +1857,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Végéta",
-			"mangasName": "Dragon Ball",
+			"title": "Végéta",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 19,
@@ -1869,8 +1869,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 19,
@@ -1881,8 +1881,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 19,
@@ -1893,8 +1893,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Bataille décisive à Alubarna",
-			"mangasName": "One Piece",
+			"title": "Bataille décisive à Alubarna",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 20,
@@ -1905,8 +1905,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 20,
@@ -1917,8 +1917,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 20,
@@ -1929,8 +1929,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Utopie",
-			"mangasName": "One Piece",
+			"title": "Utopie",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 21,
@@ -1941,8 +1941,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 21,
@@ -1953,8 +1953,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 21,
@@ -1965,8 +1965,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Espoir",
-			"mangasName": "One Piece",
+			"title": "Espoir",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 22,
@@ -1977,8 +1977,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Zabon et Doria",
-			"mangasName": "Dragon Ball",
+			"title": "Zabon et Doria",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 22,
@@ -1989,8 +1989,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 22,
@@ -2001,8 +2001,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 22,
@@ -2013,8 +2013,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "L 'aventure de Vivi",
-			"mangasName": "One Piece",
+			"title": "L 'aventure de Vivi",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 23,
@@ -2025,8 +2025,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Recoom et Guldo",
-			"mangasName": "Dragon Ball",
+			"title": "Recoom et Guldo",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 23,
@@ -2037,8 +2037,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 23,
@@ -2049,8 +2049,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 23,
@@ -2061,8 +2061,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Les rêves",
-			"mangasName": "One Piece",
+			"title": "Les rêves",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 24,
@@ -2073,8 +2073,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le Capitaine Ginue",
-			"mangasName": "Dragon Ball",
+			"title": "Le Capitaine Ginue",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 24,
@@ -2085,8 +2085,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 24,
@@ -2097,8 +2097,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "L 'homme qui valait cent millions",
-			"mangasName": "One Piece",
+			"title": "L 'homme qui valait cent millions",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 25,
@@ -2109,8 +2109,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Piccolo",
-			"mangasName": "Dragon Ball",
+			"title": "Piccolo",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 25,
@@ -2121,8 +2121,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 25,
@@ -2133,8 +2133,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "L 'île de Dieu",
-			"mangasName": "One Piece",
+			"title": "L 'île de Dieu",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 26,
@@ -2145,8 +2145,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 26,
@@ -2157,8 +2157,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Prélude",
-			"mangasName": "One Piece",
+			"title": "Prélude",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 27,
@@ -2169,8 +2169,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le Super Saïyen",
-			"mangasName": "Dragon Ball",
+			"title": "Le Super Saïyen",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 27,
@@ -2181,8 +2181,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 27,
@@ -2193,8 +2193,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Wiper le berserker",
-			"mangasName": "One Piece",
+			"title": "Wiper le berserker",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 28,
@@ -2205,8 +2205,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 28,
@@ -2217,8 +2217,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Oratorio",
-			"mangasName": "One Piece",
+			"title": "Oratorio",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 29,
@@ -2229,8 +2229,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Les Androïdes",
-			"mangasName": "Dragon Ball",
+			"title": "Les Androïdes",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 29,
@@ -2241,8 +2241,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Capriccio",
-			"mangasName": "One Piece",
+			"title": "Capriccio",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 30,
@@ -2253,8 +2253,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Je suis là",
-			"mangasName": "One Piece",
+			"title": "Je suis là",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 31,
@@ -2265,8 +2265,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Cell",
-			"mangasName": "Dragon Ball",
+			"title": "Cell",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 31,
@@ -2277,8 +2277,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Love song",
-			"mangasName": "One Piece",
+			"title": "Love song",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 32,
@@ -2289,8 +2289,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Transformation ultime",
-			"mangasName": "Dragon Ball",
+			"title": "Transformation ultime",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 32,
@@ -2301,8 +2301,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Davy back fight!!",
-			"mangasName": "One Piece",
+			"title": "Davy back fight!!",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 33,
@@ -2313,8 +2313,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Water Seven, la cité sur l 'eau",
-			"mangasName": "One Piece",
+			"title": "Water Seven, la cité sur l 'eau",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 34,
@@ -2325,8 +2325,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Capitaine",
-			"mangasName": "One Piece",
+			"title": "Capitaine",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 35,
@@ -2337,8 +2337,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "L 'Adieu de Sangoku",
-			"mangasName": "Dragon Ball",
+			"title": "L 'Adieu de Sangoku",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 35,
@@ -2349,8 +2349,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Justice nº9",
-			"mangasName": "One Piece",
+			"title": "Justice nº9",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 36,
@@ -2361,8 +2361,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Un Nouveau héros",
-			"mangasName": "Dragon Ball",
+			"title": "Un Nouveau héros",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 36,
@@ -2373,8 +2373,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Tom",
-			"mangasName": "One Piece",
+			"title": "Tom",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 37,
@@ -2385,8 +2385,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Kaïo Shin",
-			"mangasName": "Dragon Ball",
+			"title": "Kaïo Shin",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 37,
@@ -2397,8 +2397,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Rocketman!",
-			"mangasName": "One Piece",
+			"title": "Rocketman!",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 38,
@@ -2409,8 +2409,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le Sorcier Babidi",
-			"mangasName": "Dragon Ball",
+			"title": "Le Sorcier Babidi",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 38,
@@ -2421,8 +2421,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Compétition",
-			"mangasName": "One Piece",
+			"title": "Compétition",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 39,
@@ -2433,8 +2433,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Gear",
-			"mangasName": "One Piece",
+			"title": "Gear",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 40,
@@ -2445,8 +2445,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Déclaration de guerre",
-			"mangasName": "One Piece",
+			"title": "Déclaration de guerre",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 41,
@@ -2457,8 +2457,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Les pirates face au CP9",
-			"mangasName": "One Piece",
+			"title": "Les pirates face au CP9",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 42,
@@ -2469,8 +2469,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "La légende du héros",
-			"mangasName": "One Piece",
+			"title": "La légende du héros",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 43,
@@ -2481,8 +2481,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Rentrons",
-			"mangasName": "One Piece",
+			"title": "Rentrons",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 44,
@@ -2493,8 +2493,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Je comprends ce que tu ressens",
-			"mangasName": "One Piece",
+			"title": "Je comprends ce que tu ressens",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 45,
@@ -2505,8 +2505,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "A l 'aventure sur l'île fantôme",
-			"mangasName": "One Piece",
+			"title": "A l 'aventure sur l'île fantôme",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 46,
@@ -2517,8 +2517,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Ciel nuageux avec risque de chutes d 'os",
-			"mangasName": "One Piece",
+			"title": "Ciel nuageux avec risque de chutes d 'os",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 47,
@@ -2529,8 +2529,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "L 'aventure d'Odz",
-			"mangasName": "One Piece",
+			"title": "L 'aventure d'Odz",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 48,
@@ -2541,8 +2541,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Nightmare Luffy",
-			"mangasName": "One Piece",
+			"title": "Nightmare Luffy",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 49,
@@ -2553,8 +2553,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "De retour",
-			"mangasName": "One Piece",
+			"title": "De retour",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 50,
@@ -2565,8 +2565,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Les onze Supernovae",
-			"mangasName": "One Piece",
+			"title": "Les onze Supernovae",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 51,
@@ -2577,8 +2577,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Roger & Rayleigh",
-			"mangasName": "One Piece",
+			"title": "Roger & Rayleigh",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 52,
@@ -2589,8 +2589,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "La constitution souveraine",
-			"mangasName": "One Piece",
+			"title": "La constitution souveraine",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 53,
@@ -2601,8 +2601,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Inarrêtable",
-			"mangasName": "One Piece",
+			"title": "Inarrêtable",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 54,
@@ -2613,8 +2613,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Un travelo en enfer",
-			"mangasName": "One Piece",
+			"title": "Un travelo en enfer",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 55,
@@ -2625,8 +2625,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Merci",
-			"mangasName": "One Piece",
+			"title": "Merci",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 56,
@@ -2637,8 +2637,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Bataille décisive au sommet",
-			"mangasName": "One Piece",
+			"title": "Bataille décisive au sommet",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 57,
@@ -2649,8 +2649,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "L 'ère de Barbe Blanche",
-			"mangasName": "One Piece",
+			"title": "L 'ère de Barbe Blanche",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 58,
@@ -2661,8 +2661,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "La fin de Portgas D.Ace",
-			"mangasName": "One Piece",
+			"title": "La fin de Portgas D.Ace",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 59,
@@ -2673,8 +2673,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Petit frère",
-			"mangasName": "One Piece",
+			"title": "Petit frère",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 60,
@@ -2685,8 +2685,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "A l 'aube d'une grande aventure vers le nouveau monde",
-			"mangasName": "One Piece",
+			"title": "A l 'aube d'une grande aventure vers le nouveau monde",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 61,
@@ -2697,8 +2697,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Périple sur l 'île des hommes-poissons",
-			"mangasName": "One Piece",
+			"title": "Périple sur l 'île des hommes-poissons",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 62,
@@ -2709,8 +2709,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Otohime et Tiger",
-			"mangasName": "One Piece",
+			"title": "Otohime et Tiger",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 63,
@@ -2721,8 +2721,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "100 000 vs 10",
-			"mangasName": "One Piece",
+			"title": "100 000 vs 10",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 64,
@@ -2733,8 +2733,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Table rase",
-			"mangasName": "One Piece",
+			"title": "Table rase",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 65,
@@ -2745,8 +2745,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Vers le soleil",
-			"mangasName": "One Piece",
+			"title": "Vers le soleil",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 66,
@@ -2757,8 +2757,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Cool fight",
-			"mangasName": "One Piece",
+			"title": "Cool fight",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 67,
@@ -2769,8 +2769,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Alliance entre pirates",
-			"mangasName": "One Piece",
+			"title": "Alliance entre pirates",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 68,
@@ -2781,8 +2781,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "SAD",
-			"mangasName": "One Piece",
+			"title": "SAD",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 69,
@@ -2793,8 +2793,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Doflamingo sort de l 'ombre",
-			"mangasName": "One Piece",
+			"title": "Doflamingo sort de l 'ombre",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 70,
@@ -2805,8 +2805,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le colisée de tous Les dangers",
-			"mangasName": "One Piece",
+			"title": "Le colisée de tous Les dangers",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 71,
@@ -2817,8 +2817,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Les oubliés de Dressrosa",
-			"mangasName": "One Piece",
+			"title": "Les oubliés de Dressrosa",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 72,
@@ -2829,8 +2829,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "L 'opération Dressrosa S.O.P",
-			"mangasName": "One Piece",
+			"title": "L 'opération Dressrosa S.O.P",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 73,
@@ -2841,8 +2841,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Head Trick",
+			"title": "",
+			"name": "Head Trick",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "E.D & K 'Yat",
 			"tomeNumber": 1,
@@ -2853,8 +2853,8 @@ Meteor.startup(function() {
 			"editor": "ED",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Soul Eater",
+			"title": "",
+			"name": "Soul Eater",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Atsushi Ohkubo",
 			"tomeNumber": 1,
@@ -2865,8 +2865,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Ikigami-Préavis de mort",
+			"title": "",
+			"name": "Ikigami-Préavis de mort",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Motoro Mase",
 			"tomeNumber": 1,
@@ -2877,8 +2877,8 @@ Meteor.startup(function() {
 			"editor": "Kaze",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Bakuman",
+			"title": "",
+			"name": "Bakuman",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 1,
@@ -2889,8 +2889,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Naruto Uzumaki",
-			"mangasName": "Naruto",
+			"title": "Naruto Uzumaki",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 1,
@@ -2901,8 +2901,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "I Am A Hero",
+			"title": "",
+			"name": "I Am A Hero",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kengo Hanazawa",
 			"tomeNumber": 2,
@@ -2913,8 +2913,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Drifters",
+			"title": "",
+			"name": "Drifters",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kohta Hirano",
 			"tomeNumber": 2,
@@ -2925,8 +2925,8 @@ Meteor.startup(function() {
 			"editor": "Tonkam",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Prison School",
+			"title": "",
+			"name": "Prison School",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Hiramoto",
 			"tomeNumber": 2,
@@ -2937,8 +2937,8 @@ Meteor.startup(function() {
 			"editor": "Soleil",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "L 'Attaque Des Titans",
+			"title": "",
+			"name": "L 'Attaque Des Titans",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hajime Isayama",
 			"tomeNumber": 2,
@@ -2949,8 +2949,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Head Trick",
+			"title": "",
+			"name": "Head Trick",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "E.D & K 'Yat",
 			"tomeNumber": 2,
@@ -2961,8 +2961,8 @@ Meteor.startup(function() {
 			"editor": "ED",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Soul Eater",
+			"title": "",
+			"name": "Soul Eater",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Atsushi Ohkubo",
 			"tomeNumber": 2,
@@ -2973,8 +2973,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Ikigami-Préavis de mort",
+			"title": "",
+			"name": "Ikigami-Préavis de mort",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Motoro Mase",
 			"tomeNumber": 2,
@@ -2985,8 +2985,8 @@ Meteor.startup(function() {
 			"editor": "Kaze",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Bakuman",
+			"title": "",
+			"name": "Bakuman",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 2,
@@ -2997,8 +2997,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Un client embarassant",
-			"mangasName": "Naruto",
+			"title": "Un client embarassant",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 2,
@@ -3009,8 +3009,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "I Am A Hero",
+			"title": "",
+			"name": "I Am A Hero",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kengo Hanazawa",
 			"tomeNumber": 3,
@@ -3021,8 +3021,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Drifters",
+			"title": "",
+			"name": "Drifters",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kohta Hirano",
 			"tomeNumber": 3,
@@ -3033,8 +3033,8 @@ Meteor.startup(function() {
 			"editor": "Tonkam",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Prison School",
+			"title": "",
+			"name": "Prison School",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Hiramoto",
 			"tomeNumber": 3,
@@ -3045,8 +3045,8 @@ Meteor.startup(function() {
 			"editor": "Soleil",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "L 'Attaque Des Titans",
+			"title": "",
+			"name": "L 'Attaque Des Titans",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hajime Isayama",
 			"tomeNumber": 3,
@@ -3057,8 +3057,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Head Trick",
+			"title": "",
+			"name": "Head Trick",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "E.D & K 'Yat",
 			"tomeNumber": 3,
@@ -3069,8 +3069,8 @@ Meteor.startup(function() {
 			"editor": "ED",
 			"version": "Edition"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Soul Eater",
+			"title": "",
+			"name": "Soul Eater",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Atsushi Ohkubo",
 			"tomeNumber": 3,
@@ -3081,8 +3081,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Ikigami-Préavis de mort",
+			"title": "",
+			"name": "Ikigami-Préavis de mort",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Motoro Mase",
 			"tomeNumber": 3,
@@ -3093,8 +3093,8 @@ Meteor.startup(function() {
 			"editor": "Kaze",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Bakuman",
+			"title": "",
+			"name": "Bakuman",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 3,
@@ -3105,8 +3105,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Se battre pour ses rêves!!",
-			"mangasName": "Naruto",
+			"title": "Se battre pour ses rêves!!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 3,
@@ -3117,8 +3117,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "I Am A Hero",
+			"title": "",
+			"name": "I Am A Hero",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kengo Hanazawa",
 			"tomeNumber": 4,
@@ -3129,8 +3129,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Drifters",
+			"title": "",
+			"name": "Drifters",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kohta Hirano",
 			"tomeNumber": 4,
@@ -3141,8 +3141,8 @@ Meteor.startup(function() {
 			"editor": "Tonkam",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Prison School",
+			"title": "",
+			"name": "Prison School",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Hiramoto",
 			"tomeNumber": 4,
@@ -3153,8 +3153,8 @@ Meteor.startup(function() {
 			"editor": "Soleil",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "L 'Attaque Des Titans",
+			"title": "",
+			"name": "L 'Attaque Des Titans",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hajime Isayama",
 			"tomeNumber": 4,
@@ -3165,8 +3165,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Head Trick",
+			"title": "",
+			"name": "Head Trick",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "E.D & K 'Yat",
 			"tomeNumber": 4,
@@ -3177,8 +3177,8 @@ Meteor.startup(function() {
 			"editor": "ED",
 			"version": "Edition"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Soul Eater",
+			"title": "",
+			"name": "Soul Eater",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Atsushi Ohkubo",
 			"tomeNumber": 4,
@@ -3189,8 +3189,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Ikigami-Préavis de mort",
+			"title": "",
+			"name": "Ikigami-Préavis de mort",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Motoro Mase",
 			"tomeNumber": 4,
@@ -3201,8 +3201,8 @@ Meteor.startup(function() {
 			"editor": "Kaze",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Bakuman",
+			"title": "",
+			"name": "Bakuman",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 4,
@@ -3213,8 +3213,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le pont des héros!",
-			"mangasName": "Naruto",
+			"title": "Le pont des héros!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 4,
@@ -3225,8 +3225,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "I Am A Hero",
+			"title": "",
+			"name": "I Am A Hero",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kengo Hanazawa",
 			"tomeNumber": 5,
@@ -3237,8 +3237,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 5,
@@ -3249,8 +3249,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "A Silent Voice",
+			"title": "",
+			"name": "A Silent Voice",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshitoki Oima",
 			"tomeNumber": 5,
@@ -3261,8 +3261,8 @@ Meteor.startup(function() {
 			"editor": "Ki-oon",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Prison School",
+			"title": "",
+			"name": "Prison School",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Hiramoto",
 			"tomeNumber": 5,
@@ -3273,8 +3273,8 @@ Meteor.startup(function() {
 			"editor": "Soleil",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "L 'Attaque Des Titans",
+			"title": "",
+			"name": "L 'Attaque Des Titans",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hajime Isayama",
 			"tomeNumber": 5,
@@ -3285,8 +3285,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Head Trick",
+			"title": "",
+			"name": "Head Trick",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "E.D & K 'Yat",
 			"tomeNumber": 5,
@@ -3297,8 +3297,8 @@ Meteor.startup(function() {
 			"editor": "ED",
 			"version": "Edition"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Death Note",
+			"title": "",
+			"name": "Death Note",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 5,
@@ -3309,8 +3309,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Soul Eater",
+			"title": "",
+			"name": "Soul Eater",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Atsushi Ohkubo",
 			"tomeNumber": 5,
@@ -3321,8 +3321,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Ikigami-Préavis de mort",
+			"title": "",
+			"name": "Ikigami-Préavis de mort",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Motoro Mase",
 			"tomeNumber": 5,
@@ -3333,8 +3333,8 @@ Meteor.startup(function() {
 			"editor": "Kaze",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Bakuman",
+			"title": "",
+			"name": "Bakuman",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 5,
@@ -3345,8 +3345,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Les rivaux",
-			"mangasName": "Naruto",
+			"title": "Les rivaux",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 5,
@@ -3357,8 +3357,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "XXX Holic",
+			"title": "",
+			"name": "XXX Holic",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "CLAMP",
 			"tomeNumber": 6,
@@ -3369,8 +3369,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "I Am A Hero",
+			"title": "",
+			"name": "I Am A Hero",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kengo Hanazawa",
 			"tomeNumber": 6,
@@ -3381,8 +3381,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Dr. Slump",
+			"title": "",
+			"name": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 6,
@@ -3393,8 +3393,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 6,
@@ -3405,8 +3405,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "L 'Attaque Des Titans",
+			"title": "",
+			"name": "L 'Attaque Des Titans",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hajime Isayama",
 			"tomeNumber": 6,
@@ -3417,8 +3417,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Head Trick",
+			"title": "",
+			"name": "Head Trick",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "E.D & K 'Yat",
 			"tomeNumber": 6,
@@ -3429,8 +3429,8 @@ Meteor.startup(function() {
 			"editor": "ED",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Death Note",
+			"title": "",
+			"name": "Death Note",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 6,
@@ -3441,8 +3441,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Soul Eater",
+			"title": "",
+			"name": "Soul Eater",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Atsushi Ohkubo",
 			"tomeNumber": 6,
@@ -3453,8 +3453,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Ikigami-Préavis de mort",
+			"title": "",
+			"name": "Ikigami-Préavis de mort",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Motoro Mase",
 			"tomeNumber": 6,
@@ -3465,8 +3465,8 @@ Meteor.startup(function() {
 			"editor": "Kaze",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Bakuman",
+			"title": "",
+			"name": "Bakuman",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 6,
@@ -3477,8 +3477,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "La détermination de Sakura !!",
-			"mangasName": "Naruto",
+			"title": "La détermination de Sakura !!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 6,
@@ -3489,8 +3489,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "XXX Holic",
+			"title": "",
+			"name": "XXX Holic",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "CLAMP",
 			"tomeNumber": 7,
@@ -3501,8 +3501,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "I Am A Hero",
+			"title": "",
+			"name": "I Am A Hero",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kengo Hanazawa",
 			"tomeNumber": 7,
@@ -3513,8 +3513,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Dr. Slump",
+			"title": "",
+			"name": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 7,
@@ -3525,8 +3525,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 7,
@@ -3537,8 +3537,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 7,
@@ -3549,8 +3549,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "L 'Attaque Des Titans",
+			"title": "",
+			"name": "L 'Attaque Des Titans",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hajime Isayama",
 			"tomeNumber": 7,
@@ -3561,8 +3561,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Head Trick",
+			"title": "",
+			"name": "Head Trick",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "E.D & K 'Yat",
 			"tomeNumber": 7,
@@ -3573,8 +3573,8 @@ Meteor.startup(function() {
 			"editor": "ED",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Death Note",
+			"title": "",
+			"name": "Death Note",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 7,
@@ -3585,8 +3585,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Soul Eater",
+			"title": "",
+			"name": "Soul Eater",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Atsushi Ohkubo",
 			"tomeNumber": 7,
@@ -3597,8 +3597,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Ikigami-Préavis de mort",
+			"title": "",
+			"name": "Ikigami-Préavis de mort",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Motoro Mase",
 			"tomeNumber": 7,
@@ -3609,8 +3609,8 @@ Meteor.startup(function() {
 			"editor": "Kaze",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Bakuman",
+			"title": "",
+			"name": "Bakuman",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 7,
@@ -3621,8 +3621,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "La voie à suivre !!",
-			"mangasName": "Naruto",
+			"title": "La voie à suivre !!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 7,
@@ -3633,8 +3633,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "XXX Holic",
+			"title": "",
+			"name": "XXX Holic",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "CLAMP",
 			"tomeNumber": 8,
@@ -3645,8 +3645,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "I Am A Hero",
+			"title": "",
+			"name": "I Am A Hero",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kengo Hanazawa",
 			"tomeNumber": 8,
@@ -3657,8 +3657,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Dr. Slump",
+			"title": "",
+			"name": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 8,
@@ -3669,8 +3669,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 8,
@@ -3681,8 +3681,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 8,
@@ -3693,8 +3693,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "L 'Attaque Des Titans",
+			"title": "",
+			"name": "L 'Attaque Des Titans",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hajime Isayama",
 			"tomeNumber": 8,
@@ -3705,8 +3705,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Head Trick",
+			"title": "",
+			"name": "Head Trick",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "E.D & K 'Yat",
 			"tomeNumber": 8,
@@ -3717,8 +3717,8 @@ Meteor.startup(function() {
 			"editor": "ED",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Death Note",
+			"title": "",
+			"name": "Death Note",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 8,
@@ -3729,8 +3729,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Soul Eater",
+			"title": "",
+			"name": "Soul Eater",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Atsushi Ohkubo",
 			"tomeNumber": 8,
@@ -3741,8 +3741,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Ikigami-Préavis de mort",
+			"title": "",
+			"name": "Ikigami-Préavis de mort",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Motoro Mase",
 			"tomeNumber": 8,
@@ -3753,8 +3753,8 @@ Meteor.startup(function() {
 			"editor": "Kaze",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Bakuman",
+			"title": "",
+			"name": "Bakuman",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 8,
@@ -3765,8 +3765,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Au péril de sa vie !!",
-			"mangasName": "Naruto",
+			"title": "Au péril de sa vie !!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 8,
@@ -3777,8 +3777,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "XXX Holic",
+			"title": "",
+			"name": "XXX Holic",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "CLAMP",
 			"tomeNumber": 9,
@@ -3789,8 +3789,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "I Am A Hero",
+			"title": "",
+			"name": "I Am A Hero",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kengo Hanazawa",
 			"tomeNumber": 9,
@@ -3801,8 +3801,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Dr. Slump",
+			"title": "",
+			"name": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 9,
@@ -3813,8 +3813,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 9,
@@ -3825,8 +3825,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 9,
@@ -3837,8 +3837,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "L 'Attaque Des Titans",
+			"title": "",
+			"name": "L 'Attaque Des Titans",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hajime Isayama",
 			"tomeNumber": 9,
@@ -3849,8 +3849,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Death Note",
+			"title": "",
+			"name": "Death Note",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 9,
@@ -3861,8 +3861,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Soul Eater",
+			"title": "",
+			"name": "Soul Eater",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Atsushi Ohkubo",
 			"tomeNumber": 9,
@@ -3873,8 +3873,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Ikigami-Préavis de mort",
+			"title": "",
+			"name": "Ikigami-Préavis de mort",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Motoro Mase",
 			"tomeNumber": 9,
@@ -3885,8 +3885,8 @@ Meteor.startup(function() {
 			"editor": "Kaze",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Bakuman",
+			"title": "",
+			"name": "Bakuman",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 9,
@@ -3897,8 +3897,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Neiji et Hinata",
-			"mangasName": "Naruto",
+			"title": "Neiji et Hinata",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 9,
@@ -3909,8 +3909,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "I Am A Hero",
+			"title": "",
+			"name": "I Am A Hero",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kengo Hanazawa",
 			"tomeNumber": 10,
@@ -3921,8 +3921,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Dr. Slump",
+			"title": "",
+			"name": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 10,
@@ -3933,8 +3933,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 10,
@@ -3945,8 +3945,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 10,
@@ -3957,8 +3957,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "L 'Attaque Des Titans",
+			"title": "",
+			"name": "L 'Attaque Des Titans",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hajime Isayama",
 			"tomeNumber": 10,
@@ -3969,8 +3969,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "XXX Holic",
+			"title": "",
+			"name": "XXX Holic",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "CLAMP",
 			"tomeNumber": 10,
@@ -3981,8 +3981,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Death Note",
+			"title": "",
+			"name": "Death Note",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 10,
@@ -3993,8 +3993,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Soul Eater",
+			"title": "",
+			"name": "Soul Eater",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Atsushi Ohkubo",
 			"tomeNumber": 10,
@@ -4005,8 +4005,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Ikigami-Préavis de mort",
+			"title": "",
+			"name": "Ikigami-Préavis de mort",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Motoro Mase",
 			"tomeNumber": 10,
@@ -4017,8 +4017,8 @@ Meteor.startup(function() {
 			"editor": "Kaze",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Bakuman",
+			"title": "",
+			"name": "Bakuman",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 10,
@@ -4029,8 +4029,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Un ninja formidable...!!",
-			"mangasName": "Naruto",
+			"title": "Un ninja formidable...!!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 10,
@@ -4041,8 +4041,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "I Am A Hero",
+			"title": "",
+			"name": "I Am A Hero",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kengo Hanazawa",
 			"tomeNumber": 11,
@@ -4053,8 +4053,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Dr. Slump",
+			"title": "",
+			"name": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 11,
@@ -4065,8 +4065,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 11,
@@ -4077,8 +4077,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 11,
@@ -4089,8 +4089,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "L 'Attaque Des Titans",
+			"title": "",
+			"name": "L 'Attaque Des Titans",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hajime Isayama",
 			"tomeNumber": 11,
@@ -4101,8 +4101,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "XXX Holic",
+			"title": "",
+			"name": "XXX Holic",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "CLAMP",
 			"tomeNumber": 11,
@@ -4113,8 +4113,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Death Note",
+			"title": "",
+			"name": "Death Note",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 11,
@@ -4125,8 +4125,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Soul Eater",
+			"title": "",
+			"name": "Soul Eater",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Atsushi Ohkubo",
 			"tomeNumber": 11,
@@ -4137,8 +4137,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Bakuman",
+			"title": "",
+			"name": "Bakuman",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 11,
@@ -4149,8 +4149,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Mon nouveau prof !!",
-			"mangasName": "Naruto",
+			"title": "Mon nouveau prof !!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 11,
@@ -4161,8 +4161,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "I Am A Hero",
+			"title": "",
+			"name": "I Am A Hero",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kengo Hanazawa",
 			"tomeNumber": 12,
@@ -4173,8 +4173,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Dr. Slump",
+			"title": "",
+			"name": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 12,
@@ -4185,8 +4185,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 12,
@@ -4197,8 +4197,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 12,
@@ -4209,8 +4209,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "20th Century Boys",
+			"title": "",
+			"name": "20th Century Boys",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 12,
@@ -4221,8 +4221,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "L 'Attaque Des Titans",
+			"title": "",
+			"name": "L 'Attaque Des Titans",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hajime Isayama",
 			"tomeNumber": 12,
@@ -4233,8 +4233,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "XXX Holic",
+			"title": "",
+			"name": "XXX Holic",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "CLAMP",
 			"tomeNumber": 12,
@@ -4245,8 +4245,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Death Note",
+			"title": "",
+			"name": "Death Note",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 12,
@@ -4257,8 +4257,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Soul Eater",
+			"title": "",
+			"name": "Soul Eater",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Atsushi Ohkubo",
 			"tomeNumber": 12,
@@ -4269,8 +4269,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Bakuman",
+			"title": "",
+			"name": "Bakuman",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 12,
@@ -4281,8 +4281,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "L'oiseau s'est envolé...!!",
-			"mangasName": "Naruto",
+			"title": "L'oiseau s'est envolé...!!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 12,
@@ -4293,8 +4293,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "I Am A Hero",
+			"title": "",
+			"name": "I Am A Hero",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kengo Hanazawa",
 			"tomeNumber": 13,
@@ -4305,8 +4305,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Dr. Slump",
+			"title": "",
+			"name": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 13,
@@ -4317,8 +4317,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 13,
@@ -4329,8 +4329,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 13,
@@ -4341,8 +4341,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "20th Century Boys",
+			"title": "",
+			"name": "20th Century Boys",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 13,
@@ -4353,8 +4353,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "L 'Attaque Des Titans",
+			"title": "",
+			"name": "L 'Attaque Des Titans",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hajime Isayama",
 			"tomeNumber": 13,
@@ -4365,8 +4365,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "XXX Holic",
+			"title": "",
+			"name": "XXX Holic",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "CLAMP",
 			"tomeNumber": 13,
@@ -4377,8 +4377,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Death Note",
+			"title": "",
+			"name": "Death Note",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 13,
@@ -4389,8 +4389,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Soul Eater",
+			"title": "",
+			"name": "Soul Eater",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Atsushi Ohkubo",
 			"tomeNumber": 13,
@@ -4401,8 +4401,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Bakuman",
+			"title": "",
+			"name": "Bakuman",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 13,
@@ -4413,8 +4413,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "La fin de l'examen...!!",
-			"mangasName": "Naruto",
+			"title": "La fin de l'examen...!!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 13,
@@ -4425,8 +4425,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "I Am A Hero",
+			"title": "",
+			"name": "I Am A Hero",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kengo Hanazawa",
 			"tomeNumber": 14,
@@ -4437,8 +4437,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Dr. Slump",
+			"title": "",
+			"name": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 14,
@@ -4449,8 +4449,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 14,
@@ -4461,8 +4461,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 14,
@@ -4473,8 +4473,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "20th Century Boys",
+			"title": "",
+			"name": "20th Century Boys",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 14,
@@ -4485,8 +4485,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "L 'Attaque Des Titans",
+			"title": "",
+			"name": "L 'Attaque Des Titans",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hajime Isayama",
 			"tomeNumber": 14,
@@ -4497,8 +4497,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "XXX Holic",
+			"title": "",
+			"name": "XXX Holic",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "CLAMP",
 			"tomeNumber": 14,
@@ -4509,8 +4509,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Soul Eater",
+			"title": "",
+			"name": "Soul Eater",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Atsushi Ohkubo",
 			"tomeNumber": 14,
@@ -4521,8 +4521,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Great Teacher Onizuka",
+			"title": "",
+			"name": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 14,
@@ -4533,8 +4533,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Bakuman",
+			"title": "",
+			"name": "Bakuman",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 14,
@@ -4545,8 +4545,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Hokage contre Hokage !!",
-			"mangasName": "Naruto",
+			"title": "Hokage contre Hokage !!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 14,
@@ -4557,8 +4557,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Dr. Slump",
+			"title": "",
+			"name": "Dr. Slump",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 15,
@@ -4569,8 +4569,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 15,
@@ -4581,8 +4581,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 15,
@@ -4593,8 +4593,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "20th Century Boys",
+			"title": "",
+			"name": "20th Century Boys",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 15,
@@ -4605,8 +4605,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "L 'Attaque Des Titans",
+			"title": "",
+			"name": "L 'Attaque Des Titans",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hajime Isayama",
 			"tomeNumber": 15,
@@ -4617,8 +4617,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "XXX Holic",
+			"title": "",
+			"name": "XXX Holic",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "CLAMP",
 			"tomeNumber": 15,
@@ -4629,8 +4629,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Soul Eater",
+			"title": "",
+			"name": "Soul Eater",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Atsushi Ohkubo",
 			"tomeNumber": 15,
@@ -4641,8 +4641,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Great Teacher Onizuka",
+			"title": "",
+			"name": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 15,
@@ -4653,8 +4653,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Bakuman",
+			"title": "",
+			"name": "Bakuman",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 15,
@@ -4665,8 +4665,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le répertoire ninpô de Naruto !!",
-			"mangasName": "Naruto",
+			"title": "Le répertoire ninpô de Naruto !!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 15,
@@ -4677,8 +4677,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 16,
@@ -4689,8 +4689,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 16,
@@ -4701,8 +4701,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "20th Century Boys",
+			"title": "",
+			"name": "20th Century Boys",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 16,
@@ -4713,8 +4713,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "XXX Holic",
+			"title": "",
+			"name": "XXX Holic",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "CLAMP",
 			"tomeNumber": 16,
@@ -4725,8 +4725,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Soul Eater",
+			"title": "",
+			"name": "Soul Eater",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Atsushi Ohkubo",
 			"tomeNumber": 16,
@@ -4737,8 +4737,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Great Teacher Onizuka",
+			"title": "",
+			"name": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 16,
@@ -4749,8 +4749,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Bakuman",
+			"title": "",
+			"name": "Bakuman",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 16,
@@ -4761,8 +4761,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "La bataille de Konoha, dernier acte!!",
-			"mangasName": "Naruto",
+			"title": "La bataille de Konoha, dernier acte!!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 16,
@@ -4773,8 +4773,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 17,
@@ -4785,8 +4785,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 17,
@@ -4797,8 +4797,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "20th Century Boys",
+			"title": "",
+			"name": "20th Century Boys",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 17,
@@ -4809,8 +4809,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "XXX Holic",
+			"title": "",
+			"name": "XXX Holic",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "CLAMP",
 			"tomeNumber": 17,
@@ -4821,8 +4821,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Soul Eater",
+			"title": "",
+			"name": "Soul Eater",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Atsushi Ohkubo",
 			"tomeNumber": 17,
@@ -4833,8 +4833,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Great Teacher Onizuka",
+			"title": "",
+			"name": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 17,
@@ -4845,8 +4845,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Bakuman",
+			"title": "",
+			"name": "Bakuman",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 17,
@@ -4857,8 +4857,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "La puissance d'Itachi !!",
-			"mangasName": "Naruto",
+			"title": "La puissance d'Itachi !!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 17,
@@ -4869,8 +4869,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 18,
@@ -4881,8 +4881,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 18,
@@ -4893,8 +4893,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "20th Century Boys",
+			"title": "",
+			"name": "20th Century Boys",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 18,
@@ -4905,8 +4905,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "XXX Holic",
+			"title": "",
+			"name": "XXX Holic",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "CLAMP",
 			"tomeNumber": 18,
@@ -4917,8 +4917,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Soul Eater",
+			"title": "",
+			"name": "Soul Eater",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Atsushi Ohkubo",
 			"tomeNumber": 18,
@@ -4929,8 +4929,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Great Teacher Onizuka",
+			"title": "",
+			"name": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 18,
@@ -4941,8 +4941,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Bakuman",
+			"title": "",
+			"name": "Bakuman",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 18,
@@ -4953,8 +4953,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "La décision de Tsunade !!",
-			"mangasName": "Naruto",
+			"title": "La décision de Tsunade !!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 18,
@@ -4965,8 +4965,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 19,
@@ -4977,8 +4977,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 19,
@@ -4989,8 +4989,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "20th Century Boys",
+			"title": "",
+			"name": "20th Century Boys",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 19,
@@ -5001,8 +5001,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "XXX Holic",
+			"title": "",
+			"name": "XXX Holic",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "CLAMP",
 			"tomeNumber": 19,
@@ -5013,8 +5013,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Soul Eater",
+			"title": "",
+			"name": "Soul Eater",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Atsushi Ohkubo",
 			"tomeNumber": 19,
@@ -5025,8 +5025,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Great Teacher Onizuka",
+			"title": "",
+			"name": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 19,
@@ -5037,8 +5037,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Bakuman",
+			"title": "",
+			"name": "Bakuman",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 19,
@@ -5049,8 +5049,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le successeur",
-			"mangasName": "Naruto",
+			"title": "Le successeur",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 19,
@@ -5061,8 +5061,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 20,
@@ -5073,8 +5073,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Yajirobe",
-			"mangasName": "Dragon Ball",
+			"title": "Yajirobe",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 20,
@@ -5085,8 +5085,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 20,
@@ -5097,8 +5097,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "20th Century Boys",
+			"title": "",
+			"name": "20th Century Boys",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 20,
@@ -5109,8 +5109,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Soul Eater",
+			"title": "",
+			"name": "Soul Eater",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Atsushi Ohkubo",
 			"tomeNumber": 20,
@@ -5121,8 +5121,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Great Teacher Onizuka",
+			"title": "",
+			"name": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 20,
@@ -5133,8 +5133,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Bakuman",
+			"title": "",
+			"name": "Bakuman",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Takeshi Obata & Tsugumi Oba",
 			"tomeNumber": 20,
@@ -5145,8 +5145,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Naruto versus Sasuke !!",
-			"mangasName": "Naruto",
+			"title": "Naruto versus Sasuke !!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 20,
@@ -5157,8 +5157,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 21,
@@ -5169,8 +5169,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Dragon Ball",
+			"title": "",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 21,
@@ -5181,8 +5181,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 21,
@@ -5193,8 +5193,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "20th Century Boys",
+			"title": "",
+			"name": "20th Century Boys",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 21,
@@ -5205,8 +5205,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Soul Eater",
+			"title": "",
+			"name": "Soul Eater",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Atsushi Ohkubo",
 			"tomeNumber": 21,
@@ -5217,8 +5217,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Great Teacher Onizuka",
+			"title": "",
+			"name": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 21,
@@ -5229,8 +5229,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Sans pitié!!",
-			"mangasName": "Naruto",
+			"title": "Sans pitié!!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 21,
@@ -5241,8 +5241,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 22,
@@ -5253,8 +5253,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 22,
@@ -5265,8 +5265,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "20th Century Boys",
+			"title": "",
+			"name": "20th Century Boys",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Naoki Urasawa",
 			"tomeNumber": 22,
@@ -5277,8 +5277,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Soul Eater",
+			"title": "",
+			"name": "Soul Eater",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Atsushi Ohkubo",
 			"tomeNumber": 22,
@@ -5289,8 +5289,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Great Teacher Onizuka",
+			"title": "",
+			"name": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 22,
@@ -5301,8 +5301,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Réincarnation",
-			"mangasName": "Naruto",
+			"title": "Réincarnation",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 22,
@@ -5313,8 +5313,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 23,
@@ -5325,8 +5325,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 23,
@@ -5337,8 +5337,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Soul Eater",
+			"title": "",
+			"name": "Soul Eater",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Atsushi Ohkubo",
 			"tomeNumber": 23,
@@ -5349,8 +5349,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Great Teacher Onizuka",
+			"title": "",
+			"name": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 23,
@@ -5361,8 +5361,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Crise...!!",
-			"mangasName": "Naruto",
+			"title": "Crise...!!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 23,
@@ -5373,8 +5373,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 24,
@@ -5385,8 +5385,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 24,
@@ -5397,8 +5397,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 24,
@@ -5409,8 +5409,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Soul Eater",
+			"title": "",
+			"name": "Soul Eater",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Atsushi Ohkubo",
 			"tomeNumber": 24,
@@ -5421,8 +5421,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Great Teacher Onizuka",
+			"title": "",
+			"name": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 24,
@@ -5433,8 +5433,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Tournant décisif !!",
-			"mangasName": "Naruto",
+			"title": "Tournant décisif !!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 24,
@@ -5445,8 +5445,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 25,
@@ -5457,8 +5457,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 25,
@@ -5469,8 +5469,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 25,
@@ -5481,8 +5481,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Soul Eater",
+			"title": "",
+			"name": "Soul Eater",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Atsushi Ohkubo",
 			"tomeNumber": 25,
@@ -5493,8 +5493,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "GTO - Great Teacher Onizuka",
+			"title": "",
+			"name": "GTO - Great Teacher Onizuka",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tôru Fujisawa",
 			"tomeNumber": 25,
@@ -5505,8 +5505,8 @@ Meteor.startup(function() {
 			"editor": "Pika",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Itachi et Sasuke",
-			"mangasName": "Naruto",
+			"title": "Itachi et Sasuke",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 25,
@@ -5517,8 +5517,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 26,
@@ -5529,8 +5529,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le Petit Dende",
-			"mangasName": "Dragon Ball",
+			"title": "Le Petit Dende",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 26,
@@ -5541,8 +5541,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 26,
@@ -5553,8 +5553,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 26,
@@ -5565,8 +5565,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Séparation...!!",
-			"mangasName": "Naruto",
+			"title": "Séparation...!!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 26,
@@ -5577,8 +5577,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 27,
@@ -5589,8 +5589,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "FullMetal Alchemist",
+			"title": "",
+			"name": "FullMetal Alchemist",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Hiromu Arakawa",
 			"tomeNumber": 27,
@@ -5601,8 +5601,8 @@ Meteor.startup(function() {
 			"editor": "Kurokawa",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 27,
@@ -5613,8 +5613,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le jour du départ !!",
-			"mangasName": "Naruto",
+			"title": "Le jour du départ !!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 27,
@@ -5625,8 +5625,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 28,
@@ -5637,8 +5637,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Trunks",
-			"mangasName": "Dragon Ball",
+			"title": "Trunks",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 28,
@@ -5649,8 +5649,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 28,
@@ -5661,8 +5661,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le retour au pays !!",
-			"mangasName": "Naruto",
+			"title": "Le retour au pays !!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 28,
@@ -5673,8 +5673,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 29,
@@ -5685,8 +5685,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 29,
@@ -5697,8 +5697,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 29,
@@ -5709,8 +5709,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Kakashi versus Itachi!!",
-			"mangasName": "Naruto",
+			"title": "Kakashi versus Itachi!!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 29,
@@ -5721,8 +5721,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 30,
@@ -5733,8 +5733,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Réunification",
-			"mangasName": "Dragon Ball",
+			"title": "Réunification",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 30,
@@ -5745,8 +5745,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 30,
@@ -5757,8 +5757,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 30,
@@ -5769,8 +5769,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Chiyo et Sakura",
-			"mangasName": "Naruto",
+			"title": "Chiyo et Sakura",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 30,
@@ -5781,8 +5781,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 31,
@@ -5793,8 +5793,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 31,
@@ -5805,8 +5805,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 31,
@@ -5817,8 +5817,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Testament !!",
-			"mangasName": "Naruto",
+			"title": "Testament !!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 31,
@@ -5829,8 +5829,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "City Hunter",
+			"title": "",
+			"name": "City Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Tsukasa Hojo",
 			"tomeNumber": 32,
@@ -5841,8 +5841,8 @@ Meteor.startup(function() {
 			"editor": "Panini",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 32,
@@ -5853,8 +5853,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Hunter X Hunter",
+			"title": "",
+			"name": "Hunter X Hunter",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Yoshihiro Togashi",
 			"tomeNumber": 32,
@@ -5865,8 +5865,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Sur les traces de Sasuke !!",
-			"mangasName": "Naruto",
+			"title": "Sur les traces de Sasuke !!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 32,
@@ -5877,8 +5877,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le Défi",
-			"mangasName": "Dragon Ball",
+			"title": "Le Défi",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 33,
@@ -5889,8 +5889,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 33,
@@ -5901,8 +5901,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Mission secrète...!!",
-			"mangasName": "Naruto",
+			"title": "Mission secrète...!!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 33,
@@ -5913,8 +5913,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le Combat final de Sangoku",
-			"mangasName": "Dragon Ball",
+			"title": "Le Combat final de Sangoku",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 34,
@@ -5925,8 +5925,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 34,
@@ -5937,8 +5937,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Les retrouvailles...!!",
-			"mangasName": "Naruto",
+			"title": "Les retrouvailles...!!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 34,
@@ -5949,8 +5949,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 35,
@@ -5961,8 +5961,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Un nouveau duo !!",
-			"mangasName": "Naruto",
+			"title": "Un nouveau duo !!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 35,
@@ -5973,8 +5973,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 36,
@@ -5985,8 +5985,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "L'équipe 10",
-			"mangasName": "Naruto",
+			"title": "L'équipe 10",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 36,
@@ -5997,8 +5997,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Berserk",
+			"title": "",
+			"name": "Berserk",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Kentaro Miura",
 			"tomeNumber": 37,
@@ -6009,8 +6009,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le combat de Shikamaru !!",
-			"mangasName": "Naruto",
+			"title": "Le combat de Shikamaru !!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 37,
@@ -6021,8 +6021,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "nuit de l 'entraînement...!!",
-			"mangasName": "Naruto",
+			"title": "nuit de l 'entraînement...!!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 38,
@@ -6033,8 +6033,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Boo",
-			"mangasName": "Dragon Ball",
+			"title": "Boo",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 39,
@@ -6045,8 +6045,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Ceux qui font bouger les choses",
-			"mangasName": "Naruto",
+			"title": "Ceux qui font bouger les choses",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 39,
@@ -6057,8 +6057,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "La Fusion",
-			"mangasName": "Dragon Ball",
+			"title": "La Fusion",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 40,
@@ -6069,8 +6069,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "L'art ultime !!",
-			"mangasName": "Naruto",
+			"title": "L'art ultime !!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 40,
@@ -6081,8 +6081,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Super Gotenks",
-			"mangasName": "Dragon Ball",
+			"title": "Super Gotenks",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 41,
@@ -6093,8 +6093,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le choix de Jiraya !!",
-			"mangasName": "Naruto",
+			"title": "Le choix de Jiraya !!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 41,
@@ -6105,8 +6105,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "La Victoire",
-			"mangasName": "Dragon Ball",
+			"title": "La Victoire",
+			"name": "Dragon Ball",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Akira Toriyama",
 			"tomeNumber": 42,
@@ -6117,8 +6117,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le secret du kaléidoscope hypnotique...!!",
-			"mangasName": "Naruto",
+			"title": "Le secret du kaléidoscope hypnotique...!!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 42,
@@ -6129,8 +6129,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Celui qui sait",
-			"mangasName": "Naruto",
+			"title": "Celui qui sait",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 43,
@@ -6141,8 +6141,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Traditions d'ermite",
-			"mangasName": "Naruto",
+			"title": "Traditions d'ermite",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 44,
@@ -6153,8 +6153,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Konoha, Théâtre de guerre!!",
-			"mangasName": "Naruto",
+			"title": "Konoha, Théâtre de guerre!!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 45,
@@ -6165,8 +6165,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le retour de Naruto !!",
-			"mangasName": "Naruto",
+			"title": "Le retour de Naruto !!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 46,
@@ -6177,8 +6177,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le sceau brisé !!",
-			"mangasName": "Naruto",
+			"title": "Le sceau brisé !!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 47,
@@ -6189,8 +6189,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Hourras au village !!",
-			"mangasName": "Naruto",
+			"title": "Hourras au village !!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 48,
@@ -6201,8 +6201,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le conseil des cinq Kage...!!",
-			"mangasName": "Naruto",
+			"title": "Le conseil des cinq Kage...!!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 49,
@@ -6213,8 +6213,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Duel à mort dans la prison aqueuse !!",
-			"mangasName": "Naruto",
+			"title": "Duel à mort dans la prison aqueuse !!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 50,
@@ -6225,8 +6225,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Sasuke vs danzô...!!",
-			"mangasName": "Naruto",
+			"title": "Sasuke vs danzô...!!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 51,
@@ -6237,8 +6237,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Réalités multiples",
-			"mangasName": "Naruto",
+			"title": "Réalités multiples",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 52,
@@ -6249,8 +6249,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "La naissance de Naruto",
-			"mangasName": "Naruto",
+			"title": "La naissance de Naruto",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 53,
@@ -6261,8 +6261,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Un pont pour la paix",
-			"mangasName": "Naruto",
+			"title": "Un pont pour la paix",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 54,
@@ -6273,8 +6273,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Le début de la grande guerre !",
-			"mangasName": "Naruto",
+			"title": "Le début de la grande guerre !",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 55,
@@ -6285,8 +6285,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "L'équipe asuna de nouveau réunie !",
-			"mangasName": "Naruto",
+			"title": "L'équipe asuna de nouveau réunie !",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 56,
@@ -6297,8 +6297,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Naruto part en guerre...!!",
-			"mangasName": "Naruto",
+			"title": "Naruto part en guerre...!!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 57,
@@ -6309,8 +6309,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Naruto vs Itachi!!",
-			"mangasName": "Naruto",
+			"title": "Naruto vs Itachi!!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 58,
@@ -6321,8 +6321,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Côte à côte...!!",
-			"mangasName": "Naruto",
+			"title": "Côte à côte...!!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 59,
@@ -6333,8 +6333,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Kurama",
-			"mangasName": "Naruto",
+			"title": "Kurama",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 60,
@@ -6345,8 +6345,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "frères unis dans le combat!!",
-			"mangasName": "Naruto",
+			"title": "frères unis dans le combat!!",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 61,
@@ -6357,8 +6357,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Fissure",
-			"mangasName": "Naruto",
+			"title": "Fissure",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 62,
@@ -6369,8 +6369,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Monde onirique",
-			"mangasName": "Naruto",
+			"title": "Monde onirique",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 63,
@@ -6381,8 +6381,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Jubi",
-			"mangasName": "Naruto",
+			"title": "Jubi",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 64,
@@ -6393,8 +6393,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Naruto",
+			"title": "",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 65,
@@ -6405,8 +6405,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Naruto",
+			"title": "",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 66,
@@ -6417,8 +6417,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Naruto",
+			"title": "",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 67,
@@ -6429,8 +6429,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "",
-			"mangasName": "Naruto",
+			"title": "",
+			"name": "Naruto",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Masashi Kishimoto",
 			"tomeNumber": 68,
@@ -6441,8 +6441,8 @@ Meteor.startup(function() {
 			"editor": "Kana",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Je serai toujours à tes côtés",
-			"mangasName": "One Piece",
+			"title": "Je serai toujours à tes côtés",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 74,
@@ -6453,8 +6453,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Ma gratitude",
-			"mangasName": "One Piece",
+			"title": "Ma gratitude",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 75,
@@ -6465,8 +6465,8 @@ Meteor.startup(function() {
 			"editor": "Glénat",
 			"version": "fr"
 		}, {
-			"tomeTitle": "Pousuit ta route",
-			"mangasName": "One Piece",
+			"title": "Pousuit ta route",
+			"name": "One Piece",
 			"user": "K78ciJjtN6FYCMG9p",
 			"author": "Eiichiro Oda",
 			"tomeNumber": 76,

@@ -101,9 +101,9 @@ Template.addMangas.events({
 		var mangas = {
 			title: $('#title').val(),
 			user: Meteor.userId(),
-			mangasName: $('#mangasName').val(),
+			name: $('#mangasName').val(),
 			author: $('#author').val(),
-			tomeNumber: filterInt($('#tomeNumber').val()),
+			number: filterInt($('#tomeNumber').val()),
 			isbn: $('#isbn').val(),
 			cover: $('#cover').val(),
 			releaseDate: $('#releaseDate').val(),

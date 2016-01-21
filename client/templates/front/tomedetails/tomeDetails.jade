@@ -4,7 +4,7 @@ template(name="tomeDetails")
 			.panel.panel-default
 				.panel-heading
 					.panel-title
-						h1 #{mangasName}
+						h1 #{name}
 							small {{_ "by"}} #{author}
 				.panel-body
 					.col-xs-12.col-sm-12.col-md-6.col-lg-6
@@ -15,7 +15,7 @@ template(name="tomeDetails")
 								img(src="#{cover}" alt="#{title}")
 								.caption
 									h3.text-center #{title}
-									h4.text-center {{_ "tome"}} #{tomeNumber} - {{_ "version"}} #{version}
+									h4.text-center {{_ "tome"}} #{number} - {{_ "version"}} #{version}
 					.col-xs-12.col-sm-12.col-md-6.col-lg-6
 						.panel.panel-default
 							.panel-heading
@@ -23,7 +23,7 @@ template(name="tomeDetails")
 							.panel-body
 								if title
 									p {{_ "tomeTitle"}} : #{title}
-								p {{_ "mangasName"}} : #{mangasName}
+								p {{_ "mangasName"}} : #{name}
 								p {{_ "author"}} :
 									a(href="{{pathFor 'mangaka'}}") #{author}
 								p {{_ "released"}} : #{displayDate}
