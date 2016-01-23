@@ -15,6 +15,7 @@ Template.addMangaForUserStep2.helpers({
 				number: 1
 			}
 		}).fetch();
+		// Add tomes only if the user own tomes
 		if (tomes.length !== 0) {
 			for (var i = 0; i < manga.tomes.length; i++) {
 				if (tomes[i].number === manga.tomes[i].number) {
