@@ -4,9 +4,23 @@ Template.addMangaForUserStep2.onRendered(function() {
 
 Template.addMangaForUserStep2.helpers({
 	manga: function() {
-		return MangasData.findOne({
+		var manga = MangasData.findOne({
 			'_id': Router.current().params._id
 		});
+		var tomes = Mangas.find({
+			'user': Meteor.userId(),
+			'name': manga.names.fr
+		}, {
+			sort: {
+				number: 1
+			}
+		}).fetch();
+		for (var i = 0; i < manga.tomes.length; i++) {
+			if (tomes[i].number === manga.tomes[i].number) {
+				manga.tomes[i].owned = tomes[i].owned
+			}
+		}
+		return manga;
 	}
 });
 

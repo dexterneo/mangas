@@ -21,4 +21,6 @@ template(name='home')
 		.col-xs-12.col-sm-12.col-md-12.col-lg-12
 			#coverList.grid
 				each covers
-					+cover
+					.grid-item.mangas-cover
+						a.thumbnail(href="{{pathFor 'addMangaForUserStep2'}}")
+							img(src="#{cover}")

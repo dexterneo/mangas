@@ -16,7 +16,10 @@ template(name="addMangaForUserStep2")
 							.mangas.grid-item
 								a.thumbnail(href="{{pathFor 'tomeDetails'}}")
 									img(src="#{cover}" alt="#{mangasName}")
-								button.addToCollection.btn.btn-default.btn-block(type="button") {{_ "clickToAddToCollection"}}
+								if owned
+									button.addToCollection.btn.btn-success.btn-block(type="button") {{_ "clickToAddToCollection"}}
+								else
+									button.addToCollection.btn.btn-default.btn-block(type="button") {{_ "clickToAddToCollection"}}
 						.clearfix
 							button.ownThemAll.btn.btn-primary(type="button") {{_ "ownThemAll"}}
 							button.addTomes.btn.btn-success(type="button") {{_ "addTomes"}}

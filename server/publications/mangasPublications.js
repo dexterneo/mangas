@@ -28,3 +28,10 @@ Meteor.publish('allTomes', function(userId, name) {
 		"name": name
 	});
 });
+
+// Send back all tomes for a userId
+Meteor.publish('allTomesForUser', function(userId) {
+	return Mangas.find({
+		"user": userId
+	});
+});
