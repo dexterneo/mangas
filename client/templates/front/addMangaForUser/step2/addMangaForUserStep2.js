@@ -1,3 +1,7 @@
+Template.addMangaForUserStep2.onRendered(function() {
+	Session.set("toggle", 0);
+});
+
 Template.addMangaForUserStep2.helpers({
 	manga: function() {
 		return MangasData.findOne({
@@ -13,8 +17,14 @@ Template.addMangaForUserStep2.events({
 	},
 	"click .ownThemAll": function(e, t) {
 		e.preventDefault();
-		$(".ownThemAll").toggleClass("btn-primary btn-warning");
-		return $(".addToCollection").toggleClass("btn-default btn-success");
+		if (Session.get("toggle") === 0) {
+			$(".addToCollection").removeClass("btn-default").addClass("btn-success");
+			Session.set("toggle", 1);
+		} else {
+			$(".addToCollection").removeClass("btn-success").addClass("btn-default");
+			Session.set("toggle", 0);
+		}
+		return $(".ownThemAll").toggleClass("btn-primary btn-warning");
 	},
 	"click .addTomes": function(e, t) {
 		var manga = this;
