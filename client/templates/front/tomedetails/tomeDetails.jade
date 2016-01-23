@@ -35,16 +35,14 @@ template(name="tomeDetails")
 										.panel-heading
 											h5 {{_ "inBiblio"}}
 										.panel-body
-											p {{_ "setOwnedFalse"}}
-												button#setOwnedFalse.btn.btn-danger(type="button")
-													span.glyphicon.glyphicon-remove
+											button#setOwnedFalse.btn.btn-danger(type="button") {{_ "setOwnedFalse"}}
+												span.glyphicon.glyphicon-remove
 									else
 										.panel-heading
 											h5 {{_ "notInBiblio"}}
 										.panel-body
-											p {{_ "setOwnedTrue"}}
-												button#setOwnedTrue.btn.btn-success(type="button")
-													span.glyphicon.glyphicon-ok
+											button#setOwnedTrue.btn.btn-success(type="button") {{_ "setOwnedTrue"}}
+												span.glyphicon.glyphicon-ok
 								if notOwned
 									.panel.panel-default
 										.panel-heading
