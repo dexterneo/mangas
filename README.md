@@ -1,4 +1,4 @@
-# Mangatek [Codeship Status for Mangatek](https://codeship.com/projects/d0df1a90-a444-0133-52bb-1ae2673d316b/status?branch=master)
+# Mangatek ![Codeship Status for Mangatek](https://codeship.com/projects/d0df1a90-a444-0133-52bb-1ae2673d316b/status?branch=master)
 
 Is a tool where anyone can create and manage his(her) mangas library.
 
