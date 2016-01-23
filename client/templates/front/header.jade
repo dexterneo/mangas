@@ -18,8 +18,5 @@ template(name="header")
 						if admin
 							li(class="#{addCompleteMangasActive}")
 								a(href="{{pathFor 'addCompleteMangas'}}") {{_ "addCompleteMangas"}}
-							form.navbar-form.navbar-left#buttonAddMangas
-								button.btn.btn-warning(type="button" data-toggle="modal" data-target="#myModal") {{_ "addAMangas"}}
 				.nav.navbar-nav.navbar-right
 					+loginButtons
-	+addMangas
