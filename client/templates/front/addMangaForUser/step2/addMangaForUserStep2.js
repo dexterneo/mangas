@@ -15,9 +15,11 @@ Template.addMangaForUserStep2.helpers({
 				number: 1
 			}
 		}).fetch();
-		for (var i = 0; i < manga.tomes.length; i++) {
-			if (tomes[i].number === manga.tomes[i].number) {
-				manga.tomes[i].owned = tomes[i].owned
+		if (tomes.length !== 0) {
+			for (var i = 0; i < manga.tomes.length; i++) {
+				if (tomes[i].number === manga.tomes[i].number) {
+					manga.tomes[i].owned = tomes[i].owned;
+				}
 			}
 		}
 		return manga;
