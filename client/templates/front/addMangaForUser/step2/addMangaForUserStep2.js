@@ -1,5 +1,8 @@
 Template.addMangaForUserStep2.onRendered(function() {
 	Session.set("toggle", 0);
+	if (Meteor.userId() === null) {
+		Router.go('home');
+	}
 });
 
 Template.addMangaForUserStep2.helpers({
