@@ -4,21 +4,23 @@ template(name='home')
 			h1 {{_ "applicationName"}}
 			p {{_ "catchPhrase"}}
 	.container
-		h2 {{_ "whatIsIt"}}
-		ul
-			li {{_ "whatIsItAnswer1"}}
-			li {{_ "whatIsItAnswer2"}}
-			li {{_ "whatIsItAnswer3"}}
-			li {{_ "whatIsItAnswer4"}}
-		h2 {{_ "howToBegin"}}
-		ol
-			li {{_ "step1"}}
-			li {{_ "step2"}}
-			li {{_ "step3"}}
-			li {{_ "step4"}}
-			li {{_ "step5"}}
-		h2 {{_ "mangasOnApplication"}}
-		.col-xs-12.col-sm-12.col-md-12.col-lg-12
+		.cleafix
+			.hidden-xs.col-sm-12.col-md-6.col-lg-6
+				h2 {{_ "whatIsIt"}}
+				ul
+					li {{_ "whatIsItAnswer1"}}
+					li {{_ "whatIsItAnswer2"}}
+					li {{_ "whatIsItAnswer3"}}
+					li {{_ "whatIsItAnswer4"}}
+			.hidden-xs.col-sm-12.col-md-6.col-lg-6
+				h2 {{_ "howToBegin"}}
+				ol
+					li {{_ "step1"}}
+					li {{_ "step2"}}
+					li {{_ "step3"}}
+					li {{_ "step4"}}
+		.col-sm-12.col-md-12.col-lg-12
+			h2 {{_ "mangasOnApplication"}}
 			#coverList.grid
 				each covers
 					.grid-item.mangas-cover
