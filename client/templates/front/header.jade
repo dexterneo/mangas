@@ -18,5 +18,7 @@ template(name="header")
 						if admin
 							li(class="#{addCompleteMangasActive}")
 								a(href="{{pathFor 'addCompleteMangas'}}") {{_ "addCompleteMangas"}}
+							li(class="#{viewMangasToAddActive}")
+								a(href="{{pathFor 'viewMangasToAdd'}}") {{_ "viewMangasToAdd"}}
 				.nav.navbar-nav.navbar-right
 					+loginButtons

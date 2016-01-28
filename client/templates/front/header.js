@@ -20,6 +20,13 @@ Template.header.helpers({
 			return false;
 		}
 	},
+	viewMangasToAddActive: function() {
+		if (Router.current().route._path === '/admin/viewMangasToAdd') {
+			return 'active';
+		} else {
+			return false;
+		}
+	},
 	admin: function() {
 		if (Meteor.user().profile.admin) {
 			return true;
