@@ -1,10 +1,10 @@
 # Mangatek ![Codeship Status for Mangatek](https://codeship.com/projects/4a154410-a834-0133-19e4-260181bada64/status?branch=master)
 
-Is a tool where anyone can create and manage his(her) mangas library.
+Is a SaaS product where anyone can create and manage his(her) mangas library.
 
 ## Why using Mangatek ?
 
-If you have more than 10 mangas and you don't own all the tomes.
+If you have more than 10 mangas series and you don't own all the tomes.
 When you go to the books shop, you now know which tome is missing in your collection.
 
 ## Features
@@ -16,13 +16,12 @@ When you go to the books shop, you now know which tome is missing in your collec
 * See the details of a given tome
 * Add a tome to your collection
 * Remove a tome off your collection
-* Add a missing tome to your collection
 
 ## Future features
 
-* Add a list of tomes of a given mangas because currently you have to add tome by tome
 * Sort function
 * Search function
+* Ask for a manga to be added on the site
 
 ## Pull Request are welcome
 
