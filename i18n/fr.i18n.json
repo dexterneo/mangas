@@ -71,5 +71,8 @@
 	"toCollection": "à votre mangathèque",
 	"clickToAddToCollection": "Ajouter ce tome",
 	"ownThemAll": "Sélectionnez/Dé-sélectionnez les tous !",
-	"viewMangasToAdd": "Mangas à ajouter"
+	"viewMangasToAdd": "Mangas à ajouter",
+	"dontSeeMangasYouOwn": "Il manque un manga que vous possédez ?",
+	"add": "Ajouter",
+	"waitingExplanation": "Nous l'ajouterons rapidement à Mangatek pour que vous puissiez l'ajouter dans votre mangathèque."
 }
