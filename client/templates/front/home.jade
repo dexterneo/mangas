@@ -26,3 +26,9 @@ template(name='home')
 					.grid-item.mangas-cover
 						a.thumbnail(href="{{pathFor 'addMangaForUserStep2'}}")
 							img(src="#{cover}")
+		.col-sm-12.col-md-12.col-lg-12
+			h2 {{_ "dontSeeMangasYouOwn"}}
+			form.form-inline
+				.form-group
+					label(for="mangasToAdd") {{_ "mangasName"}}
+					input.form-control(type="text")

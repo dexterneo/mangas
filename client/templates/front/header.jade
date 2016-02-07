@@ -8,7 +8,7 @@ template(name="header")
 					span.icon-bar
 					span.icon-bar
 				a.navbar-brand(href="{{pathFor 'home'}}") {{_ "applicationName"}}
-			#mkp-navbar.collapse.navbar-collapse
+			.collapse.navbar-collapse
 				if currentUser
 					ul.nav.navbar-nav
 						li(class="#{homeActive}")
