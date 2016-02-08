@@ -1,0 +1,9 @@
+template(name="addMangaToWaitingList")
+	.col-sm-12.col-md-12.col-lg-12
+		h2 {{_ "dontSeeMangasYouOwn"}}
+		form.form-inline
+			.form-group
+				label(for="mangasToAdd") {{_ "mangasName"}}
+				input.form-control(type="text")
+				button.btn.btn-default#addMangaToWaitingList(type="button") {{_ "add"}}
+		p {{_ "waitingExplanation"}}

@@ -5,3 +5,5 @@ template(name="addMangaForUserStep1")
 			#coverList.grid
 				each covers
 					+cover
+		if ifLogIn
+			+AddMangaToWaitingList

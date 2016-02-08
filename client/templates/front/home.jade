@@ -23,15 +23,6 @@ template(name='home')
 			h2 {{_ "mangasOnApplication"}}
 			#coverList.grid
 				each covers
-					.grid-item.mangas-cover
-						a.thumbnail(href="{{pathFor 'addMangaForUserStep2'}}")
-							img(src="#{cover}")
+					+mangaCover
 		if ifLogIn
-			.col-sm-12.col-md-12.col-lg-12
-				h2 {{_ "dontSeeMangasYouOwn"}}
-				form.form-inline
-					.form-group
-						label(for="mangasToAdd") {{_ "mangasName"}}
-						input.form-control(type="text")
-						button.btn.btn-default#addMangaToWaitingList(type="button") {{_ "add"}}
-				p {{_ "waitingExplanation"}}
+			+AddMangaToWaitingList
