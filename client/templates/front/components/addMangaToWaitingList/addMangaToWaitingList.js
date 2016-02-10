@@ -20,7 +20,6 @@ class AddMangaToWaitingList extends BlazeComponent {
 			if (error) {
 				return throwError(error.message);
 			} else {
-				console.log(result);
 				$('#mangasNameToAdd').val('');
 			}
 		});
