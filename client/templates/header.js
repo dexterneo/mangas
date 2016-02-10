@@ -13,15 +13,8 @@ Template.header.helpers({
 			return false;
 		}
 	},
-	addCompleteMangasActive: function() {
-		if (Router.current().route._path === '/admin/addCompleteMangas') {
-			return 'active';
-		} else {
-			return false;
-		}
-	},
-	viewMangasToAddActive: function() {
-		if (Router.current().route._path === '/admin/viewMangasToAdd') {
+	adminActive: function() {
+		if (Router.current().route._path.match('admin')) {
 			return 'active';
 		} else {
 			return false;

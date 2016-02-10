@@ -16,9 +16,7 @@ template(name="header")
 						li(class="#{missingActive}")
 							a(href="{{pathFor 'missingMangas'}}") {{_ "missingMangas"}}
 						if admin
-							li(class="#{addCompleteMangasActive}")
-								a(href="{{pathFor 'addCompleteMangas'}}") {{_ "addCompleteMangas"}}
-							li(class="#{viewMangasToAddActive}")
-								a(href="{{pathFor 'viewMangasToAdd'}}") {{_ "viewMangasToAdd"}}
+							li(class="#{adminActive}")
+								a(href="{{pathFor 'adminHome'}}") {{_ "admin"}}
 				.nav.navbar-nav.navbar-right
 					+loginButtons
