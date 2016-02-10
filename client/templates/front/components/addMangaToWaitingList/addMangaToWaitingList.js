@@ -11,7 +11,7 @@ class AddMangaToWaitingList extends BlazeComponent {
 
 	addMangaToWaitingList() {
 		var manga = {
-			askBy: Meteor.userId(),
+			askedBy: Meteor.userId(),
 			name: $('#mangasNameToAdd').val(),
 			date: new Date()
 		};
