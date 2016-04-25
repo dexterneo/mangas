@@ -1,6 +1,6 @@
 # Mangatek
 
-Is a SaaS product where anyone can create and manage his(her) mangas library.
+Anyone can create and manage his(her) mangas library.
 
 ## Why using Mangatek ?
 
