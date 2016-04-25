@@ -1,37 +1,37 @@
 Template.tomeDetails.helpers({
-	displayDate: function() {
-		return moment(this.releaseDate, "YYYY/MM/DD").fromNow();
+	displayDate() {
+		return moment(this.releaseDate, 'YYYY/MM/DD').fromNow();
 	},
-	notOwned: function() {
+	notOwned() {
 		return !this.owned;
 	},
-	allTomesOwned: function() {
+	allTomesOwned() {
 		return Mangas.find({
-			"user": Meteor.userId(),
-			"name": this.name,
-			"owned": true
+			user: Meteor.userId(),
+			name: this.name,
+			owned: true
 		}, {
 			sort: {
-				"number": 1
+				'number': 1
 			}
 		});
 	},
-	allTomesMissing: function() {
+	allTomesMissing() {
 		return Mangas.find({
-			"user": Meteor.userId(),
-			"name": this.name,
-			"owned": false
+			user: Meteor.userId(),
+			name: this.name,
+			owned: false
 		}, {
 			sort: {
-				"number": 1
+				'number': 1
 			}
 		});
 	},
-	missingTome: function() {
+	missingTome() {
 		var a = Mangas.findOne({
-			"user": Meteor.userId(),
-			"name": this.name,
-			"owned": false
+			user: Meteor.userId(),
+			name: this.name,
+			owned: false
 		});
 		if (a) {
 			return true;
@@ -39,30 +39,30 @@ Template.tomeDetails.helpers({
 			return false;
 		}
 	},
-	ownedTome: function() {
+	ownedTome() {
 		var a = Mangas.findOne({
-			"user": Meteor.userId(),
-			"name": this.name,
-			"owned": true
+			user: Meteor.userId(),
+			name: this.name,
+			owned: true
 		});
 		if (a) {
 			return true;
 		} else {
 			return false;
 		}
-	},
+	}
 });
 
 Template.tomeDetails.events({
 	'click #setOwnedTrue': function() {
-		Meteor.call('setOwnedTrue', this._id, function(error) {
+		Meteor.call('setOwnedTrue', this._id, (error, result) => {
 			if (error) {
 				return throwError(error.message);
 			}
 		});
 	},
 	'click #setOwnedFalse': function() {
-		Meteor.call('setOwnedFalse', this._id, function(error) {
+		Meteor.call('setOwnedFalse', this._id, (error, result) => {
 			if (error) {
 				return throwError(error.message);
 			}

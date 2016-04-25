@@ -8,7 +8,7 @@ filterInt = function(value) {
 };
 
 isValidUrl = function(url) {
-	var urlregex = new RegExp("^(http|https|ftp)\://([a-zA-Z0-9\.\-]+(\:[a-zA-Z0-9\.&amp;%\$\-]+)*@)*((25[0-5]|2[0-4][0-9]|[0-1]{1}[0-9]{2}|[1-9]{1}[0-9]{1}|[1-9])\.(25[0-5]|2[0-4][0-9]|[0-1]{1}[0-9]{2}|[1-9]{1}[0-9]{1}|[1-9]|0)\.(25[0-5]|2[0-4][0-9]|[0-1]{1}[0-9]{2}|[1-9]{1}[0-9]{1}|[1-9]|0)\.(25[0-5]|2[0-4][0-9]|[0-1]{1}[0-9]{2}|[1-9]{1}[0-9]{1}|[0-9])|([a-zA-Z0-9\-]+\.)*[a-zA-Z0-9\-]+\.(com|edu|gov|int|mil|net|org|biz|arpa|info|name|pro|aero|coop|museum|[a-zA-Z]{2}))(\:[0-9]+)*(/($|[a-zA-Z0-9\.\,\?\'\\\+&amp;%\$#\=~_\-]+))*$");
+	var urlregex = new RegExp('^(http|https|ftp)\://([a-zA-Z0-9\.\-]+(\:[a-zA-Z0-9\.&amp;%\$\-]+)*@)*((25[0-5]|2[0-4][0-9]|[0-1]{1}[0-9]{2}|[1-9]{1}[0-9]{1}|[1-9])\.(25[0-5]|2[0-4][0-9]|[0-1]{1}[0-9]{2}|[1-9]{1}[0-9]{1}|[1-9]|0)\.(25[0-5]|2[0-4][0-9]|[0-1]{1}[0-9]{2}|[1-9]{1}[0-9]{1}|[1-9]|0)\.(25[0-5]|2[0-4][0-9]|[0-1]{1}[0-9]{2}|[1-9]{1}[0-9]{1}|[0-9])|([a-zA-Z0-9\-]+\.)*[a-zA-Z0-9\-]+\.(com|edu|gov|int|mil|net|org|biz|arpa|info|name|pro|aero|coop|museum|[a-zA-Z]{2}))(\:[0-9]+)*(/($|[a-zA-Z0-9\.\,\?\'\\\+&amp;%\$#\=~_\-]+))*$');
 	if (urlregex.test(url)) {
 		return url;
 	} else {
@@ -17,7 +17,7 @@ isValidUrl = function(url) {
 };
 
 getFullName = function(obj) {
-	var fullName = "";
+	var fullName = '';
 	if (obj.firstName === undefined && obj.lastName === undefined) {
 		return fullName;
 	} else if (obj.lastName === undefined) {
@@ -27,13 +27,13 @@ getFullName = function(obj) {
 		fullName = obj.lastName;
 		return fullName;
 	} else {
-		fullName = obj.firstName + " " + obj.lastName;
+		fullName = obj.firstName + ' ' + obj.lastName;
 		return fullName;
 	}
 };
 
 getAuthors = function(list) {
-	var author = "";
+	var author = '';
 	if (list.length === 0) {
 		return author;
 	} else if (list.length === 1) {
@@ -44,7 +44,7 @@ getAuthors = function(list) {
 			if (i === 0) {
 				author = author.concat(getFullName(list[i]));
 			} else {
-				author = author.concat(" & ", getFullName(list[i]));
+				author = author.concat(' & ', getFullName(list[i]));
 			}
 		}
 		return author;

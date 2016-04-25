@@ -22,9 +22,9 @@ Meteor.publish('oneMangasData', function(id) {
 
 // Send all Mangas for a given mangaka
 Meteor.publish('mangaka', function(author) {
-	var newAuthor = author.split(" ");
+	var newAuthor = author.split(' ');
 	return MangasData.find({
-		"authors.firstName": newAuthor[0],
-		"authors.lastName": newAuthor[1]
+		'authors.firstName': newAuthor[0],
+		'authors.lastName': newAuthor[1]
 	});
 });

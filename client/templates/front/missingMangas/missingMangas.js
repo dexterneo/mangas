@@ -1,17 +1,17 @@
 Template.missingMangas.helpers({
-	mangasList: function() {
+	mangasList() {
 		return Mangas.find({
-			"user": Meteor.userId(),
-			"owned": false
+			user: Meteor.userId(),
+			owned: false
 		}, {
 			sort: {
-				"number": 1
+				number: 1
 			},
 			fields: {
-				"cover": 1,
-				"name": 1,
-				"number": 1,
-				"owned": 1
+				cover: 1,
+				name: 1,
+				number: 1,
+				owned: 1
 			}
 		});
 	}

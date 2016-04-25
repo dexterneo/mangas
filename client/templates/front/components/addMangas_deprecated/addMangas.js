@@ -2,10 +2,10 @@ Template.addMangas.helpers({
 	editorList: function() {
 		var list = _.uniq(Mangas.find({}, {
 			sort: {
-				"editor": 1
+				editor: 1
 			},
 			fields: {
-				"editor": 1
+				editor: 1
 			}
 		}).fetch().map(function(x) {
 			return x.editor;
@@ -21,10 +21,10 @@ Template.addMangas.helpers({
 	versionList: function() {
 		var list = _.uniq(Mangas.find({}, {
 			sort: {
-				"version": 1
+				'version': 1
 			},
 			fields: {
-				"version": 1
+				'version': 1
 			}
 		}).fetch().map(function(x) {
 			return x.version;
@@ -40,10 +40,10 @@ Template.addMangas.helpers({
 	mangasList: function() {
 		var list = _.uniq(Mangas.find({}, {
 			sort: {
-				"mangasName": 1
+				'mangasName': 1
 			},
 			fields: {
-				"mangasName": 1
+				'mangasName': 1
 			}
 		}).fetch().map(function(x) {
 			return x.mangasName;
@@ -59,10 +59,10 @@ Template.addMangas.helpers({
 	authorList: function() {
 		var list = _.uniq(Mangas.find({}, {
 			sort: {
-				"author": 1
+				'author': 1
 			},
 			fields: {
-				"author": 1
+				'author': 1
 			}
 		}).fetch().map(function(x) {
 			return x.author;
@@ -78,10 +78,10 @@ Template.addMangas.helpers({
 	genreList: function() {
 		var list = _.uniq(Mangas.find({}, {
 			sort: {
-				"genre": 1
+				'genre': 1
 			},
 			fields: {
-				"genre": 1
+				'genre': 1
 			}
 		}).fetch().map(function(x) {
 			return x.genre;

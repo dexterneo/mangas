@@ -3,13 +3,13 @@ Template.mangaka.helpers({
 		return Router.current().params.author;
 	},
 	serie() {
-		var newAuthor = Router.current().params.author.split(' ');
+		let newAuthor = Router.current().params.author.split(' ');
 		return MangasData.find({
-			"authors.firstName": newAuthor[0],
-			"authors.lastName": newAuthor[1]
+			'authors.firstName': newAuthor[0],
+			'authors.lastName': newAuthor[1]
 		}, {
 			sort: {
-				"names.fr": 1,
+				'names.fr': 1,
 				tomes: 1
 			}
 		});
