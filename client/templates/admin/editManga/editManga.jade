@@ -1,0 +1,76 @@
+template(name="editManga")
+	.panel.panel-default
+		.panel-heading
+			h2 Edition de #{names.fr}
+		.panel-body
+			form
+				.row
+					.col-xs-12.col-sm-6.col-md-4.col-lg-4
+						.form-group
+							label(for="namesFr") {{_ "namesFr"}}
+							input#namesFr.form-control(type="text" value="#{names.fr}")
+					.col-xs-12.col-sm-6.col-md-4.col-lg-4
+						.form-group
+							label(for="namesEn") {{_ "namesEn"}}
+							input#namesEn.form-control(type="text" value="#{names.en}")
+					.col-xs-12.col-sm-6.col-md-4.col-lg-4
+						.form-group
+							label(for="namesJp") {{_ "namesJp"}}
+							input#namesJp.form-control(type="text" value="#{names.jp}")
+			each authors
+				form
+					.row
+						.col-xs-12.col-sm-6.col-md-6.col-lg-6
+							.form-group
+								label(for="firstName") {{_ "firstName"}}
+								input.firstName.form-control(type="text" value="#{firstName}")
+						.col-xs-12.col-sm-6.col-md-6.col-lg-6
+							.form-group
+								label(for="lastName") {{_ "lastName"}}
+								input.lastName.form-control(type="text" value="#{lastName}")
+			form
+				.row
+					.col-xs-12.col-sm-6.col-md-6.col-lg-6
+						.form-group
+							label(for="coverManga") {{_ "coverManga"}}
+							input#coverManga.form-control(type="url" value="#{cover}")
+					.col-xs-12.col-sm-6.col-md-6.col-lg-6
+						a.thumbnail(href="#")
+							img(src="#{cover}" alt="#{names.fr}")
+			form
+				.form-group
+					label(for="genre") {{_ "genre"}}
+					input#genre.form-control(type="url" value="#{genre}")
+			each tomes
+				.panel.panel-default
+					.panel-heading
+						if title
+							h4.panel-title Titre : #{title}
+						else
+							h4.panel-title Tome n°#{number}
+					.panel-body
+						.row
+							.col-xs-12.col-sm-12.col-md-6.col-lg-6
+								#tomeDetailCover.panel.panel-default
+									.panel-heading
+										h4.panel-title {{_ "tomeCover"}}
+									.panel-body
+										.thumbnail
+											img(src="#{cover}" alt="#{title}")
+											.caption
+												h3.text-center #{title}
+												h4.text-center {{_ "tome"}} #{number} - {{_ "version"}} #{version}
+							.col-xs-12.col-sm-12.col-md-6.col-lg-6
+								.panel.panel-default
+									.panel-heading
+										h4.panel-title {{_ "tomeInformations"}}
+									.panel-body
+										if title
+											p {{_ "tomeTitle"}} : #{title}
+										p {{_ "mangasName"}} : #{name}
+										p {{_ "author"}} :
+											a(href="{{pathFor 'mangaka'}}") #{author}
+										p {{_ "released"}} : #{displayDate}
+										p {{_ "genre"}} : #{genre}
+										p {{_ "editor"}} : #{editor}
+										p {{_ "version"}} : #{version}
