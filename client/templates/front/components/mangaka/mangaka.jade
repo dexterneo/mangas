@@ -1,14 +1,12 @@
 template(name="mangaka")
-	.container
-		.panel.panel-default
-			.panel-heading
-				.panel-title
-					h1 #{author}
-			.panel-body
-				h2 {{_ "mangasByThisAuthor"}}
-				#coverList.grid
-					each serie
-						with tome1
-							.grid-item.mangas-cover
-								a.thumbnail(href="{{pathFor 'addMangaForUserStep1'}}")
-									img(src="#{cover}" alt="#{name}")
+	.panel.panel-default
+		.panel-heading
+			h1 #{author}
+				small {{_ "mangasByThisAuthor"}}
+		.panel-body
+			#coverList.grid
+				each serie
+					with tome1
+						.grid-item.mangas
+							a.thumbnail(href="{{pathFor 'addMangaForUserStep1'}}")
+								img(src="#{cover}" alt="#{name}")

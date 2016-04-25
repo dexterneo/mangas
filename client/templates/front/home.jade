@@ -1,28 +1,30 @@
 template(name='home')
 	.jumbotron
-		.container
-			h1 {{_ "applicationName"}}
-			p {{_ "catchPhrase"}}
-	.container
-		.cleafix
-			.hidden-xs.col-sm-12.col-md-6.col-lg-6
-				h2 {{_ "whatIsIt"}}
-				ul
-					li {{_ "whatIsItAnswer1"}}
-					li {{_ "whatIsItAnswer2"}}
-					li {{_ "whatIsItAnswer3"}}
-					li {{_ "whatIsItAnswer4"}}
-			.hidden-xs.col-sm-12.col-md-6.col-lg-6
-				h2 {{_ "howToBegin"}}
-				ol
-					li {{_ "step1"}}
-					li {{_ "step2"}}
-					li {{_ "step3"}}
-					li {{_ "step4"}}
-		.col-sm-12.col-md-12.col-lg-12
+		h1 {{_ "applicationName"}}
+		p {{_ "catchPhrase"}}
+	.row
+		.hidden-xs.col-sm-12.col-md-6.col-lg-6
+			.panel.panel-default
+				.panel-heading
+					h2.panel-title {{_ "whatIsIt"}}
+				.panel-body
+					ul
+						li {{_ "whatIsItAnswer1"}}
+						li {{_ "whatIsItAnswer2"}}
+						li {{_ "whatIsItAnswer3"}}
+						li {{_ "whatIsItAnswer4"}}
+		.hidden-xs.col-sm-12.col-md-6.col-lg-6
+			.panel.panel-default
+				.panel-heading
+					h2.panel-title {{_ "howToBegin"}}
+				.panel-body
+					ol
+						li {{_ "step1"}}
+						li {{_ "step2"}}
+						li {{_ "step3"}}
+						li {{_ "step4"}}
+	.panel.panel-default
+		.panel-heading
 			h2 {{_ "mangasOnApplication"}}
-			#coverList.grid
-				each covers
-					+mangaCover
-		if ifLogIn
-			+AddMangaToWaitingList
+		.panel-body
+			+mangasCoverList

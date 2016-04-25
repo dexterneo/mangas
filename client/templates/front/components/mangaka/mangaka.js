@@ -1,19 +1,20 @@
 Template.mangaka.helpers({
-	author: function() {
+	author() {
 		return Router.current().params.author;
 	},
-	serie: function() {
+	serie() {
 		var newAuthor = Router.current().params.author.split(' ');
 		return MangasData.find({
 			"authors.firstName": newAuthor[0],
 			"authors.lastName": newAuthor[1]
 		}, {
 			sort: {
-				"names.fr": 1
+				"names.fr": 1,
+				tomes: 1
 			}
 		});
 	},
-	tome1: function() {
+	tome1() {
 		return this.tomes[0];
 	}
 });

@@ -1,6 +1,11 @@
 template(name='missingMangas')
-	+buttonAddMangaForUser
-	.container
-		.grid
-			each mangasList
-				+mangas
+	.panel.panel-default
+		.panel-heading
+			h2 {{_ "allTomesMissing"}}
+		.panel-body
+			+buttonAddMangaForUser
+			.grid
+				each mangasList
+					+mangas
+		.panel-footer
+			+buttonAddMangaForUser

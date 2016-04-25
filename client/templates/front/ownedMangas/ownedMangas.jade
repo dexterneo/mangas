@@ -1,6 +1,11 @@
 template(name="ownedMangas")
-	+buttonAddMangaForUser
-	.container
-		.grid
-			each mangasList
-				+mangas
+	.panel.panel-default
+		.panel-heading
+			h2 {{_ "allTomesOwned"}}
+		.panel-body
+			+buttonAddMangaForUser
+			.grid
+				each mangasList
+					+mangas
+		.panel-footer
+			+buttonAddMangaForUser

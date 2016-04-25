@@ -1,63 +1,61 @@
 template(name="tomeDetails")
-	.container
-		.clearfix
-			.panel.panel-default
-				.panel-heading
-					.panel-title
-						h1 #{name}
-							small {{_ "by"}} #{author}
-				.panel-body
-					.col-xs-12.col-sm-12.col-md-6.col-lg-6
-						.panel.panel-default
-							.panel-heading
-								h4 {{_ "tomeCover"}}
-							.panel-body
+	.panel.panel-default
+		.panel-heading
+			h1 #{name}
+				small {{_ "by"}} #{author}
+		.panel-body
+			.row
+				.col-xs-12.col-sm-12.col-md-6.col-lg-6
+					#tomeDetailCover.panel.panel-default
+						.panel-heading
+							h4.panel-title {{_ "tomeCover"}}
+						.panel-body
+							.thumbnail
 								img(src="#{cover}" alt="#{title}")
 								.caption
 									h3.text-center #{title}
 									h4.text-center {{_ "tome"}} #{number} - {{_ "version"}} #{version}
-					.col-xs-12.col-sm-12.col-md-6.col-lg-6
-						.panel.panel-default
-							.panel-heading
-								h4 {{_ "tomeInformations"}}
-							.panel-body
-								if title
-									p {{_ "tomeTitle"}} : #{title}
-								p {{_ "mangasName"}} : #{name}
-								p {{_ "author"}} :
-									a(href="{{pathFor 'mangaka'}}") #{author}
-								p {{_ "released"}} : #{displayDate}
-								p {{_ "genre"}} : #{genre}
-								p {{_ "editor"}} : #{editor}
-								p {{_ "version"}} : #{version}
+				.col-xs-12.col-sm-12.col-md-6.col-lg-6
+					.panel.panel-default
+						.panel-heading
+							h4.panel-title {{_ "tomeInformations"}}
+						.panel-body
+							if title
+								p {{_ "tomeTitle"}} : #{title}
+							p {{_ "mangasName"}} : #{name}
+							p {{_ "author"}} :
+								a(href="{{pathFor 'mangaka'}}") #{author}
+							p {{_ "released"}} : #{displayDate}
+							p {{_ "genre"}} : #{genre}
+							p {{_ "editor"}} : #{editor}
+							p {{_ "version"}} : #{version}
+							.panel.panel-default
+								if owned
+									.panel-heading
+										h5.panel-title {{_ "inBiblio"}}
+									.panel-body
+										button#setOwnedFalse.btn-block.btn.btn-danger(type="button") {{_ "setOwnedFalse"}}
+											span.glyphicon.glyphicon-remove
+								else
+									.panel-heading
+										h5.panel-title {{_ "notInBiblio"}}
+									.panel-body
+										button#setOwnedTrue.btn-block.btn.btn-success(type="button") {{_ "setOwnedTrue"}}
+											span.glyphicon.glyphicon-ok
+							if notOwned
 								.panel.panel-default
-									if owned
-										.panel-heading
-											h5 {{_ "inBiblio"}}
-										.panel-body
-											button#setOwnedFalse.btn.btn-danger(type="button") {{_ "setOwnedFalse"}}
-												span.glyphicon.glyphicon-remove
-									else
-										.panel-heading
-											h5 {{_ "notInBiblio"}}
-										.panel-body
-											button#setOwnedTrue.btn.btn-success(type="button") {{_ "setOwnedTrue"}}
-												span.glyphicon.glyphicon-ok
-								if notOwned
-									.panel.panel-default
-										.panel-heading
-											h5 {{_ "buyTome"}}
-												span.glyphicon.glyphicon-shopping-cart
-										.panel-body
-											p
-												a(href="http://www.amazon.fr/s?field-keywords=#{isbn}" target="blank") {{_ "buyItOnAmazon"}}
-											p
-												a(href="http://www.priceminister.com/s/#{isbn}" target="blank") {{_ "buyItOnPriceMinister"}}
+									.panel-heading
+										h5.panel-title {{_ "buyTome"}}
+											span.glyphicon.glyphicon-shopping-cart
+									.panel-body
+										p
+											a(href="http://www.amazon.fr/s?field-keywords=#{isbn}" target="blank") {{_ "buyItOnAmazon"}}
+										p
+											a(href="http://www.priceminister.com/s/#{isbn}" target="blank") {{_ "buyItOnPriceMinister"}}
 			if missingTome
 				.panel.panel-danger
 					.panel-heading
-						.panel-title
-							h2 {{_ "allTomesMissing"}}
+						h2.panel-title {{_ "allTomesMissing"}}
 					.panel-body
 						#coverList.grid
 							each allTomesMissing
@@ -65,8 +63,7 @@ template(name="tomeDetails")
 			if ownedTome
 				.panel.panel-success
 					.panel-heading
-						.panel-title
-							h2 {{_ "allTomesOwned"}}
+						h2.panel-title {{_ "allTomesOwned"}}
 					.panel-body
 						#coverList.grid
 							each allTomesOwned

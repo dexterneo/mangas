@@ -1,4 +1,4 @@
-Template.addMangaForUserStep2.onRendered(function() {
+Template.addMangaForUserStep2.onRendered(() => {
 	Session.set("toggle", 0);
 	if (Meteor.userId() === null) {
 		Router.go('home');
@@ -6,13 +6,13 @@ Template.addMangaForUserStep2.onRendered(function() {
 });
 
 Template.addMangaForUserStep2.helpers({
-	manga: function() {
-		var manga = MangasData.findOne({
-			'_id': Router.current().params._id
+	manga() {
+		let manga = MangasData.findOne({
+			_id: Router.current().params._id
 		});
-		var tomes = Mangas.find({
-			'user': Meteor.userId(),
-			'name': manga.names.fr
+		let tomes = Mangas.find({
+			user: Meteor.userId(),
+			name: manga.names.fr
 		}, {
 			sort: {
 				number: 1
@@ -47,12 +47,12 @@ Template.addMangaForUserStep2.events({
 		return $(".ownThemAll").toggleClass("btn-primary btn-warning");
 	},
 	"click .addTomes": function(e, t) {
-		var manga = this;
+		let manga = this;
 		e.preventDefault();
-		$('.mangas').each(function(index, element) {
+		$('.mangas').each((index, element) => {
 			if (index + 1 === manga.tomes[index].number) {
-				var tomeData = manga.tomes[index];
-				var tome = {
+				let tomeData = manga.tomes[index];
+				let tome = {
 					title: tomeData.title || "",
 					user: Meteor.userId(),
 					name: manga.names.fr,
@@ -70,7 +70,7 @@ Template.addMangaForUserStep2.events({
 				} else {
 					tome.owned = false;
 				}
-				Meteor.call('mangasInsert', tome, function(error) {
+				Meteor.call('mangasInsert', tome, (error, result) => {
 					if (error) {
 						return throwError(error.message);
 					}
