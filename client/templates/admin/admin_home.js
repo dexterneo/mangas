@@ -16,7 +16,7 @@ Template.adminHome.helpers({
 				cover: 1,
 				tomes: 1
 			}
-		})
+		});
 	},
 	nbTomes() {
 		return this.tomes.length;
