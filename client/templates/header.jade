@@ -12,11 +12,11 @@ template(name="header")
 				if currentUser
 					ul.nav.navbar-nav
 						li(class="#{homeActive}")
-							a(href="{{pathFor 'ownedMangas'}}") {{_ "ownedMangas"}}
+							a.route(href="{{pathFor 'ownedMangas'}}" data-target='.navbar-collapse') {{_ "ownedMangas"}}
 						li(class="#{missingActive}")
-							a(href="{{pathFor 'missingMangas'}}") {{_ "missingMangas"}}
+							a.route(href="{{pathFor 'missingMangas'}}" data-target='.navbar-collapse') {{_ "missingMangas"}}
 						if admin
 							li(class="#{adminActive}")
-								a(href="{{pathFor 'adminHome'}}") {{_ "admin"}}
+								a.route(href="{{pathFor 'adminHome'}}" data-target='.navbar-collapse') {{_ "admin"}}
 				.nav.navbar-nav.navbar-right
 					+loginButtons
