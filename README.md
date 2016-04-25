@@ -1,4 +1,4 @@
-# Mangatek ![Codeship Status for Mangatek](https://codeship.com/projects/4a154410-a834-0133-19e4-260181bada64/status?branch=master)
+# Mangatek
 
 Is a SaaS product where anyone can create and manage his(her) mangas library.
 
