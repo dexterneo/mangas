@@ -31,5 +31,6 @@ check
 meteorhacks:aggregate
 twbs:bootstrap
 ian:accounts-ui-bootstrap-3
-peerlibrary:blaze-components
+blaze-html-templates
+templating
 ecmascript
