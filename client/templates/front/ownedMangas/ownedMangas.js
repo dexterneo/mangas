@@ -5,7 +5,8 @@ Template.ownedMangas.helpers({
 			owned: true
 		}, {
 			sort: {
-				number: 1
+				number: 1,
+				name: 1
 			},
 			fields: {
 				cover: 1,
