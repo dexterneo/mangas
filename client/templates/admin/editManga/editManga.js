@@ -19,18 +19,14 @@ Template.editManga.events({
 	},
 	'click #mangaAuthorsSave' (event) {
 		event.preventDefault();
-		console.log(this);
 	},
 	'click #mangaCoverSave' (event) {
 		event.preventDefault();
-		console.log(this);
 	},
 	'click #mangaGenreSave' (event) {
 		event.preventDefault();
-		console.log(this);
 	},
 	'click .tomeSave' (event) {
 		event.preventDefault();
-		console.log(this);
 	}
 });
