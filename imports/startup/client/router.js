@@ -1,4 +1,11 @@
-var subscriptions = new SubsManager();
+import { Router } from 'meteor/iron:router';
+import { SubsManager } from 'meteor/meteorhacks:subs-manager';
+import { loading } from 'meteor/sacha:spin';
+
+import '../../ui/layouts/layout.jade';
+import '../../ui/components/notFound.jade';
+
+let subscriptions = new SubsManager();
 
 Router.configure({
 	layoutTemplate: 'layout',
@@ -35,8 +42,7 @@ Router.route('/', {
 	name: 'home',
 	waitOn() {
 		return subscriptions.subscribe('allMangasCover');
-	},
-	fastRender: true
+	}
 });
 
 Router.route('/addMangaForUser/step1', {
