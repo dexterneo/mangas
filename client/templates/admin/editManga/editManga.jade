@@ -26,7 +26,7 @@ template(name="editManga")
 			.panel.panel-default
 				.panel-heading
 					p.panel-title {{_ "mangaAuthors"}}
-				.panel-body
+				#authorsList.panel-body
 					each authors
 						form
 							.row
@@ -75,7 +75,7 @@ template(name="editManga")
 					.panel-body
 						.row
 							.col-xs-12.col-sm-12.col-md-6.col-lg-6
-								#tomeDetailCover.panel.panel-default
+								.panel.panel-default
 									.panel-heading
 										h4.panel-title {{_ "tomeCover"}}
 									.panel-body
