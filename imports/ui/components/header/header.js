@@ -1,3 +1,10 @@
+import { Template } from 'meteor/templating';
+import { Router } from 'meteor/iron:router';
+import { Meteor } from 'meteor/meteor';
+import { $ } from 'meteor/jquery';
+
+import './header.jade';
+
 Template.header.helpers({
 	homeActive() {
 		if (Router.current().route._path === '/ownedMangas') {
@@ -30,12 +37,12 @@ Template.header.helpers({
 });
 
 Template.header.events({
-	'click .route': function() {
+	'click .route' (event) {
 		if ($('#navigation').hasClass('in')) {
 			$('#navigation').removeClass('in');
 		}
 	},
-	'click .navbar-brand': function() {
+	'click .navbar-brand' (event) {
 		if ($('#navigation').hasClass('in')) {
 			$('#navigation').removeClass('in');
 		}

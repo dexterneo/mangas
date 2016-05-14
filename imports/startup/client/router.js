@@ -1,9 +1,18 @@
 import { Router } from 'meteor/iron:router';
-import { SubsManager } from 'meteor/meteorhacks:subs-manager';
 import { loading } from 'meteor/sacha:spin';
 
+// Base components/layouts
 import '../../ui/layouts/layout.jade';
+import '../../ui/components/loading.jade';
 import '../../ui/components/notFound.jade';
+
+
+// Pages
+import '../../ui/pages/home/home.js';
+
+// Publications
+//import '../../api/mangas/server/publications.js';
+
 
 let subscriptions = new SubsManager();
 
@@ -40,9 +49,9 @@ Router.route('/admin/viewMangasToAdd', {
 
 Router.route('/', {
 	name: 'home',
-	waitOn() {
+	/*waitOn() {
 		return subscriptions.subscribe('allMangasCover');
-	}
+	}*/
 });
 
 Router.route('/addMangaForUser/step1', {

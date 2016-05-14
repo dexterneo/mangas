@@ -14,7 +14,7 @@ iron:router
 accounts-password
 stylus
 momentjs:moment
-aldeed:collection2
+aldeed:simple-schema
 meteor-base
 mobile-experience
 mongo

@@ -1,3 +1,7 @@
+import { Meteor } from 'meteor/meteor';
+
+import { MangasData } from '../schema.js';
+
 // Send back all covers and french mangasName
 Meteor.publish('allMangasCover', () => {
 	return MangasData.find({}, {

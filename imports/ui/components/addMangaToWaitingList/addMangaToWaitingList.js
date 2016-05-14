@@ -1,3 +1,7 @@
+import { Template } from 'meteor/templating';
+
+import './addMangaToWaitingList.jade';
+
 Template.addMangaToWaitingList.events({
 	'click #addMangaToWaitingList': function() {
 		const manga = {

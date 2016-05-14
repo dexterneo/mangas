@@ -1,8 +1,15 @@
-MangasData = new Mongo.Collection('mangasData');
+import { Mongo } from 'meteor/mongo';
+import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 
-var Schemas = {};
+export const MangasData = new Mongo.Collection('mangasData');
 
-NamesSchema = new SimpleSchema({
+MangasData.deny({
+	insert() { return true; },
+	update() { return true; },
+	remove() { return true; },
+});
+
+let NamesSchema = new SimpleSchema({
 	fr: {
 		type: String,
 		label: 'French manga name'
@@ -19,7 +26,7 @@ NamesSchema = new SimpleSchema({
 	}
 });
 
-AuthorsSchema = new SimpleSchema({
+let AuthorsSchema = new SimpleSchema({
 	firstName: {
 		type: String,
 		label: 'First name of the author',
@@ -37,7 +44,7 @@ AuthorsSchema = new SimpleSchema({
 	}
 });
 
-TomeSchema = new SimpleSchema({
+let TomeSchema = new SimpleSchema({
 	title: {
 		type: String,
 		label: 'Title',
@@ -60,8 +67,7 @@ TomeSchema = new SimpleSchema({
 	},
 	isbn: {
 		type: String,
-		label: 'ISBN or Barcode',
-		unique: true
+		label: 'ISBN or Barcode'
 	},
 	cover: {
 		type: String,
@@ -74,7 +80,7 @@ TomeSchema = new SimpleSchema({
 	}
 });
 
-Schemas.MangasData = new SimpleSchema({
+MangasData.schema = new SimpleSchema({
 	names: {
 		type: NamesSchema
 	},
@@ -97,5 +103,3 @@ Schemas.MangasData = new SimpleSchema({
 		minCount: 1
 	}
 });
-
-MangasData.attachSchema(Schemas.MangasData);
