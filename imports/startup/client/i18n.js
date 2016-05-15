@@ -1,3 +1,6 @@
+import { Meteor } from 'meteor/meteor';
+import { TAPi18n } from 'meteor/tap:i18n';
+
 getUserLanguage = function() {
 	// Put here the logic for determining the user language
 	return 'fr';

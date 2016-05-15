@@ -16,14 +16,6 @@ Template.mangasCoverList.onCreated(function() {
 
 Template.mangasCoverList.helpers({
 	covers() {
-		console.log(MangasData.find({}, {
-			sort: {
-				'names.fr': 1
-			},
-			fields: {
-				cover: 1
-			}
-		}).fetch());
 		return MangasData.find({}, {
 			sort: {
 				'names.fr': 1
