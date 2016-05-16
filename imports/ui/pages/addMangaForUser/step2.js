@@ -1,3 +1,22 @@
+import { Meteor } from 'meteor/meteor';
+import { Template } from 'meteor/templating';
+import { TAPi18n } from 'meteor/tap:i18n';
+import { Router } from 'meteor/iron:router';
+import { Session } from 'meteor/session';
+
+import { MangasData } from '../../../api/mangasData/schema.js';
+import { Mangas } from '../../../api/mangas/schema.js';
+import { getAuthors } from '../../../startup/client/lib/sharedFunctions.js';
+
+import './step2.jade';
+
+Template.addMangaForUserStep2.onCreated(function() {
+	this.autorun(() => {
+		this.subscribe('oneMangasData', Router.current().params._id);
+		this.subscribe('allTomesForUser', Meteor.userId());
+	});
+});
+
 Template.addMangaForUserStep2.onRendered(() => {
 	Session.set('toggle', 0);
 	if (Meteor.userId() === null) {
@@ -6,27 +25,44 @@ Template.addMangaForUserStep2.onRendered(() => {
 });
 
 Template.addMangaForUserStep2.helpers({
-	manga() {
-		let manga = MangasData.findOne({
+	dataForTheManga() {
+		return MangasData.findOne({
 			_id: Router.current().params._id
 		});
+	},
+	tomesOwnedByUser() {
+		let mangasDataTomes = this.tomes;
 		let tomes = Mangas.find({
 			user: Meteor.userId(),
-			name: manga.names.fr
+			name: this.names.fr
 		}, {
 			sort: {
 				number: 1
 			}
 		}).fetch();
 		// Add tomes only if the user own tomes
-		if (tomes.length !== 0) {
-			for (var i = 0; i < manga.tomes.length; i++) {
-				if (tomes[i].number === manga.tomes[i].number) {
-					manga.tomes[i].owned = tomes[i].owned;
-				}
+		mangasDataTomes.sort((a, b) => {
+			if (a.number < b.number) {
+				return -1;
+			} else if (a.number > b.number) {
+				return 1;
+			} else {
+				return 0;
 			}
+		});
+		if (tomes.length !== 0) {
+			mangasDataTomes.map((cur, index, array) => {
+				if (tomes[index].number === cur.number) {
+					cur.owned = tomes[index].owned;
+				}
+			});
+		} else {
+			mangasDataTomes.map((cur, index, array) => {
+				cur.owned = false;
+			});
 		}
-		return manga;
+		console.log(mangasDataTomes, tomes);
+		return mangasDataTomes;
 	}
 });
 

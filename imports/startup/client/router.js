@@ -6,13 +6,10 @@ import '../../ui/layouts/layout.jade';
 import '../../ui/components/loading.jade';
 import '../../ui/components/notFound.jade';
 
-
 // Pages
 import '../../ui/pages/home/home.js';
-
-// Publications
-//import '../../api/mangas/server/publications.js';
-
+import '../../ui/pages/addMangaForUser/step1.js';
+import '../../ui/pages/addMangaForUser/step2.js';
 
 let subscriptions = new SubsManager();
 
@@ -48,27 +45,15 @@ Router.route('/admin/viewMangasToAdd', {
 });
 
 Router.route('/', {
-	name: 'home',
-	/*waitOn() {
-		return subscriptions.subscribe('allMangasCover');
-	}*/
+	name: 'home'
 });
 
 Router.route('/addMangaForUser/step1', {
-	name: 'addMangaForUserStep1',
-	waitOn() {
-		return subscriptions.subscribe('allMangasCover');
-	}
+	name: 'addMangaForUserStep1'
 });
 
 Router.route('/addMangaForUser/step2/:_id', {
-	name: 'addMangaForUserStep2',
-	waitOn() {
-		return [
-			subscriptions.subscribe('oneMangasData', this.params._id),
-			subscriptions.subscribe('allTomesForUser', Meteor.userId())
-		];
-	}
+	name: 'addMangaForUserStep2'
 });
 
 Router.route('/ownedMangas', {

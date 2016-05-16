@@ -1,42 +1,61 @@
 import { Meteor } from 'meteor/meteor';
 
-import { MangasData } from '../schema.js';
+import { Mangas } from '../schema.js';
 
-// Send back all covers and french mangasName
-Meteor.publish('allMangasCover', () => {
-	return MangasData.find({}, {
-		fields: {
-			cover: 1,
-			'names.fr': 1
-		}
-	});
-});
-
-// Send back one mangasData
-Meteor.publish('oneMangasData', (id) => {
-	return MangasData.find({ _id: id });
-});
-
-// Send all Mangas for a given mangaka
-Meteor.publish('mangaka', (author) => {
-	var newAuthor = author.split(' ');
-	return MangasData.find({
-		'authors.firstName': newAuthor[0],
-		'authors.lastName': newAuthor[1]
+// Send back all owned mangas
+Meteor.publish('allOwnedMangas', (userId) => {
+	return Mangas.find({
+		user: userId,
+		owned: true
 	}, {
 		fields: {
-			authors: 1,
-			tomes: 1
+			title: 1,
+			cover: 1,
+			name: 1,
+			number: 1,
+			owned: 1,
+			user: 1
 		}
 	});
 });
 
-Meteor.publish('allMangasCoverForAdmin', () => {
-	return MangasData.find({}, {
+// Send back all missing mangas
+Meteor.publish('allMissingMangas', (userId) => {
+	return Mangas.find({
+		user: userId,
+		owned: false
+	}, {
 		fields: {
+			title: 1,
 			cover: 1,
-			'names.fr': 1,
-			tomes: 1
+			name: 1,
+			number: 1,
+			user: 1,
+			owned: 1
+		}
+	});
+});
+
+// Send back the data about a tome
+Meteor.publish('tomeDetails', (id) => {
+	return Mangas.find({ _id: id });
+});
+
+// Send back all tomes for a mangasName
+Meteor.publish('allTomes', (userId, name) => {
+	return Mangas.find({
+		user: userId,
+		name
+	});
+});
+
+// Send back all tomes for a userId
+Meteor.publish('allTomesForUser', (userId) => {
+	return Mangas.find({ user: userId }, {
+		fields: {
+			owned: 1,
+			number: 1,
+			user: 1
 		}
 	});
 });

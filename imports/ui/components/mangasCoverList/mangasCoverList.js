@@ -1,12 +1,10 @@
 import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
 
-import { MangasData } from '../../../api/mangas/schema.js';
+import { MangasData } from '../../../api/mangasData/schema.js';
 
 import './mangasCoverList.jade';
 import '../cover/mangaCover.jade';
-
-import '../addMangaToWaitingList/addMangaToWaitingList.js';
 
 Template.mangasCoverList.onCreated(function() {
 	this.autorun(() => {

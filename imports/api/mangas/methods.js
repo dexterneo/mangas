@@ -1,28 +1,43 @@
 Meteor.methods({
-	addCompleteMangas(data) {
+	mangasInsert(data) {
 		check(data, Object);
-		return MangasData.insert(data);
-	},
-	updateMangaNames(data) {
-		check(data, Object);
-		check(data.mangaId, String);
-		if (data.fr) {
-			check(data.fr, String);
-		}
-		if (data.en) {
-			check(data.en, String);
-		}
-		if (data.jp) {
-			check(data.jp, String);
-		}
-		if (!data.fr && !data.en && !data.jp) {
-			return false;
-		}
-		return MangasData.update({ _id: data.mangaId },{
+		return Mangas.upsert({
+			name: data.name,
+			number: data.number
+		}, {
 			$set: {
-				'names.fr': data.fr,
-				'names.en': data.en,
-				'names.jp': data.jp
+				title: data.title,
+				user: data.user,
+				name: data.name,
+				author: data.author,
+				number: data.number,
+				isbn: data.isbn,
+				cover: data.cover,
+				releaseDate: data.releaseDate,
+				owned: data.owned,
+				editor: data.editor,
+				version: data.version,
+				genre: data.genre
+			}
+		});
+	},
+	setOwnedTrue(mangasId) {
+		check(mangasId, String);
+		return Mangas.update({
+			'_id': mangasId
+		}, {
+			$set: {
+				'owned': true
+			}
+		});
+	},
+	setOwnedFalse(mangasId) {
+		check(mangasId, String);
+		return Mangas.update({
+			'_id': mangasId
+		}, {
+			$set: {
+				'owned': false
 			}
 		});
 	}

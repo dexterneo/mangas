@@ -1,5 +1,6 @@
 template(name="addMangaForUserStep2")
-	with manga
+	+header
+	with dataForTheManga
 		.panel.panel-default
 			.panel-heading
 				.panel-title
@@ -13,10 +14,10 @@ template(name="addMangaForUserStep2")
 					.col-xs-12.col-sm-6.col-md-6.col-lg-6
 						button.addTomes.btn-block.btn.btn-success(type="button") {{_ "addTomes"}}
 				.grid
-					each tomes
+					each tomesOwnedByUser
 						.mangas.grid-item
 							a.thumbnail(href="{{pathFor 'tomeDetails'}}")
-								img(src="#{cover}" alt="#{mangasName}")
+								img(src="#{cover}" alt="#{title}")
 							if owned
 								button.addToCollection.btn.btn-success.btn-block(type="button") {{_ "clickToAddToCollection"}}
 							else
