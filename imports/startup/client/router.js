@@ -10,6 +10,8 @@ import '../../ui/components/notFound.jade';
 import '../../ui/pages/home/home.js';
 import '../../ui/pages/addMangaForUser/step1.js';
 import '../../ui/pages/addMangaForUser/step2.js';
+import '../../ui/pages/ownedMangas/ownedMangas.js';
+import '../../ui/pages/missingMangas/missingMangas.js';
 
 let subscriptions = new SubsManager();
 
@@ -57,17 +59,11 @@ Router.route('/addMangaForUser/step2/:_id', {
 });
 
 Router.route('/ownedMangas', {
-	name: 'ownedMangas',
-	waitOn() {
-		return subscriptions.subscribe('allOwnedMangas', Meteor.userId());
-	}
+	name: 'ownedMangas'
 });
 
 Router.route('/missingMangas', {
-	name: 'missingMangas',
-	waitOn() {
-		return subscriptions.subscribe('allMissingMangas', Meteor.userId());
-	}
+	name: 'missingMangas'
 });
 
 Router.route('/:name/tome/:number/:_id', {

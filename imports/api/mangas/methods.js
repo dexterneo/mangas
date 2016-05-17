@@ -1,11 +1,17 @@
+import { Meteor } from 'meteor/meteor';
+
+import { Mangas } from './schema.js';
+
 Meteor.methods({
 	mangasInsert(data) {
 		check(data, Object);
 		return Mangas.upsert({
-			name: data.name,
-			number: data.number
+			tomeId: data.tomeId,
+			mangaId: data.mangaId
 		}, {
 			$set: {
+				mangaId: data.mangaId,
+				tomeId: data.tomeId,
 				title: data.title,
 				user: data.user,
 				name: data.name,

@@ -1,11 +1,19 @@
 template(name='missingMangas')
-	.panel.panel-default
-		.panel-heading
-			h2 {{_ "allTomesMissing"}}
-		.panel-body
-			+buttonAddMangaForUser
-			.grid
-				each mangasList
-					+mangas
-		.panel-footer
-			+buttonAddMangaForUser
+	+header
+	if tomesInMangatek
+		.panel.panel-default
+			.panel-heading
+				h2 {{_ "allTomesMissing"}}
+			.panel-body
+				+buttonAddMangaForUser
+				.grid
+					each mangasList
+						+mangas
+			.panel-footer
+				+buttonAddMangaForUser
+	else
+		.panel.panel-default
+			.panel-heading
+				h2.panel-title {{_ "noTomesInMangatek"}}
+			.panel-body
+				+buttonAddMangaForUser

@@ -10,6 +10,14 @@ Mangas.deny({
 });
 
 Mangas.schema = new SimpleSchema({
+	tomeId: {
+		type: String,
+		label: 'Tome id of the mangaId in the MangasData collection'
+	},
+	mangaId: {
+		type: String,
+		label: 'Manga Id in the MangasData collection'
+	},
 	title: {
 		type: String,
 		label: 'Title',

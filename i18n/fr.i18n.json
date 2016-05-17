@@ -75,5 +75,6 @@
 	"dontSeeMangasYouOwn": "Il manque un manga que vous possédez ?",
 	"add": "Ajouter",
 	"waitingExplanation": "Nous l'ajouterons rapidement à Mangatek pour que vous puissiez l'ajouter dans votre mangathèque.",
-	"admin": "Administration"
+	"admin": "Administration",
+	"noTomesInMangatek":"Aucun tome n'est actuellement dans votre Mangatek"
 }

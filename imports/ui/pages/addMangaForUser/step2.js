@@ -9,11 +9,12 @@ import { Mangas } from '../../../api/mangas/schema.js';
 import { getAuthors } from '../../../startup/client/lib/sharedFunctions.js';
 
 import './step2.jade';
+import '../../components/header/header.js';
 
 Template.addMangaForUserStep2.onCreated(function() {
 	this.autorun(() => {
 		this.subscribe('oneMangasData', Router.current().params._id);
-		this.subscribe('allTomesForUser', Meteor.userId());
+		this.subscribe('allTomesForUser', Router.current().params._id, Meteor.userId());
 	});
 });
 
@@ -25,50 +26,25 @@ Template.addMangaForUserStep2.onRendered(() => {
 });
 
 Template.addMangaForUserStep2.helpers({
-	dataForTheManga() {
+	manga() {
 		return MangasData.findOne({
 			_id: Router.current().params._id
 		});
 	},
-	tomesOwnedByUser() {
-		let mangasDataTomes = this.tomes;
-		let tomes = Mangas.find({
-			user: Meteor.userId(),
-			name: this.names.fr
-		}, {
-			sort: {
-				number: 1
-			}
-		}).fetch();
-		// Add tomes only if the user own tomes
-		mangasDataTomes.sort((a, b) => {
-			if (a.number < b.number) {
-				return -1;
-			} else if (a.number > b.number) {
-				return 1;
-			} else {
-				return 0;
-			}
-		});
-		if (tomes.length !== 0) {
-			mangasDataTomes.map((cur, index, array) => {
-				if (tomes[index].number === cur.number) {
-					cur.owned = tomes[index].owned;
-				}
-			});
+	ownedByUser() {
+		let tomeForUser = Mangas.findOne({ tomeId: this.tomeId, user: Meteor.userId() });
+		if (tomeForUser && tomeForUser.owned) {
+			return true;
 		} else {
-			mangasDataTomes.map((cur, index, array) => {
-				cur.owned = false;
-			});
+			return false;
 		}
-		console.log(mangasDataTomes, tomes);
-		return mangasDataTomes;
 	}
 });
 
 Template.addMangaForUserStep2.events({
 	'click .grid-item': function(event) {
 		event.preventDefault();
+		this.owned = !this.owned;
 		return $(event.target).parents('.grid-item').find('button').toggleClass('btn-default btn-success');
 	},
 	'click .ownThemAll': function(event) {
@@ -76,16 +52,45 @@ Template.addMangaForUserStep2.events({
 		if (Session.get('toggle') === 0) {
 			$('.addToCollection').removeClass('btn-default').addClass('btn-success');
 			Session.set('toggle', 1);
+			this.tomes.map((cur, index, array) => {
+				cur.owned = true;
+			});
 		} else {
 			$('.addToCollection').removeClass('btn-success').addClass('btn-default');
 			Session.set('toggle', 0);
+			this.tomes.map((cur, index, array) => {
+				cur.owned = false;
+			});
 		}
 		return $('.ownThemAll').toggleClass('btn-primary btn-warning');
 	},
 	'click .addTomes': function(event) {
-		let manga = this;
 		event.preventDefault();
-		$('.mangas').each((index, element) => {
+		let manga = this;
+		manga.tomes.map((cur, index, array) => {
+			let tome = {
+				mangaId: manga._id,
+				tomeId: cur.tomeId,
+				title: cur.title,
+				user: Meteor.userId(),
+				name: manga.names.fr,
+				author: getAuthors(manga.authors),
+				number: cur.number,
+				isbn: cur.isbn,
+				cover: cur.cover,
+				releaseDate: cur.releaseDate,
+				owned: cur.owned  || false,
+				editor: cur.editor,
+				version: cur.version,
+				genre: manga.genre
+			};
+			Meteor.call('mangasInsert', tome, (error, result) => {
+				if (error) {
+					return error.message;
+				}
+			});
+		});
+		/*$('.mangas').each((index, element) => {
 			if (index + 1 === manga.tomes[index].number) {
 				let tomeData = manga.tomes[index];
 				let tome = {
@@ -112,7 +117,7 @@ Template.addMangaForUserStep2.events({
 					}
 				});
 			}
-		});
+		});*/
 		Router.go('ownedMangas');
 	}
 });

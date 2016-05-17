@@ -45,6 +45,10 @@ let AuthorsSchema = new SimpleSchema({
 });
 
 let TomeSchema = new SimpleSchema({
+	tomeId: {
+		type: String,
+		label: 'Tome id'
+	},
 	title: {
 		type: String,
 		label: 'Title',

@@ -1,3 +1,8 @@
+import { Meteor } from 'meteor/meteor';
+import { check } from 'meteor/check';
+
+import { MangasData } from './schema.js';
+
 Meteor.methods({
 	addCompleteMangas(data) {
 		check(data, Object);

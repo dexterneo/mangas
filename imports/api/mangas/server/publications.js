@@ -50,12 +50,17 @@ Meteor.publish('allTomes', (userId, name) => {
 });
 
 // Send back all tomes for a userId
-Meteor.publish('allTomesForUser', (userId) => {
-	return Mangas.find({ user: userId }, {
+Meteor.publish('allTomesForUser', (mangaId, userId) => {
+	return Mangas.find({
+		mangaId,
+		user: userId
+	}, {
 		fields: {
 			owned: 1,
 			number: 1,
-			user: 1
+			user: 1,
+			tomeId:1,
+			mangaId:1
 		}
 	});
 });
