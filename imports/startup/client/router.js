@@ -12,8 +12,9 @@ import '../../ui/pages/addMangaForUser/step1.js';
 import '../../ui/pages/addMangaForUser/step2.js';
 import '../../ui/pages/ownedMangas/ownedMangas.js';
 import '../../ui/pages/missingMangas/missingMangas.js';
-
-let subscriptions = new SubsManager();
+import '../../ui/pages/tomeDetails/tomeDetails.js';
+import '../../ui/pages/mangaka/mangaka.js';
+import '../../ui/pages/admin/admin.js';
 
 Router.configure({
 	layoutTemplate: 'layout',
@@ -22,10 +23,7 @@ Router.configure({
 });
 
 Router.route('/admin', {
-	name: 'adminHome',
-	waitOn() {
-		return subscriptions.subscribe('allMangasCoverForAdmin');
-	}
+	name: 'admin'
 });
 
 Router.route('/admin/editManga/:_id', {
@@ -67,21 +65,9 @@ Router.route('/missingMangas', {
 });
 
 Router.route('/:name/tome/:number/:_id', {
-	name: 'tomeDetails',
-	waitOn() {
-		return [
-			subscriptions.subscribe('tomeDetails', this.params._id),
-			subscriptions.subscribe('allTomes', Meteor.userId(), this.params.name)
-		];
-	},
-	data() {
-		return Mangas.findOne(this.params._id);
-	}
+	name: 'tomeDetails'
 });
 
 Router.route('/:author', {
-	name: 'mangaka',
-	waitOn() {
-		return subscriptions.subscribe('mangaka', this.params.author);
-	}
+	name: 'mangaka'
 });

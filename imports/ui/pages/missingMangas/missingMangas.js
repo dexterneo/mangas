@@ -8,7 +8,7 @@ import '../../components/buttonAddMangaForUser.jade';
 import '../../components/mangas.jade';
 import '../../components/header/header.js';
 
-Template.ownedMangas.onCreated(function() {
+Template.missingMangas.onCreated(function() {
 	this.autorun(() => {
 		this.subscribe('allMissingMangas', Meteor.userId());
 	});

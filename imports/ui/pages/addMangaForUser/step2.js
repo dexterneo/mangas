@@ -34,9 +34,9 @@ Template.addMangaForUserStep2.helpers({
 	ownedByUser() {
 		let tomeForUser = Mangas.findOne({ tomeId: this.tomeId, user: Meteor.userId() });
 		if (tomeForUser && tomeForUser.owned) {
-			return true;
+			return this.owned = true;
 		} else {
-			return false;
+			return this.owned = false;
 		}
 	}
 });
@@ -79,7 +79,7 @@ Template.addMangaForUserStep2.events({
 				isbn: cur.isbn,
 				cover: cur.cover,
 				releaseDate: cur.releaseDate,
-				owned: cur.owned  || false,
+				owned: cur.owned,
 				editor: cur.editor,
 				version: cur.version,
 				genre: manga.genre

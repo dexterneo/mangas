@@ -17,6 +17,6 @@ template(name="header")
 							a.route(href="{{pathFor 'missingMangas'}}" data-target='.navbar-collapse') {{_ "missingMangas"}}
 						if admin
 							li(class="#{adminActive}")
-								a.route(href="{{pathFor 'adminHome'}}" data-target='.navbar-collapse') {{_ "admin"}}
+								a.route(href="{{pathFor 'admin'}}" data-target='.navbar-collapse') {{_ "admin"}}
 				.nav.navbar-nav.navbar-right
 					+loginButtons

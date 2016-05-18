@@ -26,7 +26,8 @@ Meteor.publish('mangaka', (author) => {
 	}, {
 		fields: {
 			authors: 1,
-			tomes: 1
+			tomes: 1,
+			names: 1
 		}
 	});
 });

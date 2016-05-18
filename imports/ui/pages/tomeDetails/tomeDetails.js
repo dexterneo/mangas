@@ -1,4 +1,25 @@
+import { Meteor } from 'meteor/meteor';
+import { Template } from 'meteor/templating';
+import { Router } from 'meteor/iron:router';
+
+import { Mangas } from '../../../api/mangas/schema.js';
+
+import './tomeDetails.jade';
+import '../../components/header/header.js';
+import '../../components/cover/cover.jade';
+
+Template.tomeDetails.onCreated(function() {
+	this.autorun(() => {
+		this.subscribe('tomeDetails', Router.current().params._id);
+		this.subscribe('allTomes', Meteor.userId(), Router.current().params.name);
+	});
+});
+
+
 Template.tomeDetails.helpers({
+	tomeData() {
+		return Mangas.findOne({ _id: Router.current().params._id });
+	},
 	displayDate() {
 		return moment(this.releaseDate, 'YYYY/MM/DD').fromNow();
 	},
@@ -57,14 +78,14 @@ Template.tomeDetails.events({
 	'click #setOwnedTrue': function() {
 		Meteor.call('setOwnedTrue', this._id, (error, result) => {
 			if (error) {
-				return throwError(error.message);
+				return error.message;
 			}
 		});
 	},
 	'click #setOwnedFalse': function() {
 		Meteor.call('setOwnedFalse', this._id, (error, result) => {
 			if (error) {
-				return throwError(error.message);
+				return error.message;
 			}
 		});
 	}
