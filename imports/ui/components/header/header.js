@@ -37,12 +37,12 @@ Template.header.helpers({
 });
 
 Template.header.events({
-	'click .route' (event) {
+	'click .route': function(event) {
 		if ($('#navigation').hasClass('in')) {
 			$('#navigation').removeClass('in');
 		}
 	},
-	'click .navbar-brand' (event) {
+	'click .navbar-brand': function(event) {
 		if ($('#navigation').hasClass('in')) {
 			$('#navigation').removeClass('in');
 		}
