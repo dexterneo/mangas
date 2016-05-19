@@ -6,7 +6,7 @@ export const Mangas = new Mongo.Collection('mangas');
 Mangas.deny({
 	insert() { return true; },
 	update() { return true; },
-	remove() { return true; },
+	remove() { return true; }
 });
 
 Mangas.schema = new SimpleSchema({
