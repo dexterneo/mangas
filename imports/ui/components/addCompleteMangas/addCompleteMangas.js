@@ -1,3 +1,10 @@
+import { Template } from 'meteor/templating';
+import { Meteor } from 'meteor/meteor';
+import { Router } from 'meteor/iron:router';
+import { Blaze } from 'meteor/blaze';
+
+import './addCompleteMangas.jade';
+
 Template.addCompleteMangas.events({
 	'click #addTome': function(e, t) {
 		return Blaze.render(Template.addTome, t.$('.tomes').get(0));
@@ -30,7 +37,7 @@ Template.addCompleteMangas.events({
 		});
 		Meteor.call('addCompleteMangas', manga, function(error) {
 			if (error) {
-				return throwError(error.message);
+				return error.message;
 			} else {
 				Router.go('home');
 			}

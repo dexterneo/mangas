@@ -1,11 +1,11 @@
 import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
 import { Router } from 'meteor/iron:router';
+import 'meteor/sacha:spin';
 
 import { Mangas } from '../../../api/mangas/schema.js';
 
 import './tomeDetails.jade';
-import '../../components/header/header.js';
 import '../../components/cover/cover.jade';
 
 Template.tomeDetails.onCreated(function() {

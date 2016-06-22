@@ -1,4 +1,7 @@
 template(name="mangasCoverList")
-	#coverList.grid
-		each covers
-			+mangaCover
+	if Template.subscriptionsReady
+		#coverList.grid
+			each covers
+				+mangaCover
+	else
+		+spinner

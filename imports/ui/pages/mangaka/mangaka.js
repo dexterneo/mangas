@@ -1,10 +1,10 @@
 import { Template } from 'meteor/templating';
 import { Router } from 'meteor/iron:router';
+import 'meteor/sacha:spin';
 
 import { MangasData } from '../../../api/mangasData/schema.js';
 
 import './mangaka.jade';
-import '../../components/header/header.js';
 
 Template.mangaka.onCreated(function() {
 	this.autorun(() => {

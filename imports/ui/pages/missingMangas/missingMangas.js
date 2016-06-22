@@ -1,12 +1,12 @@
 import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
+import 'meteor/sacha:spin';
 
 import { Mangas } from '../../../api/mangas/schema.js';
 
 import './missingMangas.jade';
 import '../../components/buttonAddMangaForUser.jade';
 import '../../components/mangas.jade';
-import '../../components/header/header.js';
 
 Template.missingMangas.onCreated(function() {
 	this.autorun(() => {
@@ -16,7 +16,7 @@ Template.missingMangas.onCreated(function() {
 
 Template.missingMangas.helpers({
 	tomesInMangatek() {
-		return Mangas.findOne({user: Meteor.userId()});
+		return Mangas.findOne({ user: Meteor.userId() });
 	},
 	mangasList() {
 		return Mangas.find({

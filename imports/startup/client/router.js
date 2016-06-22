@@ -1,9 +1,7 @@
 import { Router } from 'meteor/iron:router';
-import { loading } from 'meteor/sacha:spin';
 
 // Base components/layouts
-import '../../ui/layouts/layout.jade';
-import '../../ui/components/loading.jade';
+import '../../ui/layouts/layout.js';
 import '../../ui/components/notFound.jade';
 
 // Pages
@@ -19,7 +17,6 @@ import '../../ui/pages/editManga/editManga.js';
 
 Router.configure({
 	layoutTemplate: 'layout',
-	loadingTemplate: 'loading',
 	notFoundTemplate: 'notFound'
 });
 

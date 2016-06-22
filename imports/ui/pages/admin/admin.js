@@ -1,10 +1,10 @@
 import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
+import 'meteor/sacha:spin';
 
 import { MangasData } from '../../../api/mangasData/schema.js';
 
 import './admin.jade';
-import '../../components/header/header.js';
 
 Template.admin.onCreated(function() {
 	this.autorun(() => {

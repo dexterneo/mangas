@@ -1,125 +1,127 @@
 template(name="editManga")
-	+header
-	with mangaData
-		.panel.panel-default
-			.panel-heading
-				h3 {{_ "editionOf"}} #{names.fr}
-			.panel-body
-				.panel.panel-default
-					.panel-heading
-						p.panel-title {{_ "mangaTitles"}}
-					.panel-body
-						form
-							.row
-								.col-xs-12.col-sm-6.col-md-4.col-lg-4
-									.form-group
-										label(for="namesFr") {{_ "namesFr"}}
-										input#namesFr.form-control(type="text" value="#{names.fr}")
-								.col-xs-12.col-sm-6.col-md-4.col-lg-4
-									.form-group
-										label(for="namesEn") {{_ "namesEn"}}
-										input#namesEn.form-control(type="text" value="#{names.en}")
-								.col-xs-12.col-sm-6.col-md-4.col-lg-4
-									.form-group
-										label(for="namesJp") {{_ "namesJp"}}
-										input#namesJp.form-control(type="text" value="#{names.jp}")
-					.panel-footer
-						button#mangaTitlesSave.btn.btn-success.btn-block(type="button") {{_ "save"}}
-				.panel.panel-default
-					.panel-heading
-						p.panel-title {{_ "mangaAuthors"}}
-					#authorsList.panel-body
-						each authors
-							form
-								.row
-									.col-xs-12.col-sm-6.col-md-6.col-lg-6
-										.form-group
-											label(for="firstName") {{_ "firstName"}}
-											input.firstName.form-control(type="text" value="#{firstName}")
-									.col-xs-12.col-sm-6.col-md-6.col-lg-6
-										.form-group
-											label(for="lastName") {{_ "lastName"}}
-											input.lastName.form-control(type="text" value="#{lastName}")
-					.panel-footer
-						button#mangaAuthorsSave.btn.btn-success.btn-block(type="button") {{_ "save"}}
-				.row
-					.col-xs-12.col-sm-12.col-md-6.col-lg-6
-						.panel.panel-default
-							.panel-heading
-								p.panel-title {{_ "mangaCover"}}
-							.panel-body
-								a.thumbnail(href="#")
-									img(src="#{cover}" alt="#{names.fr}")
-								form
-									.form-group
-										label(for="coverManga") {{_ "mangaCoverUrl"}}
-										input#coverManga.form-control(type="url" value="#{cover}")
-							.panel-footer
-								button#mangaCoverSave.btn.btn-success.btn-block(type="button") {{_ "save"}}
-					.col-xs-12.col-sm-12.col-md-6.col-lg-6
-						.panel.panel-default
-							.panel-heading
-								p.panel-title {{_ "mangaGenre"}}
-							.panel-body
-								form
-									.form-group
-										label(for="genre") {{_ "genre"}}
-										input#genre.form-control(type="url" value="#{genre}")
-							.panel-footer
-								button#mangaGenreSave.btn.btn-success.btn-block(type="button") {{_ "save"}}
-				each tomes
+	if Template.subscriptionsReady
+		with mangaData
+			.panel.panel-default
+				.panel-heading
+					h3 {{_ "editionOf"}} #{names.fr}
+				.panel-body
 					.panel.panel-default
 						.panel-heading
-							if title
-								h4.panel-title Titre : #{title}
-							else
-								h4.panel-title Tome n°#{number}
+							p.panel-title {{_ "mangaTitles"}}
 						.panel-body
-							.row
-								.col-xs-12.col-sm-12.col-md-6.col-lg-6
-									.panel.panel-default
-										.panel-heading
-											h4.panel-title {{_ "tomeCover"}}
-										.panel-body
-											.thumbnail
-												img(src="#{cover}" alt="#{title}")
-												.caption
-													h3.text-center #{title}
-													h4.text-center {{_ "tome"}} #{number} - {{_ "version"}} #{version}
-								.col-xs-12.col-sm-12.col-md-6.col-lg-6
-									.panel.panel-default
-										.panel-heading
-											h4.panel-title {{_ "tomeInformations"}}
-										.panel-body
-											form
-												.row
-													.col-xs-12.col-sm-12.col-md-12.col-lg-12
-														.form-group
-															label(for="title + #{_id}") {{_ "title"}}
-															input.form-control(id="title + #{_id}" type="text" value="#{title}")
-													.col-xs-12.col-sm-12.col-md-6.col-lg-6
-														.form-group
-															label(for="releaseDate + #{_id}") {{_ "releaseDate"}}
-															input.form-control(id="releaseDate + #{_id}" type="date" value="#{releaseDate}")
-													.col-xs-12.col-sm-12.col-md-6.col-lg-6
-														.form-group
-															label(for="number + #{_id}") {{_ "number"}}
-															input.form-control(id="number + #{_id}" type="number" min="1" step="1" value="#{number}")
-													.col-xs-12.col-sm-12.col-md-6.col-lg-6
-														.form-group
-															label(for="version + #{_id}") {{_ "version"}}
-															input.form-control(id="version + #{_id}" type="text" value="#{version}")
-													.col-xs-12.col-sm-12.col-md-6.col-lg-6
-														.form-group
-															label(for="isbn + #{_id}") {{_ "isbn"}}
-															input.form-control(id="isbn + #{_id}" type="text" value="#{isbn}")
-													.col-xs-12.col-sm-12.col-md-12.col-lg-12
-														.form-group
-															label(for="cover + #{_id}") {{_ "cover"}}
-															input.form-control(id="cover + #{_id}" type="url" value="#{cover}")
-													.col-xs-12.col-sm-12.col-md-12.col-lg-12
-														.form-group
-															label(for="editor + #{_id}") {{_ "editor"}}
-															input.form-control(id="editor + #{_id}" type="text" value="#{editor}")
-										.panel-footer
-											button.tomeSave.btn.btn-success.btn-block(type="button") {{_ "save"}}
+							form
+								.row
+									.col-xs-12.col-sm-6.col-md-4.col-lg-4
+										.form-group
+											label(for="namesFr") {{_ "namesFr"}}
+											input#namesFr.form-control(type="text" value="#{names.fr}")
+									.col-xs-12.col-sm-6.col-md-4.col-lg-4
+										.form-group
+											label(for="namesEn") {{_ "namesEn"}}
+											input#namesEn.form-control(type="text" value="#{names.en}")
+									.col-xs-12.col-sm-6.col-md-4.col-lg-4
+										.form-group
+											label(for="namesJp") {{_ "namesJp"}}
+											input#namesJp.form-control(type="text" value="#{names.jp}")
+						.panel-footer
+							button#mangaTitlesSave.btn.btn-success.btn-block(type="button") {{_ "save"}}
+					.panel.panel-default
+						.panel-heading
+							p.panel-title {{_ "mangaAuthors"}}
+						#authorsList.panel-body
+							each authors
+								form
+									.row
+										.col-xs-12.col-sm-6.col-md-6.col-lg-6
+											.form-group
+												label(for="firstName") {{_ "firstName"}}
+												input.firstName.form-control(type="text" value="#{firstName}")
+										.col-xs-12.col-sm-6.col-md-6.col-lg-6
+											.form-group
+												label(for="lastName") {{_ "lastName"}}
+												input.lastName.form-control(type="text" value="#{lastName}")
+						.panel-footer
+							button#mangaAuthorsSave.btn.btn-success.btn-block(type="button") {{_ "save"}}
+					.row
+						.col-xs-12.col-sm-12.col-md-6.col-lg-6
+							.panel.panel-default
+								.panel-heading
+									p.panel-title {{_ "mangaCover"}}
+								.panel-body
+									a.thumbnail(href="#")
+										img(src="#{cover}" alt="#{names.fr}")
+									form
+										.form-group
+											label(for="coverManga") {{_ "mangaCoverUrl"}}
+											input#coverManga.form-control(type="url" value="#{cover}")
+								.panel-footer
+									button#mangaCoverSave.btn.btn-success.btn-block(type="button") {{_ "save"}}
+						.col-xs-12.col-sm-12.col-md-6.col-lg-6
+							.panel.panel-default
+								.panel-heading
+									p.panel-title {{_ "mangaGenre"}}
+								.panel-body
+									form
+										.form-group
+											label(for="genre") {{_ "genre"}}
+											input#genre.form-control(type="url" value="#{genre}")
+								.panel-footer
+									button#mangaGenreSave.btn.btn-success.btn-block(type="button") {{_ "save"}}
+					each tomes
+						.panel.panel-default
+							.panel-heading
+								if title
+									h4.panel-title Titre : #{title}
+								else
+									h4.panel-title Tome n°#{number}
+							.panel-body
+								.row
+									.col-xs-12.col-sm-12.col-md-6.col-lg-6
+										.panel.panel-default
+											.panel-heading
+												h4.panel-title {{_ "tomeCover"}}
+											.panel-body
+												.thumbnail
+													img(src="#{cover}" alt="#{title}")
+													.caption
+														h3.text-center #{title}
+														h4.text-center {{_ "tome"}} #{number} - {{_ "version"}} #{version}
+									.col-xs-12.col-sm-12.col-md-6.col-lg-6
+										.panel.panel-default
+											.panel-heading
+												h4.panel-title {{_ "tomeInformations"}}
+											.panel-body
+												form
+													.row
+														.col-xs-12.col-sm-12.col-md-12.col-lg-12
+															.form-group
+																label(for="title + #{_id}") {{_ "title"}}
+																input.form-control(id="title + #{_id}" type="text" value="#{title}")
+														.col-xs-12.col-sm-12.col-md-6.col-lg-6
+															.form-group
+																label(for="releaseDate + #{_id}") {{_ "releaseDate"}}
+																input.form-control(id="releaseDate + #{_id}" type="date" value="#{releaseDate}")
+														.col-xs-12.col-sm-12.col-md-6.col-lg-6
+															.form-group
+																label(for="number + #{_id}") {{_ "number"}}
+																input.form-control(id="number + #{_id}" type="number" min="1" step="1" value="#{number}")
+														.col-xs-12.col-sm-12.col-md-6.col-lg-6
+															.form-group
+																label(for="version + #{_id}") {{_ "version"}}
+																input.form-control(id="version + #{_id}" type="text" value="#{version}")
+														.col-xs-12.col-sm-12.col-md-6.col-lg-6
+															.form-group
+																label(for="isbn + #{_id}") {{_ "isbn"}}
+																input.form-control(id="isbn + #{_id}" type="text" value="#{isbn}")
+														.col-xs-12.col-sm-12.col-md-12.col-lg-12
+															.form-group
+																label(for="cover + #{_id}") {{_ "cover"}}
+																input.form-control(id="cover + #{_id}" type="url" value="#{cover}")
+														.col-xs-12.col-sm-12.col-md-12.col-lg-12
+															.form-group
+																label(for="editor + #{_id}") {{_ "editor"}}
+																input.form-control(id="editor + #{_id}" type="text" value="#{editor}")
+											.panel-footer
+												button.tomeSave.btn.btn-success.btn-block(type="button") {{_ "save"}}
+	else
+		+spinner

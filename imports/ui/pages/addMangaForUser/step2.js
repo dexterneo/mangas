@@ -1,15 +1,14 @@
 import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
-import { TAPi18n } from 'meteor/tap:i18n';
 import { Router } from 'meteor/iron:router';
 import { Session } from 'meteor/session';
+import 'meteor/sacha:spin';
 
 import { MangasData } from '../../../api/mangasData/schema.js';
 import { Mangas } from '../../../api/mangas/schema.js';
 import { getAuthors } from '../../../startup/client/lib/sharedFunctions.js';
 
 import './step2.jade';
-import '../../components/header/header.js';
 
 Template.addMangaForUserStep2.onCreated(function() {
 	this.autorun(() => {
