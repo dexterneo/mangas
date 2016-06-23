@@ -2,7 +2,7 @@ template(name="mangaka")
 	if Template.subscriptionsReady
 		.panel.panel-default
 			.panel-heading
-				h1 #{author}
+				h1.panel-title #{author}
 					small {{_ "mangasByThisAuthor"}}
 			.panel-body
 				#coverList.grid
@@ -13,6 +13,6 @@ template(name="mangaka")
 									a.thumbnail(href="{{pathFor 'addMangaForUserStep1'}}")
 										img(src="#{cover}" alt="#{mangaName}")
 									.caption
-										h3.text-center #{mangaName}
+										h4.text-center #{mangaName}
 	else
 		+spinner

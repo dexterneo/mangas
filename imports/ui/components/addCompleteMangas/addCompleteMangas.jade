@@ -2,11 +2,11 @@ template(name="addCompleteMangas")
 	.panel.panel-default
 		.panel-heading
 			.panel-title
-				h2 {{_ "addACompleteManga"}}
+				h2.panel-title {{_ "addACompleteManga"}}
 		.panel-body
 			.panel.panel-default
 				.panel-heading
-					h4 {{_ "mangasInformations"}}
+					h4.panel-title {{_ "mangasInformations"}}
 				.panel-body
 					form
 						.form-group
@@ -29,7 +29,7 @@ template(name="addCompleteMangas")
 							input.form-control.awesomplete#genre(type="text")
 			.panel.panel-default
 				.panel-heading
-					h2 {{_ "addTomeForTheSerie"}}
+					h2.panel-title {{_ "addTomeForTheSerie"}}
 				.panel-body
 					.tomes
 						+addTome
