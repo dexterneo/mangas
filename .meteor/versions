@@ -30,6 +30,8 @@ ecmascript-runtime@0.2.11
 ejson@1.0.12
 email@1.0.14
 fastclick@1.0.12
+fortawesome:fontawesome@4.4.0_1
+fourseven:scss@3.3.3_3
 geojson-utils@1.0.9
 hot-code-push@1.0.4
 html-tools@1.0.10
@@ -99,6 +101,7 @@ stylus@2.512.2
 tap:i18n@1.8.2
 templating@1.1.11
 templating-tools@1.0.4
+themeteorchef:bert@2.1.0
 tracker@1.0.14
 twbs:bootstrap@3.3.6
 ui@1.0.11
