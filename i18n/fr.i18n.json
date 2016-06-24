@@ -76,8 +76,10 @@
 	"add": "Ajouter",
 	"waitingExplanation": "Nous l'ajouterons rapidement à Mangatek pour que vous puissiez l'ajouter dans votre mangathèque.",
 	"admin": "Administration",
-	"noTomesInMangatek":"Aucun tome n'est actuellement dans votre Mangatek",
+	"noTomesInMangatek": "Aucun tome n'est actuellement dans votre Mangatek",
 	"AllTomesInMangatek": "Vous possédez tous les tomes de vos mangas",
 	"goSeeElsewhere": "Ce n'est pas cette page que vous recherchez...",
-	"seriesActuallyOnMangatek": "Tous les mangas présents sur Mangatek"
+	"seriesActuallyOnMangatek": "Tous les mangas présents sur Mangatek",
+	"save": "Enregistrer",
+	"addATome": "Ajouter un tome"
 }
