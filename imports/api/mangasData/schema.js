@@ -4,9 +4,12 @@ import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 export const MangasData = new Mongo.Collection('mangasData');
 
 MangasData.deny({
-	insert() { return true; },
-	update() { return true; },
-	remove() { return true; }
+	insert() {
+		return true; },
+	update() {
+		return true; },
+	remove() {
+		return true; }
 });
 
 let NamesSchema = new SimpleSchema({
@@ -67,20 +70,24 @@ let TomeSchema = new SimpleSchema({
 	},
 	version: {
 		type: String,
-		label: 'Version of the manga tome'
+		label: 'Version of the manga tome',
+		optional: true
 	},
 	isbn: {
 		type: String,
-		label: 'ISBN or Barcode'
+		label: 'ISBN or Barcode',
+		optional: true
 	},
 	cover: {
 		type: String,
 		label: 'Cover url of the manga tome',
-		regEx: SimpleSchema.RegEx.Url
+		regEx: SimpleSchema.RegEx.Url,
+		optional: true
 	},
 	editor: {
 		type: String,
-		label: 'Editor'
+		label: 'Editor',
+		optional: true
 	}
 });
 
