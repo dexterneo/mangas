@@ -20,9 +20,9 @@ Template.editManga.helpers({
 	mangaTomes() {
 		return this.tomes.sort((a, b) => {
 			if (a.number < b.number) {
-				return -1
+				return -1;
 			} else if (a.number > b.number) {
-				return 1
+				return 1;
 			} else if (a.number === b.number) {
 				return 0;
 			}
@@ -65,7 +65,7 @@ Template.editManga.events({
 			mangaId: Router.current().params._id,
 			number: this.tomes.length
 		};
-		console.log(data);
+		//console.log(data);
 		Meteor.call('addATomeInAManga', data, (error, result) => {
 			if (error) {
 				return Bert.alert(error.message, 'danger', 'growl-top-right');
