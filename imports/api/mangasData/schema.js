@@ -5,17 +5,21 @@ export const MangasData = new Mongo.Collection('mangasData');
 
 MangasData.deny({
 	insert() {
-		return true; },
+		return true;
+	},
 	update() {
-		return true; },
+		return true;
+	},
 	remove() {
-		return true; }
+		return true;
+	}
 });
 
-let NamesSchema = new SimpleSchema({
+export const NamesSchema = new SimpleSchema({
 	fr: {
 		type: String,
-		label: 'French manga name'
+		label: 'French manga name',
+		optional: true
 	},
 	jp: {
 		type: String,
@@ -29,7 +33,7 @@ let NamesSchema = new SimpleSchema({
 	}
 });
 
-let AuthorsSchema = new SimpleSchema({
+export const AuthorsSchema = new SimpleSchema({
 	firstName: {
 		type: String,
 		label: 'First name of the author',
@@ -47,7 +51,7 @@ let AuthorsSchema = new SimpleSchema({
 	}
 });
 
-let TomeSchema = new SimpleSchema({
+export const TomeSchema = new SimpleSchema({
 	tomeId: {
 		type: String,
 		label: 'Tome id'
@@ -91,7 +95,7 @@ let TomeSchema = new SimpleSchema({
 	}
 });
 
-MangasData.schema = new SimpleSchema({
+export const mangasDataSchema = new SimpleSchema({
 	names: {
 		type: NamesSchema
 	},
@@ -114,3 +118,5 @@ MangasData.schema = new SimpleSchema({
 		minCount: 1
 	}
 });
+
+MangasData.schema = mangasDataSchema;

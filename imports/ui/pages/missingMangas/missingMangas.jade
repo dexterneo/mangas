@@ -1,21 +1,15 @@
 template(name='missingMangas')
-	if Template.subscriptionsReady
-		if tomesInMangatek
-			.panel.panel-default
-				.panel-heading
-					h2.panel-title {{_ "allTomesMissing"}}
-				.panel-body
-					+buttonAddMangaForUser
-					.grid
-						each mangasList
-							+mangas
-				.panel-footer
-					+buttonAddMangaForUser
+	.container-fluid
+		if Template.subscriptionsReady
+			if tomesInMangatek
+				.page-header
+					h1 {{_ "allTomesMissing"}}
+				.row
+					each mangasList
+						+tome
+			else
+				.page-header
+					h1 {{_ "AllTomesInMangatek"}}
+			+footer
 		else
-			.panel.panel-default
-				.panel-heading
-					h2.panel-title {{_ "AllTomesInMangatek"}}
-				.panel-body
-					+buttonAddMangaForUser
-	else
-		+spinner
+			+spinner

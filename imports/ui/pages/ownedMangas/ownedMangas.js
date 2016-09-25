@@ -3,36 +3,28 @@ import { Template } from 'meteor/templating';
 import 'meteor/sacha:spin';
 
 import { Mangas } from '../../../api/mangas/schema.js';
+import { MangasData } from '../../../api/mangasData/schema.js';
 
 import './ownedMangas.jade';
 import '../../components/buttonAddMangaForUser.jade';
-import '../../components/mangas.jade';
+import '../../components/tome/tome.js';
+import '../../components/footer.jade';
 
 Template.ownedMangas.onCreated(function() {
 	this.autorun(() => {
 		this.subscribe('allOwnedMangas', Meteor.userId());
+		this.subscribe('allMangasDataForUser', Meteor.userId(), true);
 	});
 });
 
 Template.ownedMangas.helpers({
 	tomesInMangatek() {
-		return Mangas.findOne({ user: Meteor.userId() });
+		return Mangas.findOne({ userId: Meteor.userId() });
 	},
 	mangasList() {
 		return Mangas.find({
-			user: Meteor.userId(),
+			userId: Meteor.userId(),
 			owned: true
-		}, {
-			sort: {
-				number: 1,
-				name: 1
-			},
-			fields: {
-				cover: 1,
-				name: 1,
-				number: 1,
-				owned: 1
-			}
 		});
 	}
 });

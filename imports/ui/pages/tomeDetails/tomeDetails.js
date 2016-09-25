@@ -1,30 +1,49 @@
 import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
 import { Router } from 'meteor/iron:router';
+import { Bert } from 'meteor/themeteorchef:bert';
 import 'meteor/sacha:spin';
 
 import { Mangas } from '../../../api/mangas/schema.js';
+import { MangasData } from '../../../api/mangasData/schema.js';
+import { getAuthors } from '../../../startup/client/lib/sharedFunctions.js';
 
 import './tomeDetails.jade';
 import '../../components/cover/cover.jade';
 
 Template.tomeDetails.onCreated(function() {
 	this.autorun(() => {
-		this.subscribe('tomeDetails', Router.current().params._id);
-		this.subscribe('allTomes', Meteor.userId(), Router.current().params.name);
+		this.subscribe('tomeDetails', Meteor.userId(), Router.current().params.mangaId);
+		this.subscribe('oneMangasData', Router.current().params.mangaId);
 	});
 });
 
 
 Template.tomeDetails.helpers({
+	mangasData() {
+		return MangasData.findOne({ _id: Router.current().params.mangaId });
+	},
 	tomeData() {
-		return Mangas.findOne({ _id: Router.current().params._id });
+		let data = this.tomes.filter((cur, index, array) => {
+			return cur.tomeId === Router.current().params.tomeId;
+		});
+		return data[0];
+	},
+	author() {
+		return getAuthors(this.authors);
 	},
 	displayDate() {
 		return moment(this.releaseDate, 'YYYY/MM/DD').fromNow();
 	},
-	notOwned() {
-		return !this.owned;
+	owned() {
+		return Mangas.findOne({
+			userId: Meteor.userId(),
+			tomeId: Router.current().params.tomeId
+		}, {
+			fields: {
+				owned: 1
+			}
+		}).owned;
 	},
 	allTomesOwned() {
 		return Mangas.find({
@@ -76,16 +95,32 @@ Template.tomeDetails.helpers({
 
 Template.tomeDetails.events({
 	'click #setOwnedTrue': function() {
-		Meteor.call('setOwnedTrue', this._id, (error, result) => {
+		let data = Mangas.findOne({
+			userId: Meteor.userId(),
+			tomeId: Router.current().params.tomeId
+		}, {
+			fields: {
+				_id: 1
+			}
+		});
+		Meteor.call('setOwnedTrue', data, (error, result) => {
 			if (error) {
-				return error.message;
+				return Bert.alert(error.message, 'danger', 'growl-top-right');
 			}
 		});
 	},
 	'click #setOwnedFalse': function() {
-		Meteor.call('setOwnedFalse', this._id, (error, result) => {
+		let data = Mangas.findOne({
+			userId: Meteor.userId(),
+			tomeId: Router.current().params.tomeId
+		}, {
+			fields: {
+				_id: 1
+			}
+		});
+		Meteor.call('setOwnedFalse', data, (error, result) => {
 			if (error) {
-				return error.message;
+				return Bert.alert(error.message, 'danger', 'growl-top-right');
 			}
 		});
 	}

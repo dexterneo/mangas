@@ -2,11 +2,11 @@ import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
 import { Router } from 'meteor/iron:router';
 import { Session } from 'meteor/session';
+import { Bert } from 'meteor/themeteorchef:bert';
 import 'meteor/sacha:spin';
 
 import { MangasData } from '../../../api/mangasData/schema.js';
 import { Mangas } from '../../../api/mangas/schema.js';
-import { getAuthors } from '../../../startup/client/lib/sharedFunctions.js';
 
 import './step2.jade';
 
@@ -31,7 +31,10 @@ Template.addMangaForUserStep2.helpers({
 		});
 	},
 	ownedByUser() {
-		let tomeForUser = Mangas.findOne({ tomeId: this.tomeId, user: Meteor.userId() });
+		let tomeForUser = Mangas.findOne({
+			tomeId: this.tomeId,
+			userId: Meteor.userId()
+		});
 		if (tomeForUser && tomeForUser.owned) {
 			return this.owned = true;
 		} else {
@@ -41,24 +44,31 @@ Template.addMangaForUserStep2.helpers({
 });
 
 Template.addMangaForUserStep2.events({
-	'click .grid-item': function(event) {
+	'click .thumbnail': function(event) {
 		event.preventDefault();
 		this.owned = !this.owned;
-		return $(event.target).parents('.grid-item').find('button').toggleClass('btn-default btn-success');
+		return $(event.target).parents('.thumbnail')
+			.toggleClass('thumbnail-success')
+			.find('button')
+			.toggleClass('btn-default btn-success');
 	},
 	'click .ownThemAll': function(event) {
 		event.preventDefault();
 		if (Session.get('toggle') === 0) {
-			$('.addToCollection').removeClass('btn-default').addClass('btn-success');
+			$('.thumbnail').addClass('thumbnail-success');
+			$('.addToCollection').removeClass('btn-default')
+				.addClass('btn-success');
 			Session.set('toggle', 1);
 			this.tomes.map((cur, index, array) => {
-				cur.owned = true;
+				return cur.owned = true;
 			});
 		} else {
-			$('.addToCollection').removeClass('btn-success').addClass('btn-default');
+			$('.thumbnail').removeClass('thumbnail-success');
+			$('.addToCollection').removeClass('btn-success')
+				.addClass('btn-default');
 			Session.set('toggle', 0);
 			this.tomes.map((cur, index, array) => {
-				cur.owned = false;
+				return cur.owned = false;
 			});
 		}
 		return $('.ownThemAll').toggleClass('btn-primary btn-warning');
@@ -67,56 +77,18 @@ Template.addMangaForUserStep2.events({
 		event.preventDefault();
 		let manga = this;
 		manga.tomes.map((cur, index, array) => {
-			let tome = {
+			let data = {
 				mangaId: manga._id,
 				tomeId: cur.tomeId,
-				title: cur.title,
-				user: Meteor.userId(),
-				name: manga.names.fr,
-				author: getAuthors(manga.authors),
-				number: cur.number,
-				isbn: cur.isbn,
-				cover: cur.cover,
-				releaseDate: cur.releaseDate,
-				owned: cur.owned,
-				editor: cur.editor,
-				version: cur.version,
-				genre: manga.genre
+				userId: Meteor.userId(),
+				owned: cur.owned
 			};
-			Meteor.call('mangasInsert', tome, (error, result) => {
+			Meteor.call('mangasInsert', data, (error, result) => {
 				if (error) {
-					return error.message;
+					return Bert.alert(error.message, 'danger', 'growl-top-right');
 				}
 			});
 		});
-		/*$('.mangas').each((index, element) => {
-			if (index + 1 === manga.tomes[index].number) {
-				let tomeData = manga.tomes[index];
-				let tome = {
-					title: tomeData.title || '',
-					user: Meteor.userId(),
-					name: manga.names.fr,
-					author: getAuthors(manga.authors),
-					number: tomeData.number,
-					isbn: tomeData.isbn,
-					cover: tomeData.cover,
-					releaseDate: tomeData.releaseDate || '',
-					genre: manga.genre,
-					editor: tomeData.editor,
-					version: tomeData.version
-				};
-				if ($(element).find('.addToCollection').hasClass('btn-success')) {
-					tome.owned = true;
-				} else {
-					tome.owned = false;
-				}
-				Meteor.call('mangasInsert', tome, (error, result) => {
-					if (error) {
-						return throwError(error.message);
-					}
-				});
-			}
-		});*/
 		Router.go('ownedMangas');
 	}
 });

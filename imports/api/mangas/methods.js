@@ -1,11 +1,12 @@
 import { Meteor } from 'meteor/meteor';
 import { check } from 'meteor/check';
+import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 
-import { Mangas } from './schema.js';
+import { Mangas, mangasSchema } from './schema.js';
 
 Meteor.methods({
 	mangasInsert(data) {
-		check(data, Object);
+		check(data, mangasSchema);
 		return Mangas.upsert({
 			tomeId: data.tomeId,
 			mangaId: data.mangaId
@@ -13,38 +14,30 @@ Meteor.methods({
 			$set: {
 				mangaId: data.mangaId,
 				tomeId: data.tomeId,
-				title: data.title,
-				user: data.user,
-				name: data.name,
-				author: data.author,
-				number: data.number,
-				isbn: data.isbn,
-				cover: data.cover,
-				releaseDate: data.releaseDate,
-				owned: data.owned,
-				editor: data.editor,
-				version: data.version,
-				genre: data.genre
+				userId: data.userId,
+				owned: data.owned
 			}
 		});
 	},
-	setOwnedTrue(mangasId) {
-		check(mangasId, String);
-		return Mangas.update({
-			'_id': mangasId
-		}, {
+	setOwnedTrue(data) {
+		let methodSchema = new SimpleSchema({
+			_id: { type: String },
+		});
+		check(data, methodSchema);
+		return Mangas.update({ _id: data._id }, {
 			$set: {
-				'owned': true
+				owned: true
 			}
 		});
 	},
-	setOwnedFalse(mangasId) {
-		check(mangasId, String);
-		return Mangas.update({
-			'_id': mangasId
-		}, {
+	setOwnedFalse(data) {
+		let methodSchema = new SimpleSchema({
+			_id: { type: String },
+		});
+		check(data, methodSchema);
+		return Mangas.update({ _id: data._id }, {
 			$set: {
-				'owned': false
+				owned: false
 			}
 		});
 	}

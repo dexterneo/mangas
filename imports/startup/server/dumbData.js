@@ -4606,13 +4606,13 @@ Meteor.startup(function() {
 			}]
 		}];
 		console.log('Start dumbData import');
-		for (var m = 0; m < mangasData.length; m++) {
-			Meteor.call('addCompleteMangas', mangasData[m], function(error) {
+		mangasData.map((cur, index, array) => {
+			Meteor.call('addCompleteMangas', cur, (error, result) => {
 				if (error) {
 					return console.log(error.message, error.invalidKeys, mangasData[m]);
 				}
 			});
-		}
+		});
 		console.log('End dumbData import');
 	}
 });

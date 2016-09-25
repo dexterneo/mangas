@@ -56,7 +56,7 @@ Router.route('/missingMangas', {
 	name: 'missingMangas'
 });
 
-Router.route('/:name/tome/:number/:_id', {
+Router.route('/:mangaId/tome/:tomeId', {
 	name: 'tomeDetails'
 });
 

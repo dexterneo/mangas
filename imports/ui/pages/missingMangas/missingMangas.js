@@ -6,33 +6,23 @@ import { Mangas } from '../../../api/mangas/schema.js';
 
 import './missingMangas.jade';
 import '../../components/buttonAddMangaForUser.jade';
-import '../../components/mangas.jade';
+import '../../components/tome/tome.js';
 
 Template.missingMangas.onCreated(function() {
 	this.autorun(() => {
 		this.subscribe('allMissingMangas', Meteor.userId());
+		this.subscribe('allMangasDataForUser', Meteor.userId(), false);
 	});
 });
 
 Template.missingMangas.helpers({
 	tomesInMangatek() {
-		return Mangas.findOne({ user: Meteor.userId() });
+		return Mangas.findOne({ userId: Meteor.userId() });
 	},
 	mangasList() {
 		return Mangas.find({
-			user: Meteor.userId(),
+			userId: Meteor.userId(),
 			owned: false
-		}, {
-			sort: {
-				number: 1,
-				name: 1
-			},
-			fields: {
-				cover: 1,
-				name: 1,
-				number: 1,
-				owned: 1
-			}
 		});
 	}
 });

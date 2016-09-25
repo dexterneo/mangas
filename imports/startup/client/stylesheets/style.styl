@@ -1,50 +1,26 @@
+@font-face
+    font-family markMyWords
+    src url('/fonts/mark_my_words.ttf')
+    font-weight 400
+    font-style normal
+
 body
-	padding 70px 0 20px 0
+	padding 50px 0 60px 0
 
-	.mangas, .mangas-cover
-		display inline-block
-		padding 0 10px 0 10px
-
-	.mangas-cover
+	.mangaCoverItem
 		img
 			max-height 50px
 
-	#tomeDetailCover .thumbnail
-		border 0
+	h1, h2, h3, h4, h5, h6, .navbar-brand, p.panel-title
+		font-family markMyWords
 
-	#buttonAddMangaForUser, .ownThemAll, .addTomes
-		margin 0 0 20px 0
+	.row
+		display flex
+		flex-wrap wrap
 
-	.addToCollection
-		margin -10px 0 10px 0
+	.thumbnail-success
+		background-color #dff0d8
+		border-color #d6e9c6
 
-@media (max-width 320px)
-	.mangas.grid-item
-		width 100%
-	.mangas-cover.grid-item
-		width 50%
-@media (min-width 321px)
-	.mangas.grid-item
-		width 50%
-	.mangas-cover.grid-item
-		width 33%
-@media (min-width 450px)
-	.mangas.grid-item
-		width 50%
-	.mangas-cover.grid-item
-		width 33%
-@media (min-width 768px)
-	.mangas.grid-item
-		width 33%
-	.mangas-cover.grid-item
-		width 33%
-@media (min-width 992px)
-	.mangas.grid-item
-		width 25%
-	.mangas-cover.grid-item
-		width 25%
-@media (min-width 1200px)
-	.mangas.grid-item
-		width 25%
-	.mangas-cover.grid-item
-		width 20%
+	.footer
+		padding-top 10px

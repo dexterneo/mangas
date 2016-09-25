@@ -18,16 +18,16 @@ export const isValidUrl = function(url) {
 
 export const getFullName = function(obj) {
 	let fullName = '';
-	if (obj.firstName === undefined && obj.lastName === undefined) {
+	if (!obj.firstName && !obj.lastName) {
 		return fullName;
-	} else if (obj.lastName === undefined) {
+	} else if (!obj.lastName) {
 		fullName = obj.firstName;
 		return fullName;
-	} else if (obj.firstName === undefined) {
+	} else if (!obj.firstName) {
 		fullName = obj.lastName;
 		return fullName;
 	} else {
-		fullName = obj.firstName + ' ' + obj.lastName;
+		fullName = `${obj.firstName} ${obj.lastName}`;
 		return fullName;
 	}
 };
@@ -40,13 +40,13 @@ export const getAuthors = function(list) {
 		author = getFullName(list[0]);
 		return author;
 	} else {
-		for (var i = 0; i < list.length; i++) {
-			if (i === 0) {
+		list.map((cur, index, array) => {
+			if (index === 0) {
 				author = author.concat(getFullName(list[i]));
 			} else {
 				author = author.concat(' & ', getFullName(list[i]));
 			}
-		}
+		})
 		return author;
 	}
 };

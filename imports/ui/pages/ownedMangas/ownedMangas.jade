@@ -1,21 +1,15 @@
 template(name="ownedMangas")
-	if Template.subscriptionsReady
-		if tomesInMangatek
-			.panel.panel-default
-				.panel-heading
-					h2.panel-title {{_ "allTomesOwned"}}
-				.panel-body
-					+buttonAddMangaForUser
-					.grid
-						each mangasList
-							+mangas
-				.panel-footer
-					+buttonAddMangaForUser
+	.container-fluid
+		if Template.subscriptionsReady
+			if tomesInMangatek
+				.page-header
+					h1 {{_ "allTomesOwned"}}
+				.row
+					each mangasList
+						+tome
+			else
+				.page-header
+					h1 {{_ "noTomesInMangatek"}}
+			+footer
 		else
-			.panel.panel-default
-				.panel-heading
-					h2.panel-title {{_ "noTomesInMangatek"}}
-				.panel-body
-					+buttonAddMangaForUser
-	else
-		+spinner
+			+spinner

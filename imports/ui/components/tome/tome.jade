@@ -1,0 +1,9 @@
+template(name="tome")
+	.col-xs-6.col-sm-4.col-md-3.col-lg-2.tome
+		.thumbnail
+			with tomeData
+				a(href="{{pathFor 'tomeDetails'}}")
+					img(src="#{cover}" alt="#{title}")
+				.caption
+					h3.text-center #{names.fr}
+					p.lead.text-center {{_ "tome"}} #{number}

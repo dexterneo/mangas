@@ -1,29 +1,23 @@
 import { Meteor } from 'meteor/meteor';
 import { check } from 'meteor/check';
 import { Random } from 'meteor/random';
+import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 
-import { MangasData } from './schema.js';
+import { MangasData, mangasDataSchema } from './schema.js';
 
 Meteor.methods({
 	addCompleteMangas(data) {
-		check(data, Object);
+		check(data, mangasDataSchema);
 		return MangasData.insert(data);
 	},
 	updateMangaNames(data) {
-		check(data, Object);
-		check(data.mangaId, String);
-		if (data.fr) {
-			check(data.fr, String);
-		}
-		if (data.en) {
-			check(data.en, String);
-		}
-		if (data.jp) {
-			check(data.jp, String);
-		}
-		if (!data.fr && !data.en && !data.jp) {
-			return false;
-		}
+		let methodSchema = new SimpleSchema({
+			mangaId: { type: String },
+			fr: { type: String, optional: true },
+			en: { type: String, optional: true },
+			jp: { type: String, optional: true }
+		});
+		check(data, methodSchema);
 		return MangasData.update({ _id: data.mangaId }, {
 			$set: {
 				'names.fr': data.fr,

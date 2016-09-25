@@ -1,6 +1,5 @@
 template(name="addMangaForUserStep1")
-	.panel.panel-default
-		.panel-heading
-			h2.panel-title {{_ "whichMangaToAdd"}}
-		.panel-body
-			+mangasCoverList
+	.container-fluid
+		.page-header
+			h1 {{_ "whichMangaToAdd"}}
+		+mangasCoverList
