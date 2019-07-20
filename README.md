@@ -1,4 +1,4 @@
-# Mangatek [![Circle CI](https://circleci.com/gh/dexterneo/mangatek.svg?style=svg)](https://circleci.com/gh/dexterneo/mangatek)
+# Mangatek
 
 Anyone can create and manage his(her) mangas library.
 

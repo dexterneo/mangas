@@ -1,13 +1,29 @@
 {
-  "name": "Mangatek",
+  "name": "mangatek",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "meteor run"
+    "start": "node ./bin/www",
+    "clean": "npx eslint *.js routes/*.js --fix"
   },
   "dependencies": {
-    "babel-runtime": "^6.18.0",
-    "bcrypt": "^0.8.7",
-    "jquery": "2.2.4",
-    "meteor-node-stubs": "~0.2.0"
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "jssha": "^2.3.1",
+    "lowdb": "^1.0.0",
+    "morgan": "~1.9.0",
+    "ramda": "^0.26.1",
+    "shortid": "^2.2.14"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0"
   }
 }

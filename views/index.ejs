@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Mangatek</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+
+  <body>
+    <h1>Mangatek</h1>
+    <%- include('signup', {errors: errors.filter(cur => cur.element === 'signup')}); %>
+    <%- include('login', {errors: errors.filter(cur => cur.element === 'login')}); %>
+  </body>
+
+</html>

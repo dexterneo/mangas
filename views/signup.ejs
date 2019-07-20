@@ -1,0 +1,15 @@
+<section id="signup-section">
+  <h2>Create an account</h2>
+  <%- include('error', {errors: errors}); %>
+  <form method="POST" action="/signup">
+    <div>
+      <label for="email-signup" class="email-label">Enter your email:</label>
+      <input type="email" id="email-signup" required name="email" />
+    </div>
+    <div>
+      <label for="password-signup" class="password-label">Enter your password:</label>
+      <input type="password" id="password-signup" required name="password" minlength="6" />
+    </div>
+    <button type="submit">Sign Up</button>
+  </form>
+</section>
