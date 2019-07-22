@@ -1,20 +1,35 @@
 const express = require('express')
 const router = express.Router()
-const { find } = require('../db')
-const {
-  compose
-} = require('ramda')
+const { getUserId } = require('../database/db')
+const { getUserCollection } = require('../database/user-book-series')
+const { createBookSerie } = require('../database/book-series')
+const { compose } = require('ramda')
 const {
   getCookieValue,
-  log
-} = require('../utils')
+  getFromBody
+} = require('./utils')
 
 router.get('/', function(req, res, next) {
   const userCollection = compose(
-    hash => find('bookSeries', { query: hash }),
+    getUserCollection,
+    getUserId,
     getCookieValue
   )(req)
-  return res.render('my-collection', { errors: [] })
+
+  return res.render('my-collection', { userCollection, errors: [] })
+})
+
+router.post('/book-series/create', function(req, res, next) {
+  const body = getFromBody(req)
+
+  const bookSerie = {
+    name: body('name'),
+    nbTomes: body('nb-tomes')
+  }
+
+  createBookSerie(bookSerie)
+
+  return res.redirect('/my-collection')
 })
 
 module.exports = router

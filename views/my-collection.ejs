@@ -1,1 +1,11 @@
 <h2>My collection</h2>
+<% if (userCollection.length > 0) { %>
+  <% userCollection.forEach(bookSerie => { %>
+    <div>
+      <p><%= bookSerie.name %></p>
+    </div>
+  <% }); %>
+<% } else { %>
+  <p>Your collection is empty</p>
+  <%- include('molecules/book-series-create', {errors: errors.filter(cur => cur.element === 'book-series-create')}); %>
+<% } %>

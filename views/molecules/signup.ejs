@@ -3,13 +3,13 @@
   <%- include('error', {errors: errors}); %>
   <form method="POST" action="/signup">
     <div>
-      <label for="email-signup" class="email-label">Enter your email:</label>
+      <label for="email-signup" class="label">Enter your email</label>
       <input type="email" id="email-signup" required name="email" />
     </div>
     <div>
-      <label for="password-signup" class="password-label">Enter your password:</label>
+      <label for="password-signup" class="label">Enter your password</label>
       <input type="password" id="password-signup" required name="password" minlength="6" />
     </div>
-    <button type="submit">Sign Up</button>
+    <button class="form-submit" type="submit">Sign Up</button>
   </form>
 </section>

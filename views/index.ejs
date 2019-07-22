@@ -9,8 +9,8 @@
 
   <body>
     <h1>Mangatek</h1>
-    <%- include('signup', {errors: errors.filter(cur => cur.element === 'signup')}); %>
-    <%- include('login', {errors: errors.filter(cur => cur.element === 'login')}); %>
+    <%- include('molecules/signup', {errors: errors.filter(cur => cur.element === 'signup')}); %>
+    <%- include('molecules/login', {errors: errors.filter(cur => cur.element === 'login')}); %>
   </body>
 
 </html>

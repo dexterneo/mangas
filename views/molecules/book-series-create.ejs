@@ -1,0 +1,15 @@
+<section id="book-series-section">
+  <h2>Add a new book serie to Mangatek</h2>
+  <%- include('error', {errors: errors}); %>
+  <form method="POST" action="/my-collection/book-series/create">
+    <div>
+      <label for="name-book-series" class="label">Name of the serie</label>
+      <input type="text" id="name-book-series" required name="name" />
+    </div>
+    <div>
+      <label for="nb-tomes-book-series" class="label">How many tomes of this serie are available?</label>
+      <input type="number" id="nb-tomes-book-series" required name="nb-tomes" min="1" step="1" max="1000" value="1" />
+    </div>
+    <button class="form-submit" type="submit">Add to Mangatek</button>
+  </form>
+</section>

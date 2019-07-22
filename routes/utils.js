@@ -1,4 +1,3 @@
-const jsSHA = require("jssha")
 const {
   path,
   prop
@@ -22,15 +21,6 @@ function log(content) {
   return content
 }
 
-function makeHash(content) {
-  const shaObj = new jsSHA("SHA-512", "TEXT")
-
-  shaObj.update(content)
-
-  return shaObj.getHash("HEX")
-}
-
 exports.getCookieValue = getCookieValue
 exports.getFromBody = getFromBody
 exports.log = log
-exports.makeHash = makeHash

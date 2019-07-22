@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "clean": "npx eslint *.js routes/*.js --fix"
+    "clean": "npx eslint *.js routes/*.js database/*.js --fix",
+    "db-reset": "node ./database/reset.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",

@@ -6,11 +6,10 @@ const {
   assoc,
   compose,
   curry,
-  head,
   identity,
   ifElse,
-  is,
   isNil,
+  map,
   merge,
   prop
 } = require('ramda')
@@ -18,7 +17,7 @@ const {
 const adapter = new FileSync('mangatek.json')
 const db = low(adapter)
 
-db.defaults({ users: [], bookSeries: [], books: [] }).write()
+db.defaults({ users: [], bookSeries: [], books: [], userBookSeries: [], userBooks: [] }).write()
 
 function find(collection, config) {
   const p = compose(
@@ -43,14 +42,34 @@ function findOne(collection, query) {
     .value()
 }
 
-function insertOne(collection, content) {
-  const contentWithId = assoc('id', shortid.generate(), content)
+function getUserId(hash) {
+  return prop('id', findOne('users', { hash }))
+}
 
+function contentWithId(content) {
+  return ifElse(
+    c => isNil(prop('id', c)),
+    c => assoc('id', shortid.generate(), c),
+    identity
+  )(content)
+}
+
+function insertOne(collection, content) {
   return db.get(collection)
-    .push(contentWithId)
+    .push(contentWithId(content))
+    .write()
+    .id
+}
+
+function insertMany(collection, list) {
+  return db.get(collection)
+    .push(map(contentWithId, list))
     .write()
 }
 
 exports.db = db
+exports.find = curry(find)
 exports.findOne = curry(findOne)
+exports.getUserId = getUserId
+exports.insertMany = curry(insertMany)
 exports.insertOne = curry(insertOne)

@@ -3,17 +3,14 @@ const router = express.Router()
 const {
   findOne,
   insertOne
-} = require('../db')
+} = require('../database/db')
 const {
-  getFromBody,
-  log,
-  makeHash
-} = require('../utils')
+  getFromBody
+} = require('./utils')
+const { makeHash } = require('../database/users')
 const {
-  __,
   concat,
-  isNil,
-  path
+  isNil
 } = require('ramda')
 
 /* GET home page. */
